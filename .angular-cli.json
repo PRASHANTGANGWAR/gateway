@@ -1,0 +1,86 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "Gatewaylifestyle"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "favicon.png",
+        "assests",
+        "css",
+        "js",
+        "images"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "css/slider.css",
+        "css/fix-style.css",
+        "css/custom.css",  
+        "css/bootstrap.css",
+        "css/bootstrap-select.css",
+        "../node_modules/font-awesome/css/font-awesome.css",    
+        "css/animate.css",
+        "css/common.css",
+        "css/tinycarousel.css",
+        "css/mapbox.css",
+        "css/MarkerCluster.css",
+        "css/MarkerCluster.Default.css",
+        "css/styles.css",  
+        "css/responsive.css",
+        "css/modal-video.min.css",
+        "css/owl.theme.default.min.css"
+      ],
+      "scripts": [
+        "js/jquery.min.js",
+        "js/jquery-1.4.min.js",
+        "js/jquery.min-1-9-1.js",
+        "js/bootstrap.min.js",
+        "js/jquery.iosslider.js",
+        "js/custom.js",
+        "js/slick.js",
+        "js/bootstrap-select.js",
+        "js/wow.min.js",
+        "js/mapbox.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

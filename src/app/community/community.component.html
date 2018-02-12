@@ -1,0 +1,790 @@
+    <!-- Media gallery -->
+    <div class="media-gallery premium ">
+        <!-- hero display -->
+        <div class="banner-res">
+            <div class="ban-slider">
+                <img [src]="comunitylatestDetail.featured_image.url">
+            </div>
+            <!-- responsive community logo goes here -->
+            <div class="sm-imgba">
+            <img [src]="comunitylatestDetail.community_logo.url"></div>
+            <!-- responsive community logo goes here -->
+        </div>
+        <!-- end of hero display -->
+        <!-- modal triggers -->
+        <!-- <div class="all-photo-btn"> -->
+            <a href="javascript:;" id="firstImageTrigger" data-eventname="photoView" class="aphotos detail_btn" 
+            (mouseover)="changeColor($event)" 
+            (mouseout)="changeColor($event)" [ngStyle]="{'color': comunitylatestDetail.primary_color}">All Photos</a>
+        <!-- </div> -->
+        <!-- modal assets here -->
+        <ul id="lightGallery" class="gallery hidden-xs">
+            <li class="gallery-image" attr.data-img-src="{{comunitylatestDetail.featured_image.url}}" attr.data-src="{{comunitylatestDetail.featured_image.url}}">
+                <img [src]="comunitylatestDetail.featured_image.url" alt="" />
+            </li>
+            <!-- <div *ngIf = "comunitylatestDetail.community_images.length"> -->
+                <li class="gallery-image" *ngFor="let _image of comunitylatestDetail.community_images" attr.data-img-src="{{_image.community_images.url}}" attr.data-src="{{_image.community_images.url}}">
+                <!-- <img [src]="_image.community_images.url" alt="" /> -->
+                </li>
+            <!-- </div> -->
+        </ul>
+        <!-- end of modal assets here -->
+        <div id="galleryLoader" class="image-placeholder">
+            <div class="image-loader-wrap with-icon animated">
+                <div class="image-loader"></div>
+                <span class="f-icon">
+               <span class="icon domain-icon-ic_home"></span>
+                </span>
+            </div>
+        </div>
+        <!-- end of modal triggers -->
+    </div>
+    <!-- end of Media gallery -->
+
+    <!--Belong section start-->
+    <section class="belong-section">
+        <div class="secondary-nav-mobile">
+            <a href="tel:1300361311" class="nav-mobile-left" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
+                <div class="mob-data">
+                    <div class="mob-img">
+                        <img src="images/call.png" />
+                    </div>
+                    <span>call</span>
+                </div>
+            </a>
+            <a href="#" class="nav-mobile-right" data-toggle="modal" data-target="#get-an-info-pack-modal" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
+                <div class="mob-data">
+                    <div class="mob-img">
+                        <img src="images/get-an-info.png" />
+                    </div>
+                    <span>get an info pack</span>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 w642 col-md-9">
+                    <div class="card">
+                        <ul class="nav nav-tabs resno" role="tablist">
+                            <li class="active sc" *ngIf="comunitylatestDetail?.community_title || comunitylatestDetail?.community_description"><a
+                                    [ngStyle]="{'color': comunitylatestDetail.primary_color}"
+                                (click)="scrollTo(WhyLive)" aria-controls="home" role="tab" data-toggle="tab">Why live here?<div [ngStyle]="{'background': comunitylatestDetail.primary_color}" class="bottom-line"></div></a></li>
+                            <li class="sc" *ngIf="comunityDetail?.homes.length"><a (mouseover)="after($event)" 
+                        (mouseout)="after($event)"
+                                (click)="scrollTo(HomeSales)">Homes for sale<div style= "background: none" class="bottom-line"></div></a></li>
+                            <li class="sc" *ngIf="comunityDetail?.events.length"><a (mouseover)="after($event)" 
+                        (mouseout)="after($event)"
+                                (click)="scrollTo(Opendays)">Open days<div style= "background: none" class="bottom-line"></div></a></li>
+                            <li class="sc"><a (mouseover)="after($event)" 
+                        (mouseout)="after($event)"
+                                (click)="scrollTo(Location)">Location<div style= "background: none" class="bottom-line"></div></a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active sc" id="home" *ngIf="comunitylatestDetail?.community_title || comunitylatestDetail?.community_description">
+                                <h3 class="big-heading" 
+                                [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{comunitylatestDetail?.community_title}}</h3>
+                                <div class="read-more-hide">
+                                    <p class="pera-textbig">{{comunitylatestDetail?.community_description}}</p>
+                                </div>
+                                 <a id="read-more" class="read-more" (click)="readMore()"> <span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 right-top glance-block">
+                    <div class="right-box-top">
+                        <div class="glance-logo">
+                            <img [src]="comunitylatestDetail.community_logo.url" 
+                            alt="">
+                        </div>    
+                        <h3 *ngIf="comunitylatestDetail.home_from">Homes from ${{comunitylatestDetail.home_from | number:'1.0'}}</h3>
+                        <h3>Call 1300 361 311</h3>
+                        <div class="bot">
+                            <div class="img-b"><img [src]="comunitylatestDetail.salesperson_image.url" alt=""></div>
+                            <div class="rt-col">
+                                <p><strong>{{comunitylatestDetail.salesperson_name}}</strong></p>
+                                <p>{{comunitylatestDetail.phone}}</p>
+                                <p>{{comunitylatestDetail.email}}</p>
+                            </div>
+
+                        </div>
+                        <button (mouseover)="changeInfoColor($event)" 
+                        (mouseout)="changeInfoColor($event)" id="info-com" class="btn btn-org" data-toggle="modal" data-target="#get-an-info-pack-modal" 
+                        [ngStyle]="{'background-color': comunitylatestDetail.primary_color,'border-color':comunitylatestDetail.primary_color}" *ngIf= "comunityDetail.info_pack?.info_pdf?.url">Get an info pack</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of Belong section start-->
+
+    <!-- Why live here -->
+    <section class="why-live-here pad-b0" [hidden]="!comunityDetail.why_live_heres.length" #WhyLive>
+        <!-- heading starts here -->
+        <div class="container">
+            <h2 class="heading">Why live here?</h2>
+            <div class="divider">
+            </div>
+        </div>
+        <!-- heading starts here -->
+        <!--  Sliders starts here -->
+        <div class="slider">
+            <div class="container">
+                <div id="myCarousel" class="carousel slide"  data-interval="false" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" id="why-live">
+                        <!-- <div class="item active">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eXY2Mda-Hlw" frameborder="0" allowfullscreen="" kwframeid="1">
+                            </iframe>
+                            <h2 class="heading-orang">Modern Facilities</h2>
+                            <p class="pera-textbig">
+                                Geteway Lifestyle Aspley is popular with those on the cusp of retirement <br>
+                                 and those who are newly retired, thanks to its urban location and ease of <br>
+                                 access to transport option. You can enjoy all the benefits of downsizing <br>
+                                your home while still enjoying every modern convenience.
+                            </p>
+                        </div> -->
+                        <div class="item" *ngFor="let why_live_here of comunityDetail.why_live_heres; let i=index"  [ngClass]="{active: i==0}">
+                            <iframe *ngIf="!why_live_here.image_present" width="100%" height="100%" [src]="why_live_here.youtube_url_link | safe: 'resourceUrl'" frameborder="0" allowfullscreen="" kwframeid="1">
+                            </iframe>
+                            <img *ngIf="why_live_here.image_present" [src]='why_live_here.image.url'>
+                            <h2 class="heading-orang" [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{why_live_here.title}}</h2>
+                            <p class="pera-textbig">
+                               {{why_live_here.description}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="fa fa-chevron-left glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="fa fa-chevron-right glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  end Sliders starts here -->
+    </section>
+    <!-- end of Why live here -->
+
+    <!-- Start Home for sale at Aspley Section-->
+    <section class="sale-at-Aspley padbot0 margbot80" id="Homes-for-sale" #HomeSales [hidden]= "!comunityDetail?.homes.length">
+        <div class="container">
+            <div class="card">
+                <h2 class="heading">Other homes in this community</h2>
+                <ul class="nav nav-tabs right-tab right-sidetab" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#All-homes" aria-controls="All-homes" role="tab" data-toggle="tab" [ngStyle]="{'color': comunitylatestDetail?.primary_color}">All homes<div [ngStyle]="{'background': comunitylatestDetail?.primary_color}" class="bottom-line"></div></a>
+                    </li>
+                    <li role="presentation" *ngIf="newHomes?.length">
+                        <a href="#New-Homes" aria-controls="New-Homes" role="tab" data-toggle="tab" (mouseover)="after($event)" 
+                        (mouseout)="after($event)">New Homes<div style="background: none" class="bottom-line"></div></a>
+                    </li>
+                    <li role="presentation" *ngIf="preLoved?.length">
+                        <a href="#Pre-loved-homes" aria-controls="Pre-loved-homes" role="tab" data-toggle="tab" (mouseover)="after($event)" 
+                        (mouseout)="after($event)">Pre-loved homes<div style="background: none" class="bottom-line"></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+          <div class="tab-content">
+            <!-- all homes tab -->
+            <div role="tabpanel" class="tab-pane active" id="All-homes">
+                <div class="center slider sale-box">                    
+                    <div *ngFor="let home of comunityDetail?.homes">
+                        <li class="width-fullnomarg">
+                            <div class="img-show-box">
+                                <div class="homefor-sale-box-img">
+                                <a routerLink="/homes-for-sale/{{home.id}}"><img *ngIf="home?.images?.length" 
+                                    [src]="home.images[0]" alt=""></a>
+                                </div>
+                                <a routerLink="/homes-for-sale/{{home.id}}"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{home.address}}</h4></a>
+                               <a *ngIf="home?.list_price" routerLink="/homes-for-sale/{{home.id}}"> <p>${{home.list_price | number : '1.0'}}</p> </a>                           
+                            </div>
+
+                        </li>
+                    </div>         
+                </div>
+            </div>
+            <!-- end of all homes tab -->
+            <!-- new home tab -->
+            <div role="tabpanel" class="tab-pane" id="New-Homes" *ngIf="newHomes?.length">
+                <div class="center slider sale-box">                    
+                    <div *ngFor="let new of newHomes">
+                        <li class="width-fullnomarg">
+                            <div class="img-show-box">
+                                <div class="homefor-sale-box-img">
+                                <a routerLink="/homes-for-sale/{{new.id}}"><img *ngIf="new?.images?.length" [src]="new.images[0]" alt=""></a>
+                                </div>
+                                <a routerLink="/homes-for-sale/{{new.id}}"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{new.address}}</h4></a> 
+                                <a *ngIf="new?.list_price" routerLink="/homes-for-sale/{{new.id}}"> <p>${{new.list_price | number : '1.0'}}</p> </a>                            
+                            </div>
+
+                        </li>
+                    </div>          
+                </div>
+            </div>
+            <!-- end of new home tab -->
+            <!-- preloved tab -->
+            <div role="tabpanel" class="tab-pane" id="Pre-loved-homes" *ngIf="preLoved?.length">
+                <div class="center slider sale-box">                    
+                    <div *ngFor="let loved of preLoved">
+                        <li class="width-fullnomarg">
+                            <div class="img-show-box">
+                                <div class="homefor-sale-box-img">
+                                <a routerLink="/homes-for-sale/{{loved.id}}"><img *ngIf="loved?.images?.length" 
+                                    [src]="loved.images[0]" alt=""></a>
+                                </div>
+                                <a routerLink="/homes-for-sale/{{loved.id}}"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{loved.address}}</h4></a>
+                                 <a *ngIf="loved?.list_price" routerLink="/homes-for-sale/{{loved.id}}"> <p>${{loved.list_price | number : '1.0'}}</p> </a>                             
+                            </div>
+
+                        </li>
+                    </div>
+                </div> 
+            </div>
+            <!-- ennd of preloved tab -->
+        </div>  
+        
+        <div class="container">
+             <div class="bot-but">
+                <a href="#" data-toggle="modal" data-target="#myModal" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)"><i class="icon"></i>Show me all {{comunityDetail?.homes.length}} homes</a>
+            </div>
+        </div>
+        <!-- Tab panes -->
+
+    </section>
+    <!-- end Home for sale at Aspley Section-->
+
+ 
+    <!-- start Community Masterplan section -->
+    <section class="community-masterplan" *ngIf="comunitylatestDetail.masterplan_pdf?.url || comunitylatestDetail.masterplan_image?.url || comunitylatestDetail.legend_image?.url">
+        <div class="container">
+            <div class="top-file-lw">
+                <h2 class="heading">Community Masterplan</h2>
+               <!--  PDF link goes here -->
+                <a *ngIf="comunitylatestDetail.masterplan_pdf?.url" href="http://www.admin.gatewaylifestyle.com.au{{comunitylatestDetail.masterplan_pdf.url}}" target="_blank"><i></i> Download PDF</a>
+                <!-- end of PDF link goes here -->
+            </div>
+            <div class="divider"></div>
+            <div class="masterplan-wp">
+                <div class="box">
+                   <!--  master plan image goes here -->
+                    <div class="left-side-image" *ngIf="comunitylatestDetail.masterplan_image?.url">
+                        <!-- map goes here -->
+                        <img [src]="comunitylatestDetail.masterplan_image.url" alt=""/>
+                        <!-- end of map goes here -->
+                    </div>
+                    <div class="right-side-image" *ngIf="comunitylatestDetail.legend_image?.url">
+                        <!-- legend goes here -->
+                        <img [src]="comunitylatestDetail.legend_image.url" alt=""/>
+                        <!-- end of legend goes here -->
+                    </div>
+                    <!--  end of master plan image goes here -->
+                </div>               
+            </div>
+        </div>
+    </section>
+    <!--end-->
+
+    <!-- Offer section -->
+    <section class="offer-headline-admin" *ngIf="comunityDetail.offer" 
+    [ngStyle]="{'background': '-webkit-linear-gradient(left, '+comunitylatestDetail.primary_color+' 0%, '+comunitylatestDetail.secondary_color +' 100%)'}">
+    <div class="col-sm-12 col-md-6 no-pad hidden-xs hidden-sm"><img [src]="comunityDetail.offer.image.url" alt=""></div>
+        <div class="col-sm-12 col-md-6">
+            <div class="rg-box">
+                <h2>{{comunityDetail.offer.title}}</h2>
+                <p>{{comunityDetail.offer.description}}</p>
+                <div class="buttons sc" (click)="offerDetails(comunityDetail.offer.more_about)"><a class="ods-btn" 
+        [ngStyle]="{'color': comunitylatestDetail.primary_color}" (mouseover)="onOffer($event)" 
+                                    (mouseout)="onOffer($event)">See offer details</a></div>
+            </div>
+        </div>
+    </section>
+     <!-- end  Offer section -->
+
+    <!-- facilities Section-->
+    <section class="sale-at-Aspley padbot0 margbot80"
+    *ngIf="comunityDetail.community_facilities?.length">
+        <div class="container">
+            <div class="card">
+                <h2 class="heading">Community facilities</h2>
+                <div class="divider"></div>
+                <p class="text-fac">You'll never want to leave the grounds with the facilities available at {{comunitylatestDetail.first_name}}!</p>
+            </div>
+        </div>
+          <div class="tab-content">
+            <div class="tab-pane active" >
+                <div class="center slider sale-box">                    
+                    <div *ngFor="let community_facility of comunityDetail.community_facilities">
+                        <li class="width-fullnomarg">
+                            <div class="img-show-box">
+                                <div class="homefor-sale-box-img">
+                                <img [src]="community_facility.image.url" 
+                                alt="">
+                                </div>
+                                <h4 class="marg-tb" [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{community_facility.name}}</h4>                             
+                            </div>
+
+                        </li>
+                    </div>   
+                </div>
+            </div>
+        </div>  
+        
+        <div class="container">
+             <div class="bot-but">
+                <a href="#" data-toggle="modal" data-target="#myfaci" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)"><i class="icon"></i>Show me all {{comunityDetail.community_facilities.length}} facilities</a>
+            </div>
+        </div>
+        <!-- Tab panes -->
+
+    </section>
+    <!-- end of  facilities Section-->
+
+    <!-- open days Section-->
+    <section class="sale-at-Aspley padbot0 margbot80 margtop0" id="Open-days" #Opendays [hidden]= "!comunityDetail.events.length">
+        <div class="container">
+            <div class="card">
+                <h2 class="heading">{{comunityDetail.events.length}} Planned open days</h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+          <div class="tab-content">
+            <div class="tab-pane active" >
+                <div class="center slider sale-box">                    
+                    <div  *ngFor="let event of comunityDetail.events">
+                        <a routerLink="/events/{{event.id}}">
+                            <li class="width-fullnomarg">
+                                <div class="box">
+                                    <div class="date-box" 
+                                    [ngStyle]="{'background': '-webkit-linear-gradient(left, '+comunitylatestDetail.primary_color+' 0%, '+comunitylatestDetail.secondary_color +' 100%)'}">
+                                        <div class="date" 
+                                        (click)="goToEventDetail(event.id)">
+                                            <span>{{event.day}}</span>
+                                            <span>{{event.month}}</span>
+                                        </div>
+                                    </div>
+                                    <h5>Read more & RSVP.</h5>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="container">
+             <div class="bot-but">
+                <a href="#" data-toggle="modal" data-target="#mydays" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)"><i class="icon"></i>Show me all {{comunityDetail.events.length}} open days</a>
+            </div>
+        </div>
+        <!-- Tab panes -->
+
+    </section>
+    <!-- end of open day Section-->
+
+    <!--Map section-->
+    <section id="Location" #Location>
+        <div class="community-location-map">
+            <iframe [src]="'https://www.google.com/maps/embed/v1/place?key=AIzaSyDgocn8utrn5kblteaLLZ1-aLEZIl9aRok&q='+ comunitylatestDetail.street_address | safe: 'resourceUrl'" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+           <div class="container">
+                <!-- address details -->
+                <div class="address-details">
+                    <ul class="map-pin">
+                        <li class="address">{{comunitylatestDetail.street_address}}</li>
+                        <a href="https://www.google.com/maps/dir//{{comunitylatestDetail?.street_address }}" target="_blank"><li class="link">View directions</li></a>
+                    </ul>
+                </div>
+                <!-- end of address details -->
+           </div>
+            
+        </div>
+    </section>
+     <!-- end of map section-->
+
+    <!-- nearby Section-->
+    <section class="sale-at-Aspley padbot0 margbot80" *ngIf="comunityDetail?.near_bys.length">
+        <div class="container">
+            <div class="card">
+                <h2 class="heading">What's nearby?</h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+          <div class="tab-content">
+            <div class="tab-pane active" >
+                <div class="center slider sale-box">                    
+                    <div *ngFor="let nearbys of comunityDetail.near_bys">
+                        <li class="width-fullnomarg">
+                            <div class="img-show-box">
+                                <div class="homefor-sale-box-img">
+                                <img [src]="nearbys.image.url" alt="">
+                                </div>
+                                <h4 [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{nearbys.name}}</h4>
+                                <p>{{nearbys.distance}}</p>                             
+                            </div>
+
+                        </li>
+                    </div> 
+                </div>
+            </div>
+        </div>  
+        
+        <div class="container">
+             <div class="bot-but">
+                <a href="#" data-toggle="modal" data-target="#mynearby" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)"><i class="icon"></i>Show me all {{comunityDetail.near_bys.length}} things to do around here</a>
+            </div>
+        </div>
+        <!-- Tab panes -->
+
+    </section>
+    <!-- end of nearby Section-->
+    <!-- CTA section-->
+    <section class="leaving-at-aspley" [ngStyle]="{'background': '-webkit-linear-gradient(left, '+comunitylatestDetail.primary_color+' 0%, '+comunitylatestDetail.secondary_color +' 100%)'}">
+        <div class="container">
+            <h2>Start living at {{comunitylatestDetail.first_name}}. <br />you deserve it.</h2>
+            <img [src]="comunitylatestDetail.salesperson_image.url" alt="">
+            <span>Talk to {{comunitylatestDetail.salesperson_name}} now on {{comunitylatestDetail.phone}}</span>
+            <div class="buttons" *ngIf= "comunityDetail.info_pack?.info_pdf?.url">
+                <a href="#" data-toggle="modal" data-target="#get-an-info-pack-modal" class="ods-btn" [ngStyle]="{'color': comunitylatestDetail.primary_color}">Get an info pack</a> 
+                <a (mouseover)="onfb($event)" (mouseout)="onfb($event)"*ngIf="comunityDetail?.facebook_links.length" href='{{comunityDetail?.facebook_links[0].link}}' class="trans-btn" target="_blank">Join Us on facebook</a>
+            </div>
+        </div>
+    </section>
+    <!-- end CTA section-->
+
+    <!-- 
+    // All modal components below //
+    -->
+
+    <!-- Get an info pack Modal -->
+    <div class="modal fade" id="get-an-info-pack-modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body no-pad">
+                     <button (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)" type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
+                        <div class="right-img-full">
+                            <div class="right-img-full" [ngStyle]="{'background-image': 'url(' + comunitylatestDetail.featured_image.url + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
+                            <!--  <img 
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                             "height: -webkit-fill-available;"> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 getinfowp">
+                   
+                        <div class="wp-main">
+                         <h3 [ngStyle]="{'color': comunitylatestDetail.primary_color}">
+                            <div class="title-img-round">
+                                <img 
+                                [src]=comunitylatestDetail.community_icon.url alt="" class="">    
+                            </div>
+                            Get an info pack
+                         </h3>
+                         <div class="profile-row">
+                            <div class="profile-img"><img [src]="comunitylatestDetail.salesperson_image.url" alt="" width="32px" height="32px"></div> 
+                            <p><strong> {{comunitylatestDetail.salesperson_name}}</strong> | {{comunitylatestDetail.phone}} | {{comunitylatestDetail.email}}</p>
+                         </div>
+                         <div class="divider"></div>
+<!--                         <div class="form-getinfo-succes">
+                            <div class="row">
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
+                            <button (click)="infoPdf(comunityDetail.info_pack.info_pdf.url)" 
+                            (mouseover)="changeInfoColor($event)" 
+                        (mouseout)="changeInfoColor($event)" class="btn btn-org" [ngStyle]="{'background-color': comunitylatestDetail.primary_color,'border-color':comunitylatestDetail.primary_color}">View the info pack Now</button></div>
+                            </div>
+                        </div> -->
+                         <div class="form-wp-getinfo">
+                             <div class="row">
+                             <!-- form starts here-->
+                                <form #infoForm="ngForm" novalidate>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.firstname" 
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <p class="requiedred" [hidden]="firstname.valid || submitted == false">
+                                            Please Enter First name
+                                            </p>  
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.lastname" 
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
+                                           <p class="requiedred" [hidden]="lastname.valid || submitted == false">
+                                            Please Enter Last name
+                                        </p>   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.plan" 
+                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                        </div>
+                                    </div>  
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.phone" 
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email" 
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <p class="requiedred" [hidden]="email.valid || submitted == false">
+                                            Please Enter your email
+                                            </p> 
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <textarea [(ngModel)]="info.area" 
+                                           class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-12">
+                                    <button  
+                                    (mouseover)="changeInfoColor($event)" 
+                                   (mouseout)="changeInfoColor($event)" 
+                                  [ngStyle]="{'background-color': comunitylatestDetail.primary_color,'border-color': comunitylatestDetail.primary_color}" class="btn btn-org"  id="send-sucess"
+                                     (click)="getInfo(infoForm)" type="submit">Get an info pack</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end  Get an info pack Modal -->
+
+    <!-- Modal all 28 homes-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)">&times;</button>
+                    <section class="sale-at-Aspley">
+                        <div class="container">
+                            <div class="card">
+                                <h2 class="heading mgtm20">Other homes in this community</h2>
+                                <ul class="nav nav-tabs right-tab right-sidetab" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#model-All-homes" aria-controls="All-homes" role="tab" data-toggle="tab" [ngStyle]="{'color': comunitylatestDetail?.primary_color}">All homes<div [ngStyle]="{'background': comunitylatestDetail?.primary_color}" class="bottom-line"></div></a>
+                                    </li>
+                                    <li role="presentation" *ngIf="newHomes?.length">
+                                        <a href="#model-New-Homes" aria-controls="New-Homes" role="tab" data-toggle="tab" (mouseover)="after($event)" 
+                                        (mouseout)="after($event)">New Homes<div style= "background: none" class="bottom-line"></div></a>
+                                    </li>
+                                    <li role="presentation"                 *ngIf="preLoved?.length">
+                                        <a href="#model-Pre-loved-homes" aria-controls="Pre-loved-homes" role="tab" data-toggle="tab" (mouseover)="after($event)" 
+                                        (mouseout)="after($event)">Pre-loved homes<div style= "background: none" class="bottom-line"></div></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="model-All-homes">
+                                    <div class="sale-box">
+                                        <li *ngFor="let home of comunityDetail?.homes">
+                                            <div class="img-show-box">
+                                                <div class="homefor-sale-box-img">
+                                                <a routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><img 
+                                                  *ngIf="home?.images?.length"  [src]="home.images[0]" alt=""></a>
+                                                </div>
+                                                <a routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{home.address}}</h4></a>
+                                                <a *ngIf="home?.list_price" routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><p>${{home.list_price | number : '1.0'}}</p></a>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="model-New-Homes" *ngIf="newHomes?.length">
+                                    <ul class="sale-box">
+                                        <li *ngFor="let new of newHomes">
+                                            <div class="img-show-box">
+                                                <div class="homefor-sale-box-img">
+                                                <a routerLink="/homes-for-sale/{{new.id}}" data-dismiss="modal"><img 
+                                                   *ngIf="new?.images?.length" [src]="new.images[0]" alt=""></a>
+                                                </div>
+                                                <a routerLink="/homes-for-sale/{{new.id}}" data-dismiss="modal"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{new.address}}</h4></a>
+                                                 <a *ngIf="new?.list_price" routerLink="/homes-for-sale/{{new.id}}" data-dismiss="modal"><p>${{new.list_price | number : '1.0'}}</p></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="model-Pre-loved-homes" *ngIf="preLoved?.length">
+                                    <ul class="sale-box">
+                                        <li *ngFor="let loved of preLoved">
+                                            <div class="img-show-box">
+                                                <div class="homefor-sale-box-img">
+                                                <a routerLink="/homes-for-sale/{{loved.id}}" data-dismiss="modal"><img 
+                                                   *ngIf="loved?.images?.length" [src]="loved.images[0]" alt=""></a>
+                                                </div>
+                                                <a routerLink="/homes-for-sale/{{loved.id}}" data-dismiss="modal"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{loved.address}}</h4></a>
+                                                <a *ngIf="loved?.list_price" routerLink="/homes-for-sale/{{loved.id}}" data-dismiss="modal"><p>${{loved.list_price | number : '1.0'}}</p></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end Modal all 28 homes -->
+
+    <!-- Modal facilities-->
+    <div class="modal fade" id="myfaci" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)">&times;</button>
+                    <section class="sale-at-Aspley">
+                        <div class="container">
+                            <div class="card">
+                                <h2 class="heading">Community facilities</h2>
+                                <div class="divider"></div>
+                                <p class="text-fac">You'll never want to leave the grounds with the facilities available at {{comunitylatestDetail.first_name}}!</p>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- content -->
+                                <div class="sale-box">
+                                    <li *ngFor="let community_facility of comunityDetail.community_facilities">
+                                        <div class="img-show-box">
+                                            <div class="homefor-sale-box-img">
+                                            <img [src]="community_facility.image.url" alt="">
+                                            </div>
+                                            <h4 class="marg-tb" 
+                                            [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{community_facility.name}}</h4>
+                                        </div>
+                                    </li>
+                                </div>
+                                <!-- end of content -->
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end Modal facilities-->
+
+    <!-- Modal open days-->
+    <div class="modal fade" id="mydays" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)">&times;</button>
+                    <section class="sale-at-Aspley">
+                        <div class="container">
+                            <div class="card">
+                                <h2 class="heading">{{comunityDetail.events.length}} Planned open days</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- content -->
+                                <div class="sale-box">
+                                    <!-- first in order -->
+                                    <a *ngFor="let event of comunityDetail.events" routerLink="/events/{{event.id}}" data-dismiss="modal">
+                                        <li class="width-fullnomarg">
+                                            <div class="box">
+                                                <div class="date-box" [ngStyle]="{'background': '-webkit-linear-gradient(left, '+comunitylatestDetail.primary_color+' 0%, '+comunitylatestDetail.secondary_color +' 100%)'}">
+                                                    <div class="date">
+                                                        <span>{{event.day}}</span>
+                                                        <span>{{event.month}}</span>
+                                                    </div>
+                                                </div>
+                                                <h5>Read more & RSVP.</h5>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </div>
+                                <!-- end of content -->
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end Modal open days-->
+
+    <!-- what's nearby modal-->
+    <div class="modal fade" id="mynearby" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)">&times;</button>
+                    <section class="sale-at-Aspley">
+                        <div class="container">
+                            <div class="card">
+                                <h2 class="heading">What's nearby?</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- content -->
+                                <div class="sale-box">
+                                    <li *ngFor="let nearbys of comunityDetail.near_bys">
+                                        <div class="img-show-box">
+                                            <div class="homefor-sale-box-img">
+                                            <img [src]="nearbys.image.url" alt="">
+                                            </div>
+                                            <h4 [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{nearbys.name}}</h4>
+                                            <p>{{nearbys.distance}}</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <!-- end of content -->
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end what's nearby -->

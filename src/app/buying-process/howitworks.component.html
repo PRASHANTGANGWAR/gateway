@@ -1,0 +1,367 @@
+    <!-- Header width bg - fixed version -->
+	<section class="hfsl-banner how-it-work-hero" 
+[ngStyle]="{'background-image': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+		<div class="overlay"></div>		
+		<div class="context">
+			<div class="container">
+				 <h2>{{howwork.heroHeading}}</h2>
+        		 <p>{{howwork.heroText}}</p>
+			</div>
+		</div>
+	</section>
+    <!-- Header width bg - fixed version end -->
+
+    <!-- how it works section - fixed version -->
+	<section class="about-top-sec image-with-text-home how-works">
+        <div class="container">
+            <div class="row-first">
+                <div class="img-box"><img src="{{startedimg1}}" alt=""></div>
+                <div class="content-box">
+                    <h3>{{started1.showcaseImageTitleText1}}</h3>
+                    <p>{{started1.showcaseImageTitleDescription}} </p>
+                    
+                </div>
+            </div>
+            <div class="row-first row-second">
+        		
+                <div class="img-box"><img src="{{startedimg2}}" alt=""></div>
+                <div class="content-box">
+                    
+                    <h3>{{started1.showcaseTitle2}}</h3>
+                    <p>{{started1.showcaseDescription2}} </p>
+                    
+                </div>
+        		
+            </div>
+            <div class="row-first">
+        		
+                <div class="img-box"><img src="{{startedimg3}}" alt=""></div>
+                <div class="content-box">
+                    
+                   <h3>{{started1.showcaseTitle3}}</h3>
+                    <p>{{started1.showcaseDescription3}} </p>
+        			
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- how it works section - fixed version end -->
+
+
+	<!-- faqs blue block - fixed version -->
+    <section class="faq">
+        <div class="container">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" class="collapsed" href="#collapse0">{{faqTitle.faqTitle1}}</a>
+                        </div>
+                        <div id="collapse0" class="panel-collapse collapse">
+                            <div class="panel-data">{{faqTitle.faqDescription1}}</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" class="collapsed" href="#collapse1">{{faqTitle.faqTitle2}}</a>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-data">{{faqTitle.faqDescription2}}</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" class="collapsed" href="#collapse2">{{faqTitle.faqTitle3}}</a>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-data">{{faqTitle.faqDescription3}}</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>           
+            <div class="faq-btn">
+                <a routerLink="/faqs">see more faqs</a>
+            </div>
+            </div>
+    </section>
+	<!-- faqs blue block - fixed version end -->
+	
+	<!-- How it works image no.2 - fixed version -->
+	<section class="how-work how-it-works" [ngStyle]="{'background': 'url(' + imageId + ')','background-repeat': 'no-repeat'}">
+		<div class="container">
+			<div class="row">
+				<div class="work-title">
+					<h3>{{howItWorksHeading.howItWorksHeading}}</h3>
+					<p>{{howItWorksHeading.howItWorksDescription}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="how-work-main">
+					<div class="col-md-4">
+						<div class="work-col">
+							<div class="icon"><img src="{{image1}}"></div>
+							<h4>{{howItWorksHeading.heading1}}</h4>
+							<p>{{howItWorksHeading.description1}}</p>
+							<div class="dwn-pdf">
+								<a href="{{pdf1}}" download>{{mediatext1}}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="work-col">
+							<div class="icon"><img src="{{image2}}"></div>
+							<h4>{{howItWorksHeading.heading2}}</h4>
+							<p>{{howItWorksHeading.description2}}</p>
+							<div class="dwn-pdf">
+								<a href="{{pdf2}}" download>{{mediatext2}}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="work-col">
+							<div class="icon"><img src="{{image3}}"></div>
+							<h4>{{howItWorksHeading.heading3}}</h4>
+							<p>{{howItWorksHeading.description3}}</p>
+							<div class="dwn-pdf">
+								<a href="{{pdf3}}" download>{{mediatext3}}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- How it works image no.2 - fixed version end -->
+
+	<!-- featured homes Section - fixed version -->
+	<section class="sale-at-Aspley our-home-designe padtop90" id="featured-home">
+		<div class="container">
+			<div class="card">
+				<h2 class="heading">Featured homes</h2>
+				<div class="heading-right-link"><a routerLink="/homes-for-sale">Discover all {{homeCount}} homes for sale</a></div>
+				<div class="divider"></div>
+			</div>
+		</div>
+
+		<div class="tab-content">
+			<!-- all homes tab -->
+			<div role="tabpanel" class="tab-pane active" id="All-homes">
+				<div class="lookingsomthing-warp home-carousel">
+					<div class="inner-box-warp">
+
+						<div class="center slider">
+							<!-- community card -->
+							<div *ngFor="let home of featuredHomes;let jj = index">
+								<ul class="home-for-sale">
+									<li class="detail-list">
+											<div class="img-slider-warp mart-bot14">
+												<div class="sl-box">
+													<span *ngIf="home.status=='sold'" class="paid-btn">sold</span>
+
+                                                    <span *ngIf="home.status=='under_offer'" class="paid-btn" style="background: #f89923;">Under Offer</span>
+													<div id="carousel{{jj}}" class="carousel slide" data-interval="false">
+														<div class="carousel-inner home-carousel">															
+														<div class="item" *ngFor="let _image of home.images;let ii = index" [ngClass]="{active: ii===0}">
+							                                  <img 
+							                                  [src]="_image" 
+							                                  alt="">
+							                              </div>
+														</div>
+														<a class="left carousel-control" href="#carousel{{jj}}" data-slide="prev">‹</a>
+														<a class="right carousel-control" href="#carousel{{jj}}" data-slide="next">›</a>
+													</div>
+
+												</div>
+											</div>
+                                            <a href="homes-for-sale/{{home.id}}">
+											<div class="pr-b" *ngIf="home?.list_price">${{home.list_price | number:'1.0'}}</div>
+											<p>{{home.address}} {{home.address1}}</p>
+											<h4 class="margt25"><i class="sicon" [ngStyle]="{'background-image': 'url(' + home?.community?.community_icon?.url + ')','background-repeat': 'no-repeat','background-position': 'center'}"></i> Located in {{home.community.first_name}}</h4>
+											<div class="afs-wp">
+												<ul>
+													<li><i class="bed"></i> {{home.no_of_bedrooms}}</li>
+													<li><i class="tub"></i> {{home.no_of_bathrooms}}</li>
+													<li><i class="car"></i> {{home.car_space}}</li>
+												</ul>
+												<div *ngIf="home?.record_type == 'Pre-loved'" class="new-btn new-btn" style="border: 1px solid #62717f; color: #62717f!important; ">Pre Loved</div>
+                                                <div *ngIf="home?.record_type == 'New'" class="new-btn new-btn">New</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of all homes tab -->
+		</div>
+
+
+	</section>
+	<!-- featured homes Section - fixed version end -->
+
+    <!--from-our-blog section - fixed version -->    
+    <section class="from-our-blog">
+        <div class="container">
+            <div class="blog-section-heading">
+                <h3>{{ourBlogsTitle}}</h3>
+                <p>{{ourBlogsDescription}}</p>
+            </div>
+            <div class="blog-list">
+                <ul>
+                    <li>
+                        <a href="{{blogLink1}}" target="_blank">
+                        <div class="blog-single-div blog-post-1" [ngStyle]="{'background-image': 'url(' + blogBackgroundImage1 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                            <h3>{{blogTitle1}}</h3>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{blogLink2}}" target="_blank">
+                        <div class="blog-single-div blog-post-2" [ngStyle]="{'background-image': 'url(' + blogBackgroundImage2 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                            <h3>{{blogTitle2}}</h3>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{blogLink3}}" target="_blank">
+                        <div class="blog-single-div blog-post-3" [ngStyle]="{'background-image': 'url(' + blogBackgroundImage3 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                            <h3>{{blogTitle3}}</h3>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-articles">
+                <a href="https://live.gatewaylifestyle.com.au/" target="_blank">{{exploreMoreButton}}</a>
+            </div>
+        </div>
+    </section>    
+    <!--from-our-blog section - fixed version -->
+
+    <!-- start CTA block - fixed version -->
+    <section class="cta-block">
+        <div class="container">
+            <h2 class="whithead">{{chatData.standardCtaInfoPackDescription}}</h2>
+            <div class="buttons">
+                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">{{chatData.standardCtaInfoPackButtonText}}</a>
+            </div>
+            <p>{{chatData.standardCtaInfoPackAfterButtonText}}</p>
+        </div>
+    </section>
+    <!-- end CTA block - fixed version -->
+
+    <!-- Get an info pack Modal -->
+  <div class="modal fade" id="get-an-info-pack-modal-static" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body no-pad">
+                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)" >&times;</button>
+                    <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
+                        <div class="right-img-full">
+                            <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
+                            <!--  <img 
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                             "height: -webkit-fill-available;"> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 getinfowp">
+                   
+                        <div class="wp-main">
+                         <h3 style="color: #105dac;">
+                            <div class="title-img-round">
+                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
+                            </div>
+                            Get an info pack
+                         </h3>
+                         <!-- <div class="profile-row">
+                            <div class="profile-img"><img src="images/img11.png" alt=""></div> 
+                            <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p>
+                         </div> -->
+                         <div class="divider"></div>
+<!--                         <div class="form-getinfo-succes">
+                            <div class="row">
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
+                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
+                             class="btn btn-org">View the info pack Now</button></div>
+                            </div>
+                        </div> -->
+                         <div class="form-wp-getinfo">
+                             <div class="row">
+                                <!-- form starts here-->
+                                <form #infoForm="ngForm" novalidate>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.firstname" 
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <p class="requiedred" [hidden]="firstname.valid || submitted == false">
+                                            Please Enter First name
+                                            </p>  
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.lastname" 
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
+                                           <p class="requiedred" [hidden]="lastname.valid || submitted == false">
+                                            Please Enter Last name
+                                        </p>   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.plan" 
+                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                        </div>
+                                    </div>  
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.phone" 
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email" 
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <p class="requiedred" [hidden]="email.valid || submitted == false">
+                                            Please Enter your email
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <textarea [(ngModel)]="info.area" 
+                                           class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-12">
+                                    <button  class="btn btn-org"  id="send-sucess"
+                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
+                                    (mouseover)="changeColor($event)" 
+                                    (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end  Get an info pack Modal -->

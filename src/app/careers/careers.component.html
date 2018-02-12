@@ -1,0 +1,84 @@
+<!-- Header width bg - fixed version -->
+    <section class="hfsl-banner event-listing-hero" [ngStyle]="{'background-image': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+        <div class="overlay"></div>
+        <div class="context">
+            <div class="container">
+                 <h2>{{careers.heroHeading}}</h2>
+                 <p>{{careers.heroText}}</p>
+            </div>
+        </div>
+    </section>
+    <!-- Header width bg - fixed version end -->
+	
+	<!--our values section - fixed version-->
+    <section class="our-values-warp careers-page">
+        <div class="container">
+            <h2>{{ourValues.ourValueHeading}}</h2>
+            <ul>
+               <li>
+                 <div class="img-box"><img src="{{image1}}" alt=""></div>
+                 <h4>{{ourValues.title1}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image2}}" alt=""></div>
+                 <h4>{{ourValues.title2}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image3}}" alt=""></div>
+                 <h4>{{ourValues.title3}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image4}}" alt=""></div>
+                 <h4>{{ourValues.title4}}</h4>  
+               </li> 
+               <li>
+                 <div class="img-box"><img src="{{image5}}" alt=""></div>
+                 <h4>{{ourValues.title5}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image6}}" alt=""></div>
+                 <h4>{{ourValues.title6}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image7}}" alt=""></div>
+                 <h4>{{ourValues.title7}}</h4>  
+               </li>
+               <li>
+                 <div class="img-box"><img src="{{image8}}" alt=""></div>
+                 <h4>{{ourValues.title8}}</h4>  
+               </li> 
+            </ul>
+        </div>
+    </section>
+    <!--our values section - fixed version end-->
+	
+	
+	
+    <!--Video background block-->
+    <section class="video-background">
+        <div class="container">
+            <div class="center-info">
+                <h4 class="emp-name">{{video1.staffName}}</h4>
+                <span class="emp-position">{{video1.staffTitle}}</span>
+                <p>{{video1.introduction}}</p>
+                <div class="video-popup-btn"><a href="javascript:void(0);" class="js-modal-btn" [attr.data-video-id]="video1.videoBackgroundUrl">Watch the video</a></div>
+            </div>
+        </div>
+        <div style="display: none" id="video-url">{{video1.videoBackgroundUrl}}</div>
+    </section>
+    <!--END Video background block-->  
+   
+
+    <!-- start CTA block - fixed version -->
+    <section class="cta-block career-block-cta">
+        <div class="container">
+            <h2 class="whithead">{{careersCTA.ctaHeading}}</h2>
+             <p>{{careersCTA.ctaDescription}}</p>
+            <div class="buttons">
+                <a href="{{careersCTA.ctaLeftButtonUrl}}" class="borbtn">{{careersCTA.ctaLeftButton}}</a>
+                 <a href="#" class="borbtn"  data-toggle="modal" data-target="#cv-modal">{{careersCTA.ctaRightButton}}</a>
+            </div>
+           
+        </div>
+    </section>
+    <!-- start CTA block - fixed version -->

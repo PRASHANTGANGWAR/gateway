@@ -1,0 +1,507 @@
+  <section class="hfsl-banner our-home-design-hero" [ngStyle]="{'background-image': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}" *ngIf="showData">
+    <div class="overlay"></div>   
+    <div class="context">
+      <div class="container">
+         <h2>{{hsection.heroheading}}</h2>
+             <p>{{hsection.Herotext}}</p>
+      </div>
+    </div>
+    <div class="dwn-pdf">
+      <a href="{{hdownPDF}}">Download <span>pdf</span></a>
+    </div>
+  </section>
+   <!-- Header width bg - fixed version  end -->
+
+
+    <!-- Hotspot section  - fixed version end -->
+<section class="why-live-here hotspot-page">
+        <!-- heading starts here -->
+        <div class="container">
+            <div class="hotspot-heading">
+        <h2 class="heading">{{msection.headingText}}</h2>            
+        <div class="hedig-sub">{{msection.description}}</div>
+          </div>
+        </div>
+        <!-- heading starts here -->
+        <!--  Sliders starts here -->
+        <div class="slider">
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="item-inner">
+                              <img src="{{hotspotImage1}}">
+                              <div class="hotspot-hint link1">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription1"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link2">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription2"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link3">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription3"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link4">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription4"></markdown>
+                                </div>
+                              </div>                           
+                            </div>
+                        </div>
+                       <div class="item">
+                            <div class="item-inner">
+                              <img src="{{hotspotImage2}}">                                                        
+                              <div class="hotspot-hint link5">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                    <markdown [data]="hhsection.ourHomeHotspotDescription1Slide2"></markdown>
+                  </div>
+                </div>
+                <div class="hotspot-hint link6">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                    <markdown [data]="hhsection.ourHomeHotspotDescription2Slide2"></markdown>
+                  </div>
+                </div>
+                <div class="hotspot-hint link3">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                    <markdown [data]="hhsection.ourHomeHotspotDescription3Slide2"></markdown>
+                  </div>
+                </div>
+                <div class="hotspot-hint link4">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                    <markdown [data]="hhsection.ourHomeHotspotDescription4Slide2"></markdown>
+                  </div>
+                </div>
+              </div>              
+                        </div>
+                        <div class="item">
+                            <div class="item-inner">
+                              <img src="{{hotspotImage3}}">                            
+                              <div class="hotspot-hint link1">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription1Slide3"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link2">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription2Slide3"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link7">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription3Slide3"></markdown>
+                                </div>
+                              </div>
+                              <div class="hotspot-hint link8">
+                                <a class="" href="javascript:void(0);">click</a>
+                                <div class="hint-disk">
+                                  <markdown [data]="hhsection.ourHomeHotspotDescription4Slide3"></markdown>
+                                </div>
+                              </div> 
+              </div>                          
+                        </div>
+                        <div class="item">
+                            <div class="item-inner">
+                              <img src="{{hotspotImage4}}">  
+                              <div class="hotspot-hint link1">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                    <markdown [data]="hhsection.ourHomeHotspotDescription1Slide4"></markdown>
+                    <!-- <h2>{{hhsection.ourHomeHotspotDescription1Slide4}}</h2> -->
+                  </div>
+                </div>
+                <div class="hotspot-hint link2">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                  <markdown [data]="hhsection.ourHomeHotspotDescription2Slide4"></markdown>
+                    <!-- <h2>{{hhsection.ourHomeHotspotDescription2Slide4}}</h2> -->
+                  </div>
+                </div>
+                <div class="hotspot-hint link3">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                  <markdown [data]="hhsection.ourHomeHotspotDescription3Slide4"></markdown>
+                    <!-- <h2>{{hhsection.ourHomeHotspotDescription3Slide4}}</h2> -->
+                  </div>
+                </div>
+                <div class="hotspot-hint link4">
+                  <a class="" href="javascript:void(0);">click</a>
+                  <div class="hint-disk">
+                  <markdown [data]="hhsection.ourHomeHotspotDescription4Slide4"></markdown>
+                    <!-- <h2>{{hhsection.ourHomeHotspotDescription4Slide4}}</h2> -->
+                  </div>
+                </div>                                                      
+              </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="fa fa-chevron-left glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="fa fa-chevron-right glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  end Sliders starts here -->
+    </section>
+    <!-- Hotspot section  - fixed version end -->
+
+    <!-- How it work section no image  - fixed version -->
+    <section class="how-work no-image our-home-design-howit-work" *ngIf="showData">
+    <div class="container">
+      <div class="row">
+        <div class="work-title">
+          <h3>{{dbsection.howItWorksHeading}}</h3>
+          <p>{{dbsection.howItWorksDescription}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="how-work-main">
+          <div class="col-md-4">
+            <div class="work-col">
+              <div class="icon"><img [src]="dbimag1"></div>
+              <h4>{{dbsection.title1}}</h4>
+              <p>{{dbsection.description1}} </p>
+              <div class="dwn-pdf">
+                <a href="{{dbpdf1}}">{{dbsection.downloadPdfTitle1}}</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-col">
+              <div class="icon"><img [src]="dbimag2"></div>
+              <h4>{{dbsection.title2}}</h4>
+              <p>{{dbsection.description2}}</p>
+              <div class="dwn-pdf">
+                <a href="{{dbpdf2}}">{{dbsection.downloadPdfTitle2}}</a>
+              </div>  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-col">
+              <div class="icon"><img [src]="dbimag3"></div>
+              <h4>{{dbsection.title3}}</h4>
+              <p>{{dbsection.description3}}</p>
+              <div class="dwn-pdf">
+                <a href="{{dbpdf3}}">{{dbsection.downloadPdfTitle3}}</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+     <!-- How it work section no image  - fixed version end -->
+
+    <!-- Media gallery - fixed version -->
+    <section class="media-gallery-our-home-designe">
+    <div class="media-gallery premium">
+      <!-- hero display -->
+      <div class="banner-res">
+        <div class="ban-slider">
+          <img src="{{sliderImages[0]}}">
+        </div>        
+      </div>
+      <!-- end of hero display -->
+      <!-- modal triggers -->
+      <a href="javascript:;" id="firstImageTrigger" data-eventname="photoView"   class="aphotos design">{{imgslisection.ourHomeFullWidthSliderText}}</a> 
+      <!-- modal assets here -->
+      <ul id="lightGallery" class="gallery hidden-xs">
+        <li class="gallery-image" attr.data-img-src="{{sliderImages[0]}}" attr.data-src="{{sliderImages[0]}}">
+          <img src="{{sliderImages[0]}}" alt="" />
+        </li>
+        <li class="gallery-image" attr.data-img-src="{{sliderImage}}" attr.data-src="{{sliderImage}}" *ngFor="let sliderImage of sliderImages">
+        </li>
+        <!-- <li class="gallery-image" attr.data-img-src="{{sliderImage2}}" attr.data-src="{{sliderImage2}}">
+        </li>
+        <li class="gallery-image" attr.data-img-src="{{sliderImage3}}" attr.data-src="{{sliderImage3}}">
+        </li>
+        <li class="gallery-image" attr.data-img-src="{{sliderImage4}}" attr.data-src="{{sliderImage4}}">
+        </li>
+        <li class="gallery-image" attr.data-img-src="{{sliderImage5}}" attr.data-src="{{sliderImage5}}">
+        </li> -->
+        <!-- <li class="gallery-image" data-img-src="images/Buchanan.jpg" data-src="images/Buchanan.jpg">
+        </li>
+        <li class="gallery-image" data-img-src="images/Ferguson.jpg" data-src="images/Ferguson.jpg">
+        </li>
+        <li class="gallery-image" data-img-src="images/GL-Greenbanks-Low-Res-02.jpg" data-src="images/GL-Greenbanks-Low-Res-02.jpg">
+        </li>
+        <li class="gallery-image" data-img-src="images/GL-Greenbanks-Low-Res-22.jpg" data-src="images/GL-Greenbanks-Low-Res-22.jpg">
+        </li> -->
+      </ul>
+      <!-- end of modal assets here -->
+      <div id="galleryLoader" class="image-placeholder">
+        <div class="image-loader-wrap with-icon animated">
+          <div class="image-loader"></div>
+          <span class="f-icon">
+           <span class="icon domain-icon-ic_home"></span>
+          </span>
+        </div>
+      </div>
+      <!-- end of modal triggers -->
+    </div>
+    <div id="slider1">
+      <a class="buttons prev" href="#slider1">left</a>
+      <div class="viewport resno">
+        <ul class="overview">
+          <li *ngFor="let sliderImage of sliderImages; let z=index" [ngClass]="{'active': z===0  }"><img src="{{sliderImage}}" /></li>
+          <!-- <li><img src="{{sliderImage2}}" /></li>
+          <li><img src="{{sliderImage3}}" /></li>
+          <li><img src="{{sliderImage4}}" /></li>
+          <li><img src="{{sliderImage5}}" /></li> -->
+          <!-- <li><img src="{{sliderImage2}}" /></li>   -->
+          <!-- <li><img src="images/AE5T0383.jpg" /></li>
+          <li><img src="images/Buchanan.jpg" /></li>
+          <li><img src="images/Ferguson.jpg" /></li>
+          <li><img src="images/GL-Greenbanks-Low-Res-02.jpg" /></li>
+          <li><img src="images/GL-Greenbanks-Low-Res-22.jpg" /></li>  -->       
+        </ul>
+      </div>
+      <a class="buttons next" href="#slider1">right</a>        
+    </div>
+    </section>
+    <!-- end of Media gallery -fixed version end -->
+    
+    <!--How we started block - fixed version -->
+  <section class="about-top-sec image-with-text-home" *ngIf="showData">
+    <div class="container">
+      <div class="row-first">
+        <div class="img-box"><img [src]="firstImage" alt=""></div>
+        <div class="content-box">
+          <h3>{{showsection.showcaseImageTitleText1}}</h3>
+          <p>{{showsection.showcaseImageTitleDescription}}</p>
+          <div class="circle-blue"></div>
+        </div>
+      </div>    
+      <div class="row-first row-second">
+        <!--<div class="circle-blue"></div>-->
+        <div class="img-box"><img [src]="secondImage" alt=""></div>
+        <div class="content-box">
+          <!--<div class="circle-blue up-circle"></div>-->
+          <h3>{{showsection.showcaseTitle2}}</h3>
+              <p>{{showsection.showcaseDescription2}}</p>
+          <div class="circle-blue bottom-circle"></div>
+        </div>
+      </div>
+      <div class="row-first">
+        <div class="circle-blue top-circle"></div>
+        <div class="img-box"><img [src]="thirdImage" alt=""></div>
+        <div class="content-box">
+          <div class="circle-blue"></div>
+          <h3>{{showsection.showcaseTitle3}}</h3>
+          <p>{{showsection.showcaseDescription3}}</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--end How we started - fixed version end-->
+
+    <!-- featured homes Section - fixed version -->
+  <section class="sale-at-Aspley our-home-designe" id="featured-home">
+    <div class="container">
+      <div class="card">
+        <h2 class="heading">Featured homes</h2>
+        <div class="heading-right-link"><a routerLink="/homes-for-sale">Discover all {{homeCount}} homes for sale</a></div>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <!-- all homes tab -->
+      <div role="tabpanel" class="tab-pane active" id="All-homes">
+        <div class="lookingsomthing-warp home-carousel">
+          <div class="inner-box-warp">
+
+            <div class="center slider">
+              <!-- community card -->
+              <div *ngFor="let home of featuredHomes;let jj = index">
+                <ul class="home-for-sale">
+                  <li class="detail-list">
+                      <div class="img-slider-warp mart-bot14">
+                        <div class="sl-box">
+                          <span *ngIf="home.status=='sold'" class="paid-btn">sold</span>
+
+                                                    <span *ngIf="home.status=='under_offer'" class="paid-btn" style="background: #f89923;">Under Offer</span>
+                          <div id="carousel{{jj}}" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner home-carousel">                              
+                            <div class="item" *ngFor="let _image of home.images;let ii = index" [ngClass]="{active: ii===0}">
+                                                <img 
+                                                [src]="_image" 
+                                                alt="">
+                                            </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel{{jj}}" data-slide="prev">‹</a>
+                            <a class="right carousel-control" href="#carousel{{jj}}" data-slide="next">›</a>
+                          </div>
+
+                        </div>
+                      </div>
+                                            <a href="homes-for-sale/{{home.id}}">
+                      <div class="pr-b" *ngIf="home?.list_price">${{home?.list_price | number:'1.0'}}</div>
+                      <p>{{home.address}} {{home.address1}}</p>
+                      <h4 class="margt25"><i class="sicon" [ngStyle]="{'background-image': 'url(' + home?.community?.community_icon?.url + ')','background-repeat': 'no-repeat','background-position': 'center'}"></i> Located in {{home.community.first_name}}</h4>
+                      <div class="afs-wp">
+                        <ul>
+                          <li><i class="bed"></i> {{home.no_of_bedrooms}}</li>
+                          <li><i class="tub"></i> {{home.no_of_bathrooms}}</li>
+                          <li><i class="car"></i> {{home.car_space}}</li>
+                        </ul>
+                        <div *ngIf="home?.record_type == 'Pre-loved'" class="new-btn new-btn" style="border: 1px solid #62717f; color: #62717f!important; ">Pre Loved</div>
+                                                <div *ngIf="home?.record_type == 'New'" class="new-btn new-btn">New</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of all homes tab -->
+    </div>
+
+
+  </section>
+  <!-- featured homes Section - fixed version end -->
+
+    <!-- start CTA block - fixed version -->
+    <section class="cta-block" *ngIf="showData">
+        <div class="container">
+            <h2 class="whithead">{{ctasection.standardCtaInfoPackDescription}}</h2>
+            <div class="buttons">
+                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">{{ctasection.standardCtaInfoPackButtonText}}</a>
+            </div>
+            <p>{{ctasection.standardCtaInfoPackAfterButtonText}}</p>
+        </div>
+    </section>
+    <!--  CTA block - fixed version end -->
+        <!-- Get an info pack Modal -->
+  <div class="modal fade" id="get-an-info-pack-modal-static" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body no-pad">
+                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)" >&times;</button>
+                    <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
+                        <div class="right-img-full">
+                            <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
+                            <!--  <img 
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                             "height: -webkit-fill-available;"> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 getinfowp">
+                   
+                        <div class="wp-main">
+                         <h3 style="color: #105dac;">
+                            <div class="title-img-round">
+                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
+                            </div>
+                            Get an info pack
+                         </h3>
+                         <!-- <div class="profile-row">
+                            <div class="profile-img"><img src="images/img11.png" alt=""></div> 
+                            <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p>
+                         </div> -->
+                         <div class="divider"></div>
+<!--                         <div class="form-getinfo-succes">
+                            <div class="row">
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
+                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
+                             class="btn btn-org">View the info pack Now</button></div>
+                            </div>
+                        </div> -->
+                         <div class="form-wp-getinfo">
+                             <div class="row">
+                                <!-- form starts here-->
+                                <form #infoForm="ngForm" novalidate>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.firstname" 
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <p class="requiedred" [hidden]="firstname.valid || submitted == false">
+                                            Please Enter First name
+                                            </p>  
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.lastname" 
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
+                                           <p class="requiedred" [hidden]="lastname.valid || submitted == false">
+                                            Please Enter Last name
+                                        </p>   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.plan" 
+                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                        </div>
+                                    </div>  
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.phone" 
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email" 
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <p class="requiedred" [hidden]="email.valid || submitted == false">
+                                            Please Enter your email
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <textarea [(ngModel)]="info.area" 
+                                           class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-12">
+                                    <button  class="btn btn-org"  id="send-sucess"
+                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
+                                    (mouseover)="changeColor($event)" 
+                                    (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end  Get an info pack Modal -->

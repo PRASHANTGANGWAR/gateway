@@ -1,0 +1,59 @@
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 col-xs-12">
+         <form [formGroup]="enqueryForm" (ngSubmit)="submitForm()">
+          <fieldset [disabled]="isSubmitting">
+
+            <fieldset class="form-group">
+              <input class="form-control"
+                type="text"
+                placeholder="First Name"
+                formControlName="firstName" />
+            </fieldset>
+
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg"
+                type="text"
+                placeholder="Last Name"
+                formControlName="lastName" />
+            </fieldset>
+
+            <fieldset class="form-group">
+              <textarea class="form-control form-control-lg"
+                type="text"
+                placeholder="Email"
+                formControlName="email">
+              </textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg"
+                type="number"
+                placeholder="Phone"
+                formControlName="phone" />
+            </fieldset>
+
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg"
+                type="number"
+                placeholder="Postcode"
+                formControlName="postcode" />
+            </fieldset>
+
+             <fieldset class="form-group">
+              <input class="form-control form-control-lg"
+                type="text"
+                placeholder="Which community is this regarding?"
+                formControlName="community" />
+            </fieldset>
+
+            <button class="btn btn-lg btn-primary pull-xs-right"
+              type="submit">
+              Send
+            </button>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>  

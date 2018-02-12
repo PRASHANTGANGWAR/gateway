@@ -1,0 +1,385 @@
+
+    
+    <!-- Header width bg - fixed version -->
+    <section class="hfsl-banner our-home-design-hero how-it-work"[ngStyle]="{'background': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+        <div class="overlay"></div>     
+        <div class="context">
+            <div class="container">
+                 <h2>{{howwork.heroheading}}</h2>
+                 <p>{{howwork.heroText}}</p>
+            </div>
+        </div>
+        <div class="dwn-pdf">
+            <a href="{{pdf}}" download>{{mediatext1}}</a>
+        </div>
+    </section>
+   <!-- Header width bg - fixed version  end -->
+    
+    
+    
+    
+    <!-- Intro - What is a land-lease community? -->
+    <section class="home-getmore how-it-work">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 getmore-left">
+                <h2>{{started1.blockheading}}</h2>
+                <p>{{started1.blockdescription}}</p>               
+            </div>
+            <div class="col-sm-6 getmore-right">
+             <ul>
+               <li>                 
+                 <h3>{{started1.featureHeading1Bold}}</h3>
+                 <p>{{started1.featureDescription1}}</p>  
+               </li> 
+               <li>                 
+                 <h3>{{started1.featureHeading2Bold}}</h3>
+                 <p>{{started1.featureDescription2}}</p>  
+               </li>
+               <li>                 
+                 <h3>{{started1.featureHeading3Bold}}</h3>
+                 <p>{{started1.featureDescription3}}</p>  
+               </li>
+               <li>                
+                 <h3>{{started1.featureHeading4Bold}}</h3>
+                 <p>{{started1.featureDescription4}}</p>  
+               </li> 
+             </ul>   
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Intro - What is a land-lease community? -->
+    
+    
+    
+          
+    <!-- Offer section -->
+    <section class="offer-headline-admin how-it-work">
+        <div class="col-sm-12 col-md-6 no-pad hidden-xs hidden-sm">
+
+        
+
+        <img src="{{img}}" alt=""></div>
+        <div class="col-sm-12 col-md-6">
+            <div class="rg-box">
+                <h2>{{blue_gradient.headingText}}</h2>
+                <p>{{blue_gradient.contentText}}</p>
+                <div class="buttons"><a href="http://gatewayhtml.orangebicycle.online/community-listing-page-final.html" target="_blank" class="ods-btn">{{blue_gradient.buttonText}}</a></div>
+            </div>
+        </div>
+    </section>
+     <!-- end  Offer section -->
+    
+    
+    
+        
+    
+    <!-- Why is it the smarter option? -->
+    <section class="how-it-works what-land-lease">
+        <div class="container">
+            <div class="top-heading">
+                <div class="work-title">
+                    <h3>{{why_smart.howItWorksHeading}}</h3>
+                    <p>{{why_smart.howItWorksDescription}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{why_smart.heading1}}</h4>
+                            <p>{{why_smart.description1}} </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{why_smart.heading2}}</h4>
+                            <p>{{why_smart.description2}}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{why_smart.heading3}}</h4>
+                            <p>{{why_smart.description3}}</p>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Why is it the smarter option? end -->
+    
+
+    <!--Video background block-->
+    <section class="video-background how-works-video">
+        <div class="container">
+            
+             
+                    <a href="javascript:void(0);" class="js-modal-btn" [attr.data-video-id]="video1.videoBackgroundUrl">
+                        <img src="./images/play-icon.png">
+                    </a>
+                    <div style="display: none" id="video-url">{{video1.videoBackgroundUrl}}</div>
+              
+    
+        </div>
+    </section>
+    <!--END Video background block-->  
+    
+    
+    
+    <!-- Why is it the smarter option? -->
+    <section class="how-it-works what-land-lease">
+        <div class="container">
+            <div class="top-heading">
+                <div class="work-title">
+                    <h3>{{cost.howItWorksHeading}}</h3>
+                    <p>{{cost.howItWorksDescription}} </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{cost.heading1}}</h4>
+                            <p>{{cost.description1}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{cost.heading2}}</h4>
+                            <p>{{cost.description2}}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col">                          
+                            <h4>{{cost.heading3}}</h4>
+                            <p>{{cost.description3}} </p>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Why is it the smarter option? end -->
+    
+    
+
+    
+    
+    <!-- featured homes Section - fixed version -->
+    <section class="sale-at-Aspley our-home-designe" id="featured-home">
+        <div class="container">
+            <div class="card">
+                <h2 class="heading">Featured homes</h2>
+                <div class="heading-right-link"><a routerLink="/homes-for-sale">Discover all {{homeCount}} homes for sale</a></div>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <!-- all homes tab -->
+            <div role="tabpanel" class="tab-pane active" id="All-homes">
+                <div class="lookingsomthing-warp home-carousel">
+                    <div class="inner-box-warp">
+
+                        <div class="center slider">
+                            <!-- community card -->
+                            <div *ngFor="let home of featuredHomes;let jj = index">
+                                <ul class="home-for-sale">
+                                    <li class="detail-list">
+                                            <div class="img-slider-warp mart-bot14">
+                                                <div class="sl-box">
+                                                    <span *ngIf="home.status=='sold'" class="paid-btn">sold</span>
+
+                                                    <span *ngIf="home.status=='under_offer'" class="paid-btn" style="background: #f89923;">Under Offer</span>
+                                                    <div id="carousel{{jj}}" class="carousel slide" data-interval="false">
+                                                        <div class="carousel-inner home-carousel">                                                          
+                                                        <div class="item" *ngFor="let _image of home.images;let ii = index" [ngClass]="{active: ii===0}">
+                                                              <img 
+                                                              [src]="_image" 
+                                                              alt="">
+                                                          </div>
+                                                        </div>
+                                                        <a class="left carousel-control" href="#carousel{{jj}}" data-slide="prev">‹</a>
+                                                        <a class="right carousel-control" href="#carousel{{jj}}" data-slide="next">›</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <a href="homes-for-sale/{{home.id}}">
+                                            <div class="pr-b" *ngIf="home?.list_price">${{home.list_price | number:'1.0'}}</div>
+                                            <p>{{home.address}} {{home.address1}}</p>
+                                            <h4 class="margt25"><i class="sicon" [ngStyle]="{'background-image': 'url(' + home?.community?.community_icon?.url + ')','background-repeat': 'no-repeat','background-position': 'center'}"></i> Located in {{home.community.first_name}}</h4>
+                                            <div class="afs-wp">
+                                                <ul>
+                                                    <li><i class="bed"></i> {{home.no_of_bedrooms}}</li>
+                                                    <li><i class="tub"></i> {{home.no_of_bathrooms}}</li>
+                                                    <li><i class="car"></i> {{home.car_space}}</li>
+                                                </ul>
+                                                <div *ngIf="home?.record_type == 'Pre-loved'" class="new-btn new-btn" style="border: 1px solid #62717f; color: #62717f!important; ">Pre Loved</div>
+                                                <div *ngIf="home?.record_type == 'New'" class="new-btn new-btn">New</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of all homes tab -->
+        </div>
+
+
+    </section>
+    <!-- featured homes Section fixed version end -->
+
+     <!-- start CTA block -->
+    <section class="cta-block scroll">
+        <div class="container">
+            <h2 class="whithead">Let's chat about your next home <br> and discuss if Gateway is right <br>for you.</h2>
+            <div class="buttons">
+                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">Get an info pack</a> 
+            </div>
+            <p>Or give us a call on 1300 361 311.</p>
+        </div>
+    </section>
+    <!-- end CTA block -->
+        <!-- Get an info pack Modal -->
+  <div class="modal fade" id="get-an-info-pack-modal-static" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body no-pad">
+                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
+                                    (mouseout)="onHover($event)" >&times;</button>
+                    <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
+                        <div class="right-img-full">
+                            <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
+                            <!--  <img 
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                             "height: -webkit-fill-available;"> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 getinfowp">
+                   
+                        <div class="wp-main">
+                         <h3 style="color: #105dac;">
+                            <div class="title-img-round">
+                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
+                            </div>
+                            Get an info pack
+                         </h3>
+                         <!-- <div class="profile-row">
+                            <div class="profile-img"><img src="images/img11.png" alt=""></div> 
+                            <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p>
+                         </div> -->
+                         <div class="divider"></div>
+<!--                         <div class="form-getinfo-succes">
+                            <div class="row">
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
+                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
+                             class="btn btn-org">View the info pack Now</button></div>
+                            </div>
+                        </div> -->
+                         <div class="form-wp-getinfo">
+                             <div class="row">
+                                <!-- form starts here-->
+                                <form #infoForm="ngForm" novalidate>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.firstname" 
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <p class="requiedred" [hidden]="firstname.valid || submitted == false">
+                                            Please Enter First name
+                                            </p>  
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.lastname" 
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
+                                           <p class="requiedred" [hidden]="lastname.valid || submitted == false">
+                                            Please Enter Last name
+                                        </p>   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.plan" 
+                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                        </div>
+                                    </div>  
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.phone" 
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email" 
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <p class="requiedred" [hidden]="email.valid || submitted == false">
+                                            Please Enter your email
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                           <textarea [(ngModel)]="info.area" 
+                                           class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-12">
+                                    <button  class="btn btn-org"  id="send-sucess"
+                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
+                                    (mouseover)="changeColor($event)" 
+                                    (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--end  Get an info pack Modal -->
+
+        <!--Video popup JS-->
+    <script src="../js/modal-video.js"></script>
+    <script src="../js/jquery-modal-video.js"></script>
+    <script src="../js/jquery.tubular.1.0.js"></script>
+    <script type="text/javascript">
+    $(".js-modal-btn").modalVideo();    
+    </script>
+    <script>
+        $('document').ready(function() {
+            var options = { videoId: 'qCNfNLHe7Vs?modestbranding=1', start: 0 , mute: true, };
+            $('.video-background').tubular(options);
+            // f-UGhWj1xww cool sepia hd
+            // 49SKbS7Xwf4 beautiful barn sepia
+        });
+    </script>
+    
+    
+    <script>
+        if (window.shr) { window.shr.setup({ count: { classname: 'btn__count' } }); }
+    </script>
+
+    <script src="http://cdn.trackduck.com/toolbar/prod/td.js" async data-trackduck-id="59c1f6d531124d3462e66c65"></script>
+
+   
+
