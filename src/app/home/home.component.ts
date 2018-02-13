@@ -57,6 +57,10 @@ export class HomeComponent implements OnInit {
   Smallvideo1Img: any;
   Smallvideo2Img: any;
 
+  blue_split : any;
+  sliderImg1 : any;
+  sliderImg2 : any;
+  sliderImg3 : any;
   slider1Title: any;
   slider1Description: any;
   slider1ButtonText: any;
@@ -253,6 +257,25 @@ export class HomeComponent implements OnInit {
           that.backimage= data.fields.file.url;
         });
       })
+
+       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/uJj7daZX20WcmOe2sSGCI?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
+          function(data, status){
+            that.blue_split=data.fields;
+        
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage1.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg1= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage2.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg2= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage3.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg3= data.fields.file.url;
+        });
+        })
+
        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/5GSasSCYo0KsSKK8cCmCi6?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
       function(data, status){
         that.testimonialsQuote=data.fields.quote;

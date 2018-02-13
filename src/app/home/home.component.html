@@ -48,6 +48,38 @@
     </section>
     <!--  Owl slider for the homepage - fixed version end -->
 
+      <!--our values section - fixed version-->
+    <section class="home-four-button-v2">
+        <div class="container">         
+            <ul>
+               <li>
+                <a routerLink="/events">
+                 <div class="img-box"><img src="images/open-days-icon.png" alt=""></div>
+                 <h4>Open days</h4>  
+              </a>
+               </li>
+               <li>
+                <a routerLink="/resident-stories">
+                 <div class="img-box"><img src="images/resident-stories-icon.png" alt=""></div>
+                 <h4>Resident stories</h4>  
+              </a>
+               </li>
+               <li>
+                <a routerLink="/buying-process">
+                 <div class="img-box"><img src="images/explore-our-designs-icon.png" alt=""></div>
+                 <h4>Explore our designs</h4>  
+              </a>
+               </li>
+               <li>
+                <a href="http://live.gatewaylifestyle.com.au/" target="_blank">
+                 <div class="img-box"><img src="images/latest-news-icon.png" alt=""></div>
+                 <h4>Latest news</h4>  
+              </a>
+               </li>                         
+            </ul>
+        </div>
+    </section>
+    <!--our values section - fixed version end-->
 
   <!-- Intro - get more section start - fixed version -->
   <section class="home-getmore">
@@ -91,42 +123,51 @@
 </section>
   <!-- Intro - get more section start - fixed version end -->
 
-  <!--testimonial section start - fixed version -->
-  <section class="hometestimonial">
-    <div class="hometestimonial-left">
-      <div class="testi-warp">
-        <div class="owl-carousel owl-theme">
-          <div class="item active">
-            <div class="testimonial4_slide">
-              <div class="testimonial_text_inner">
-                <h4>{{testimonialsQuote}}</h4>
-                <p><markdown [data]="testimonialsQuoteDesc"></markdown></p>
-              </div>
+    <!--testimonial section start - fixed version -->
+    <section class="hometestimonial resident-stories">
+        <div class="hometestimonial-left">
+            <div class="testi-warp">
+                <div class="owl-carousel owl-theme">
+                    <div class="item active">
+                        <div class="testimonial4_slide">
+                            <div class="testimonial_text_inner">
+                                <h4>{{blue_split.quote}}</h4>
+                                <p>{{blue_split.pareText1}}</p>
+                                <div class="testimonial-name">{{blue_split.personsName1}}</div>
+                                <span>{{blue_split.communityName1}}</span>                               
+                            </div>
+                        </div>
+
+                        <div class="testimonial-right" [ngStyle]="{'background-image': 'url(' + sliderImg1 + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
+
+                    </div>
+                    <div class="item active">
+                        <div class="testimonial4_slide">
+                            <div class="testimonial_text_inner">
+                                <h4>{{blue_split.quote2}}</h4>
+                                <p>{{blue_split.pareText2}}</p>
+                                <div class="testimonial-name">{{blue_split.personsName2}}</div>
+                                <span>{{blue_split.communityName2}}</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-right" [ngStyle]="{'background': 'url(' + sliderImg2 + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
+ -->                    </div>
+                    <div class="item active">
+                        <div class="testimonial4_slide">
+                            <div class="testimonial_text_inner">
+                                <h4>{{blue_split.quote3}}</h4>
+                                <p>{{blue_split.pareText3}}</p>
+                                <div class="testimonial-name">{{blue_split.personsName3}}</div>
+                                <span>{{blue_split.communityName3}}</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-right" [ngStyle]="{'background': 'url(' + sliderImg3 + ')','background-repeat': 'no-repeat'}"></div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-right" [ngStyle]="{'background-image': 'url(' + testimonialsImage + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
-          </div>
-          <div class="item active">
-            <div class="testimonial4_slide">
-              <div class="testimonial_text_inner">
-                <h4>{{testimonialsQuote2}}</h4>
-                <p><markdown [data]="testimonialsQuoteDesc2"></markdown></p>
-              </div>
-            </div>
-            <div class="testimonial-right" [ngStyle]="{'background-image': 'url(' + testimonialsImage2 + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
-          </div>
-          <div class="item active">
-            <div class="testimonial4_slide">
-              <div class="testimonial_text_inner">
-                <h4>{{testimonialsQuote3}}</h4>
-                <p><markdown [data]="testimonialsQuoteDesc3"></markdown></p>
-              </div>
-            </div>
-            <div class="testimonial-right" [ngStyle]="{'background-image': 'url(' + testimonialsImage3 + ')','background-repeat': 'no-repeat','background-position': 'center'}"></div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+    <!--testimonial section end - fixed version end -->
 
   <!--testimonial section end - fixed version end -->
 
