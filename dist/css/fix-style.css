@@ -6129,7 +6129,7 @@ Author: Bharat Khairnar
 
 @media screen and (max-width: 767px) {
   .hometestimonial .hometestimonial-left .testi-warp .owl-item .testimonial-right {
-    width: 100%;
+    width: 95%;
     min-height: 360px;
   }
 }
@@ -7869,6 +7869,22 @@ Author: Bharat Khairnar
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+
+
+/*responsive */
+@media screen and (max-width: 768px){
+  .box-video-sm a .box-video-img-sml {
+    position: relative;
+    height: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+
+}
+
 
 .box-video-sm a .box-video-img-sml img {
   border-radius: 6px;
