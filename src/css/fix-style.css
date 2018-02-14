@@ -823,11 +823,11 @@ Author: Hardik Pethani
 }
 
 .slick-prev:before {
-  content: "â†";
+  content: "Ã¢â€ Â";
 }
 
 [dir="rtl"] .slick-prev:before {
-  content: "â†’";
+  content: "Ã¢â€ â€™";
 }
 
 .slick-next {
@@ -840,11 +840,11 @@ Author: Hardik Pethani
 }
 
 .slick-next:before {
-  content: "â†’";
+  content: "Ã¢â€ â€™";
 }
 
 [dir="rtl"] .slick-next:before {
-  content: "â†";
+  content: "Ã¢â€ Â";
 }
 
 /* Dots */
@@ -899,7 +899,7 @@ Author: Hardik Pethani
   position: absolute;
   top: 0;
   left: 0;
-  content: "â€¢";
+  content: "Ã¢â‚¬Â¢";
   width: 20px;
   height: 20px;
   font-family: "slick";
@@ -7870,6 +7870,7 @@ Author: Bharat Khairnar
   -o-border-radius: 6px;
 }
 
+
 /*responsive */
 @media screen and (max-width: 768px){
   .box-video-sm a .box-video-img-sml {
@@ -7883,7 +7884,6 @@ Author: Bharat Khairnar
   }
 
 }
-
 
 
 .box-video-sm a .box-video-img-sml img {
