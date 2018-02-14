@@ -4,7 +4,7 @@ var owl = $('.owl-carousel');
 			  items: 1,
 			  loop: true,
 			  margin: 0,			  
-        	autoplay: false,
+        	autoplay: 10000,
         	autoplayTimeout: 10000,
 			  autoplayHoverPause: false        
 });
