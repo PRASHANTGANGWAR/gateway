@@ -15,10 +15,10 @@ export class ThanksEnquiringComponent implements OnInit {
   	window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
   	if(window.localStorage.getItem('genericCheck')=='0'){
-  		this.infoUrl = 'http://www.admin.gatewaylifestyle.com.au'+window.localStorage.getItem('basicinfo_url');
+  		this.infoUrl = 'https://www.admin.gatewaylifestyle.com.au'+window.localStorage.getItem('basicinfo_url');
   	}
   	else if(window.localStorage.getItem('genericCheck')=='1'){
-  		this.infoUrl = 'http://www.admin.gatewaylifestyle.com.au'+window.localStorage.getItem('generic_url');
+  		this.infoUrl = 'https://www.admin.gatewaylifestyle.com.au'+window.localStorage.getItem('generic_url');
   	}
   }
 

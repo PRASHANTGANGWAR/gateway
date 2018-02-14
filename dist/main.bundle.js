@@ -6696,7 +6696,7 @@ var ThanksEnquiringComponent = (function () {
             this.infoUrl = 'https://www.admin.gatewaylifestyle.com.au' + window.localStorage.getItem('basicinfo_url');
         }
         else if (window.localStorage.getItem('genericCheck') == '1') {
-            this.infoUrl = 'http://www.admin.gatewaylifestyle.com.au' + window.localStorage.getItem('generic_url');
+            this.infoUrl = 'https://www.admin.gatewaylifestyle.com.au' + window.localStorage.getItem('generic_url');
         }
     };
     ThanksEnquiringComponent = __decorate([
@@ -6773,7 +6773,7 @@ var thanksenquiringModule = (function () {
 // The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
     production: false,
-    apiBase: 'http://www.admin.gatewaylifestyle.com.au'
+    apiBase: 'https://www.admin.gatewaylifestyle.com.au'
 };
 //# sourceMappingURL=environment.js.map
 
