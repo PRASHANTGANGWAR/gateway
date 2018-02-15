@@ -1,5 +1,6 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'angular2-markdown';
 import { CommuntyResolver} from './community-resolver';
 import { CommuntySlugResolver } from './community-slug-resolver';
 import { communitiesComponent } from './communities.component';
@@ -32,6 +33,7 @@ const settingsRouting: ModuleWithProviders = RouterModule.forChild([
                                                                                                                                                                                                                                               
 @NgModule({
   imports: [
+    MarkdownModule.forRoot(),
     SharedModule,
     settingsRouting,
     Ng2SearchPipeModule,

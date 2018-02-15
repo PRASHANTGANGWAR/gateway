@@ -8,6 +8,15 @@ $(document).ready(function () {
 		$('body').toggleClass('scroll-off');
 	});
 
+$(document).ready(function () { 
+
+	if ($('div').hasClass("in")) {
+		alert("hi");
+      $('body').toggleClass('header-fixed');
+	} 
+	
+	});
+
 
 	
 	
@@ -309,4 +318,18 @@ jQuery(document).ready(function(){
 		$(this).hide();
 	});
 });
+
+
+$('#getin').click(function(){
+    $('body').removeClass('header-fixed');
+});
+
+$('#send-success').click(function(){
+    $('body').addClass('header-fixed');
+});
+
+$('.close').click(function(){
+    $('body').addClass('header-fixed');
+});
+
 

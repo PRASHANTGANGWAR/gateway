@@ -85,7 +85,10 @@
                                 <h3 class="big-heading" 
                                 [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{comunitylatestDetail?.community_title}}</h3>
                                 <div class="read-more-hide">
-                                    <p class="pera-textbig">{{comunitylatestDetail?.community_description}}</p>
+
+                                    <markdown [data]="comunitylatestDetail?.community_description"></markdown>
+
+                                    
                                 </div>
                                  <a id="read-more" class="read-more" (click)="readMore()"> <span>Read More</span></a>
                             </div>
