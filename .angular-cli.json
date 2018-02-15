@@ -41,15 +41,17 @@
       ],
       "scripts": [
         "js/jquery.min.js",
-        "js/jquery-1.4.min.js",
-        "js/jquery.min-1-9-1.js",
-        "js/bootstrap.min.js",
-        "js/jquery.iosslider.js",
-        "js/custom.js",
-        "js/slick.js",
-        "js/bootstrap-select.js",
-        "js/wow.min.js",
-        "js/mapbox.js"
+         "js/bootstrap.min.js",
+         "js/jquery-1.4.min.js",
+         "js/jquery.min-1-9-1.js",
+         "js/jquery.iosslider.js",
+         "js/slick.js",
+         "js/custom.js",
+          "../node_modules/mapbox.js/src/mapbox.js", 
+         "js/leaflet.markercluster.js",
+         "js/owl.carousel.js",
+         "js/jquery.tinycarousel.js",
+         "js/wow.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
