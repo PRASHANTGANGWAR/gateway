@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiBase:'http://www.admin.gatewaylifestyle.com.au'
+  apiBase:'https://www.admin.gatewaylifestyle.com.au'
 };
