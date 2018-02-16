@@ -1615,7 +1615,6 @@ var communityComponent = (function () {
                         }
                     });
                 }
-                $.getScript('js/slider.js'); // autoattaching itself
                 $.getScript('js/customSlick.js');
             });
         });

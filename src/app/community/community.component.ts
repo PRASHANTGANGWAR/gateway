@@ -103,7 +103,7 @@ export class communityComponent implements OnInit {
                }
             });
           }
-          $.getScript('js/slider.js'); // autoattaching itself
+          
           $.getScript('js/customSlick.js');
         })
     });
