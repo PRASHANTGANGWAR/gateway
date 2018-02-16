@@ -93,7 +93,7 @@
                             </div>
                             <a routerLink="/homes-for-sale/{{home.id}}" >
                             <div class="pr-b">${{home.list_price | number : '1.0'}}</div>  
-                            <p>{{home.address}}</p>
+                            <p>{{home.address}} {{home.address1}}</p>
                             <h4 class="margt25"><i class="sicon" 
                                 [ngStyle]="{'background-image': 'url(' + home?.community?.community_icon?.url + ')','background-repeat': 'no-repeat','background-position': 'center'}"></i> Located in {{home?.community?.first_name}}</h4>
                             <div class="afs-wp">

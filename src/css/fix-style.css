@@ -119,6 +119,10 @@ p {
   line-height: 24px;
 }
 
+#mark{
+  font-size: 18px;
+}
+
 .divider {
   float: left;
   width: 100%;
@@ -282,6 +286,7 @@ p {
     padding-top: 10px;
   }
 }
+
 
 .aphotos {
   position: absolute;

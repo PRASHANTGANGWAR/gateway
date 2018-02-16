@@ -84,9 +84,9 @@
                             <div role="tabpanel" class="tab-pane active sc" id="home" *ngIf="comunitylatestDetail?.community_title || comunitylatestDetail?.community_description">
                                 <h3 class="big-heading" 
                                 [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{comunitylatestDetail?.community_title}}</h3>
-                                <div class="read-more-hide">
+                                <div class="read-more-hide" id="mark">
 
-                                    <markdown [data]="comunitylatestDetail?.community_description"></markdown>
+                                    <markdown  [data]="comunitylatestDetail?.community_description"></markdown>
 
                                     
                                 </div>
