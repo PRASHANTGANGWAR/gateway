@@ -32,6 +32,7 @@
     "@types/node": "~7.0.16",
     "angular-font-awesome": "^2.0.3",
     "angular2-markdown": "^1.6.0",
+    "check-node-version": "^3.2.0",
     "codelyzer": "~3.0.1",
     "core-js": "^2.4.1",
     "express": "^4.15.4",
