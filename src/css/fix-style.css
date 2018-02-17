@@ -8968,7 +8968,7 @@ video background
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
-  /*background: url(../images/play-icon-blue.png) no-repeat left center/25px 25px;*/
+  background: url(../images/play-icon-blue.png) no-repeat left center/25px 25px;
   padding-left: 33px;
   text-decoration: underline;
   padding-top: 5px;
@@ -8985,7 +8985,7 @@ video background
   right: 0;
   bottom: 0;
   margin: auto;
-  background: url(../images/play-icon.png) no-repeat center center/100% 100%;
+  /*background: url(../images/play-icon.png) no-repeat center center/100% 100%;*/
 }
 
 .video-background.how-works-video .container .js-modal-btn:hover {
