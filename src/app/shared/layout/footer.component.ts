@@ -22,7 +22,7 @@ export class FooterComponent implements AfterViewInit {
    }
 
    ngAfterViewInit(){
-     
+
      $.getScript('js/custom.js');
      $.getScript("js/wow.min.js");
      // $.getScript("js/modal-video.js"),

@@ -8,19 +8,7 @@ $(document).ready(function () {
 		$('body').toggleClass('scroll-off');
 	});
 
-$(document).ready(function () { 
 
-	if ($('div').hasClass("in")) {
-		alert("hi");
-      $('body').toggleClass('header-fixed');
-	} 
-	
-	});
-
-
-	
-	
-	
 	$(window).scroll(function(){
 	  var sticky = $('body'),
 		  scroll = $(window).scrollTop();
@@ -320,12 +308,18 @@ jQuery(document).ready(function(){
 });
 
 
+
 $('#getin').click(function(){
     $('body').removeClass('header-fixed');
 });
 
-$('#send-success').click(function(){
-    $('body').addClass('header-fixed');
+$('#send-sucess').click(function(){
+    if($('body').hasClass('modal-open')){
+		$('body').removeClass('header-fixed');
+	}
+	else{
+		$('body').addClass('header-fixed');
+	}
 });
 
 $('.close').click(function(){
