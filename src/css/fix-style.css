@@ -1917,7 +1917,7 @@ Author: Priyanka
 .secondary-nav-mobile .nav-mobile-right {
   width: 50%;
   float: right;
-  border-left: 2px solid #d17f29;
+  border-left: 2px solid #f0f0f0;
   height: 100%;
   position: relative;
 }
@@ -2093,6 +2093,7 @@ Author: Hardik Pethani
 @media (max-width: 767px) {
   .community-masterplan .masterplan-wp .box .left-side-image {
     width: 100%;
+    min-height: 200px;
   }
 }
 
@@ -8975,7 +8976,9 @@ video background
   padding-bottom: 5px;
 }
 
-.video-background.how-works-video .container .js-modal-btn {
+
+@media (min-width: 768px) {
+  .video-background.how-works-video .container .js-modal-btn {
   width: 105px;
   height: 105px;
   display: inline-block;
@@ -8985,8 +8988,10 @@ video background
   right: 0;
   bottom: 0;
   margin: auto;
-  /*background: url(../images/play-icon.png) no-repeat center center/100% 100%;*/
+  background: url(../images/play-icon.png) no-repeat center center/100% 100%;
+  }
 }
+
 
 .video-background.how-works-video .container .js-modal-btn:hover {
   background: url(../images/play-icon-hover.png) no-repeat center center/100% 100%;

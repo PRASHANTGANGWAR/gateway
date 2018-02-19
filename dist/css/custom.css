@@ -18,6 +18,6 @@ body.modal-open
 
 @media (max-width: 767px){
 	.detail_btn {
-	    bottom: 150px !important;
+	    /*bottom: 150px !important;*/
 	}
 }

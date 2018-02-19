@@ -41,13 +41,13 @@
       ],
       "scripts": [
         "js/jquery.min.js",
-
+         
          "js/jquery-1.4.min.js",
          "js/jquery.min-1-9-1.js",
+         "js/bootstrap.min.js",
          "js/jquery.iosslider.js",
          "js/slick.js",
          "js/custom.js",
-         "js/bootstrap.min.js",
           "../node_modules/mapbox.js/src/mapbox.js", 
          "js/leaflet.markercluster.js",
          "js/owl.carousel.js",

@@ -89,53 +89,58 @@
             </div>
     </section>
 	<!-- faqs blue block - fixed version end -->
+
+    <!-- How it work image no. 1- fixed version -->
+  <section class="how-work" [ngStyle]="{'background-image': 'url(' + imageId + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+    <div class="container">
+      <div class="row">
+        <div class="work-title">
+          <h3>{{howItWorksHeading.howItWorksHeading}}</h3>
+          <p>{{howItWorksHeading.howItWorksDescription}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="how-work-main">
+          <div class="col-md-4">
+            <div class="work-col">
+              <div class="icon"><img src="{{image1}}"></div>
+              <h4>{{howItWorksHeading.heading1}}</h4>
+              <p>{{howItWorksHeading.description1}}</p>
+              <div class="dwn-pdf">
+                <a href="{{pdf1}}" download>{{mediatext1}}</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-col">
+                <div class="icon"><img src="{{image2}}"></div>
+                <h4>{{howItWorksHeading.heading2}}</h4>
+                <p>{{howItWorksHeading.description2}}</p>
+                <div class="dwn-pdf">
+                    <a href="{{pdf2}}" download>{{mediatext2}}</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-col">
+                <div class="icon"><img src="{{image3}}"></div>
+                <h4>{{howItWorksHeading.heading3}}</h4>
+                <p>{{howItWorksHeading.description3}}</p>
+                <div class="dwn-pdf">
+                    <a href="{{pdf3}}" download>{{mediatext3}}</a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- How it work image no. 1- fixed version end -->
+
 	
-	<!-- How it works image no.2 - fixed version -->
-	<section class="how-work how-it-works" [ngStyle]="{'background': 'url(' + imageId + ')','background-repeat': 'no-repeat'}">
-		<div class="container">
-			<div class="row">
-				<div class="work-title">
-					<h3>{{howItWorksHeading.howItWorksHeading}}</h3>
-					<p>{{howItWorksHeading.howItWorksDescription}}</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="how-work-main">
-					<div class="col-md-4">
-						<div class="work-col">
-							<div class="icon"><img src="{{image1}}"></div>
-							<h4>{{howItWorksHeading.heading1}}</h4>
-							<p>{{howItWorksHeading.description1}}</p>
-							<div class="dwn-pdf">
-								<a href="{{pdf1}}" download>{{mediatext1}}</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="work-col">
-							<div class="icon"><img src="{{image2}}"></div>
-							<h4>{{howItWorksHeading.heading2}}</h4>
-							<p>{{howItWorksHeading.description2}}</p>
-							<div class="dwn-pdf">
-								<a href="{{pdf2}}" download>{{mediatext2}}</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="work-col">
-							<div class="icon"><img src="{{image3}}"></div>
-							<h4>{{howItWorksHeading.heading3}}</h4>
-							<p>{{howItWorksHeading.description3}}</p>
-							<div class="dwn-pdf">
-								<a href="{{pdf3}}" download>{{mediatext3}}</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    <!-- How it works image no.2 - fixed version end -->
+
 
 	<!-- featured homes Section - fixed version -->
 	<section class="sale-at-Aspley our-home-designe padtop90" id="featured-home">

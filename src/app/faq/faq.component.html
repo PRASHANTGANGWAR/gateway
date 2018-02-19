@@ -40,63 +40,51 @@
     </section>
     <!-- faq white section - fixed version end --> 
 
+    <section class="how-work" [ngStyle]="{'background-image': 'url(' + imageId + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+    <div class="container">
+      <div class="row">
+        <div class="work-title">
+          <h3>{{howItWorksHeading.howItWorksHeading}}</h3>
+          <p>{{howItWorksHeading.howItWorksDescription}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="how-work-main">
+          <div class="col-md-4">
+                        <div class="work-col"   >
+                            <div  class="icon"><img src="{{image1}}"></div>
+                            <h4>{{howItWorksHeading.howItWorksHeadingBold}}</h4>
+                            <p>{{howItWorksHeading.paragraphText}}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col"   >
+                            <div  class="icon"><img src="{{image2}}"></div>
+                            <h4>{{howItWorksHeading.howItWorksHeadingBold2}}</h4>
+                            <p>{{howItWorksHeading.sectionParagraph2}}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-col"   >
+                            <div  class="icon"><img src="{{image3}}"></div>
+                            <h4>{{howItWorksHeading.howItWorksHeadingBold3}}</h4>
+                            <p>{{howItWorksHeading.sectionParagraph3}}</p>
+                            
+                        </div>
+                    </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
     <!-- How it work section - fixed version -->
 
-
-
-    <section class="how-work" [ngStyle]="{'background': 'url(' + imageId + ')','background-repeat': 'no-repeat'}" >
-        <div class="container">
-            <div class="row">
-                <div class="work-title">
-                    <h3>{{howItWorksHeading.title}}</h3>
-                    <p>{{howItWorksHeading.howItWorksDescription}}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="how-work-main">
-                    <div class="col-md-4">
-						<div class="work-col"   >
-							<div  class="icon"><img src="{{image1}}"></div>
-							<h4>{{howItWorksHeading.howItWorksHeadingBold}}</h4>
-							<p>{{howItWorksHeading.paragraphText}}</p>
-							
-						</div>
-                    </div>
-                    <div class="col-md-4">
-						<div class="work-col"   >
-							<div  class="icon"><img src="{{image2}}"></div>
-							<h4>{{howItWorksHeading.howItWorksHeadingBold2}}</h4>
-							<p>{{howItWorksHeading.sectionParagraph2}}</p>
-							
-						</div>
-                    </div>
-                    <div class="col-md-4">
-						<div class="work-col"   >
-							<div  class="icon"><img src="{{image3}}"></div>
-							<h4>{{howItWorksHeading.howItWorksHeadingBold3}}</h4>
-							<p>{{howItWorksHeading.sectionParagraph3}}</p>
-							
-						</div>
-                    </div>
-                  <!--   <div class="col-md-4">
-                        <div class="work-col">
-                            <div class="icon"><img src="images/Bitmap-icon.png"></div>
-                            <h4>Step 2: Order your home and contract read</h4>
-                            <p>There are no Government charges such as stamp duty. You are not even required to engage a  Solicitor unless you desire to do so. </p>
-                        </div>
-                    </div> -->
-                 <!--    <div class="col-md-4">
-                        <div class="work-col">
-                            <div class="icon"><img src="images/Bitmap-icon.png"></div>
-                            <h4>Step 3: Delivery of your home</h4>
-                            <p>With no entry or exit fees and no deferred management fees, free up your funds to enjoy the freedom that comes with living less financially complicated.</p>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- How work section - fixed version end -->
 
 
    <!-- faq white section - fixed version -->
