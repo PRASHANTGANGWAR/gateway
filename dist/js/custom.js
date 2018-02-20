@@ -327,3 +327,15 @@ $('.close').click(function(){
 });
 
 
+$('.navbar-collapse li a').click(function(){
+
+    if ($(this).parent().children("ul").length) {
+    	console.log("ifffffffffffffff");
+        $('.navbar-collapse li ul li a').click(function(){
+            $(".navbar-collapse").css("display", "none");
+        });
+    }
+    else{
+        $(".navbar-collapse").css("display", "none");
+    }
+});

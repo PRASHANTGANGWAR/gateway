@@ -2093,7 +2093,6 @@ Author: Hardik Pethani
 @media (max-width: 767px) {
   .community-masterplan .masterplan-wp .box .left-side-image {
     width: 100%;
-    min-height: 200px;
   }
 }
 
@@ -2880,7 +2879,7 @@ Author: Bharat Khairnar
 
 .community-masterplan .masterplan-wp .box .left-side-image img {
   width: 100%;
-  max-height: 400px;
+  min-height: 200px;
 }
 
 .community-masterplan .masterplan-wp .box .right-side-image {
