@@ -21,7 +21,7 @@ export class communitiesComponent implements OnInit {
   filter:string='';
   originalLength:any;
   public newmap=null;
-  headerTitle:any={first_name:'Gateway',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
+  headerTitle:any={first_name:'logo',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
   //sorting
   key: string = 'orderby_name'; //set default
   reverse: boolean = false;

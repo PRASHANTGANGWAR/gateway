@@ -189,9 +189,9 @@ __webpack_require__("../../../../script-loader/addScript.js")(__webpack_require_
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery.min.js");
+__webpack_require__("../../../../script-loader/index.js!../../../../../src/js/bootstrap.min.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery-1.4.min.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery.min-1-9-1.js");
-__webpack_require__("../../../../script-loader/index.js!../../../../../src/js/bootstrap.min.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery.iosslider.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/slick.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/custom.js");

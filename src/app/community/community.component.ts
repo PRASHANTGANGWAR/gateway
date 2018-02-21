@@ -80,6 +80,7 @@ export class communityComponent implements OnInit {
           title.secondary_color = this.comunitylatestDetail.secondary_color;  
 
           this.sharedService.publishData(title);
+          console.log(title,"title");
           this.shortName = this.comunitylatestDetail.short_name
           if(this.comunityDetail.events.length){
             let event_date:any;
@@ -112,7 +113,7 @@ export class communityComponent implements OnInit {
     $('body').removeClass(this.bodyClasses);
     this.title.setTitle('Gateway Lifestyle | Over 50s Residential Communities');
     this.Meta.updateTag({ name: 'description', content: 'Gateway' });
-    let headerTitle:any={first_name:'Gateway',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
+    let headerTitle:any={first_name:'logo',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
     this.sharedService.publishData(headerTitle);
   }
 

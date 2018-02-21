@@ -102,6 +102,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     //$('body').addClass(this.bodyClasses);
+    $.getScript("js/leaflet.markercluster.js");
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
     this.getGenericInfopack();
