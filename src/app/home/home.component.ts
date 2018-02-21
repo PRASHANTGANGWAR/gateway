@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   image1: any = "";
   image2: any = "";
   image3: any = "";
+  image4: any = "";
   icon1: any = "";
   icon2: any = "";
   icon3: any = "";
@@ -73,6 +74,10 @@ export class HomeComponent implements OnInit {
   slider1ButtonUrl:any;
   slider2ButtonUrl:any;
   slider3ButtonUrl:any;
+  slider4Title: any;
+  slider4Description: any;
+  slider4ButtonText: any;
+  slider4ButtonUrl:any;
   videoImage: any;
   discover: any = {};
 
@@ -193,6 +198,10 @@ export class HomeComponent implements OnInit {
         that.slider3ButtonUrl=data.fields.slider3ButtonUrl;
         that.slider3Description = data.fields.slider3Description;
         that.slider3ButtonText = data.fields.slider3ButtonText;
+        that.slider4Title = data.fields.slider4Title;
+        that.slider4ButtonUrl=data.fields.slider4ButtonUrl;
+        that.slider4Description = data.fields.slider4Description;
+        that.slider4ButtonText = data.fields.slider4ButtonText;
 
 
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider1Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
@@ -202,6 +211,10 @@ export class HomeComponent implements OnInit {
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider2Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
           that.image2= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider2Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+          that.image4= data.fields.file.url;
         });
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider3Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
