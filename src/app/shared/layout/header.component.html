@@ -3,13 +3,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-sm-12 col-xs-12 logo-outer">
-                    <div class="logo logo-res" *ngIf="communityTitle && communityTitle?.first_name != 'logo'">
-                        <a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.first_name}} <span>{{communityTitle?.last_name}}</span></a>
+
+                    <div class="community-nav-name" *ngIf="communityTitle && communityTitle?.first_name != 'logo'">
+                        <ul>
+                            <li class="brand"><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.first_name}}</a></li>
+                            <li><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.last_name}}</a></li>
+                        </ul>
                     </div>
+
+                    
                     <div class="logo logo-res" *ngIf="!communityTitle || communityTitle?.first_name == 'logo'">
                         <a routerLink="/"><img width="131" src="images/logo.svg" alt=""/></a>
                     </div>
                 </div>
+
                 <div class="col-md-10 col-sm-12 col-sm-12 col-xs-12">
                     <nav class="navbar">
                         <div class="navbar-header">

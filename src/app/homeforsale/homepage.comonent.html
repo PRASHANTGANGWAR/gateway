@@ -200,7 +200,7 @@
         <div class="container">
             <div class="box-warp">
                 <div class="logo-community"><img [src]="linkedCommunity?.community_logo.url" alt=""></div>
-                <p class="pera-textbig">This home is located in {{linkedCommunity?.first_name}} by {{linkedCommunity?.last_name}}.</p>
+                <p class="pera-textbig">This home is located in {{linkedCommunity?.first_name}} {{linkedCommunity?.last_name}}.</p>
                 <p class="pera-textbig">{{linkedCommunity?.first_name}} is a peaceful residential area set around Little Cabbage Tree Creek, in the northern suburbs of Brisbane.</p>
                 <button class="btntheme" (click)="goToCommunity(linkedCommunity?.slug)" (mouseover)="changeInfoColor($event)" 
                         (mouseout)="changeInfoColor($event)" [ngStyle]="{'background-color': linkedCommunity?.primary_color,'border-color':linkedCommunity?.primary_color}">Go To Community</button>

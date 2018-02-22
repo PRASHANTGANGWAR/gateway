@@ -95,7 +95,7 @@ constructor(
 
     ngOnDestroy() { 
         $('body').removeClass(this.bodyClasses);
-        let headerTitle:any={first_name:'Gateway',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
+        let headerTitle:any={first_name:'logo',primary_color:'#003C6B',last_name:'Lifestyle',secondary_color:'#62717f'};
         this.sharedService.publishData(headerTitle);
     }
 

@@ -9875,3 +9875,34 @@ footer .footer-icon {
   line-height: 24px;
   padding: 0 10px;
 }
+
+
+.logo-outer .community-nav-name{
+  margin: 19px 0px;
+  color: #62717f;
+  font-size: 12px;
+  font-weight: normal;
+  min-width: 150px;
+  width: 150px;
+  z-index:99;
+  position: relative;
+}
+
+.logo-outer .community-nav-name .brand{
+  color:#F89923;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+@media screen and (max-width: 812px) {
+  .logo-outer .community-nav-name{
+    margin: 8px 0px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .logo-outer .community-nav-name{
+    margin: 8px 0px;
+  }
+}
