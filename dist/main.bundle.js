@@ -5503,7 +5503,6 @@ var HeaderComponent = (function () {
     }
     HeaderComponent.prototype.ngOnInit = function () {
         var _this = this;
-        $.getScript('js/bootstrap.min.js');
         this.sharedService.caseNumber$.subscribe(function (data) {
             _this.communityTitle = data;
             var generic_data = JSON.parse(window.localStorage.getItem('generic_data'));
