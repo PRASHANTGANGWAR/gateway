@@ -310,6 +310,12 @@ jQuery(document).ready(function(){
 
 
 $('#getin').click(function(){
+  	console.log("bhai chal ja please");
+    $('body').removeClass('header-fixed');
+});
+
+$('#getin2').click(function(){
+  	console.log("bhai chal ja please");
     $('body').removeClass('header-fixed');
 });
 
