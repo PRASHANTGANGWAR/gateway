@@ -9882,10 +9882,7 @@ footer .footer-icon {
   color: #62717f;
   font-size: 12px;
   font-weight: normal;
-  min-width: 160px;
-  width: 150px;
-  z-index:99;
-  position: relative;
+  min-width: 250px;
 }
 
 .logo-outer .community-nav-name .brand{
