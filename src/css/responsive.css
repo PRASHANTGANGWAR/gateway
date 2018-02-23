@@ -195,7 +195,7 @@ button.close {right: 15px; top: 5px;}
     text-align: left;
     padding: 0 10px;}
     .big-heading {font-size: 18px; margin: 0px 0 15px; line-height: 22px;}
-    .pera-textbig {font-size: 12px; line-height: 16px;}
+    
     section {padding: 15px 0;}
     .right-tab li {float: left;}
     .top-file-lw a {position: relative; top: 0px; right: 0;  font-size: 12px; line-height: 44px;}
@@ -336,7 +336,7 @@ margin: 10px 5px;}
     padding: 15px 0px 10px 0px;
 }
 
-.offer-headline-admin .rg-box h2{font-size: 18px; line-height: 24px;}
+
 .offer-headline-admin .rg-box p {
     font-size: 12px;
     margin: 15px 0 25px 0;
