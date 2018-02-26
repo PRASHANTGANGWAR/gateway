@@ -154,7 +154,8 @@
                             <img *ngIf="why_live_here.image_present" [src]='why_live_here.image.url'>
                             <h2 class="heading-orang" [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{why_live_here.title}}</h2>
                             <p class="pera-textbig">
-                               {{why_live_here.description}}
+                            <markdown>{{why_live_here.description}}</markdown>
+                               
                             </p>
                         </div>
                     </div>
