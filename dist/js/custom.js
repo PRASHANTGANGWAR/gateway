@@ -360,3 +360,4 @@ $('.img-box h2').click(function(){
      $("#resbtn-show").toggleClass('open-men');
 
 });
+$.noConflict();

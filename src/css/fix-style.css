@@ -9620,6 +9620,7 @@ footer .footer-icon {
 @media (max-width: 768px) {
   .hometestimonial.resident-stories .hometestimonial-left .testi-warp .owl-item .testimonial4_slide {
     width: 100%;
+    min-height: 500px;
   }
 }
 

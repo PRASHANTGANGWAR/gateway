@@ -43,7 +43,7 @@
 
     <!--Belong section start-->
     <section class="belong-section">
-        <div class="secondary-nav-mobile">
+        <div class="secondary-nav-mobile" *ngIf= "comunityDetail.info_pack?.info_pdf?.url">
             <a href="tel:1300361311" class="nav-mobile-left" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
                 <div class="mob-data">
                     <div class="mob-img">
@@ -52,7 +52,7 @@
                     <span>call</span>
                 </div>
             </a>
-            <a href="#" class="nav-mobile-right" data-toggle="modal" data-target="#get-an-info-pack-modal" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
+            <a href="#" class="nav-mobile-right" data-toggle="modal" data-target="#get-an-info-pack-modal" [ngStyle]="{'background': comunitylatestDetail.primary_color} " >
                 <div class="mob-data">
                     <div class="mob-img">
                         <img src="images/get-an-info.png" />

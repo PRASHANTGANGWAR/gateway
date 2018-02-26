@@ -7,7 +7,7 @@
                     <div class="community-nav-name" *ngIf="communityTitle && communityTitle?.first_name != 'logo'">
                         <ul>
                             <li class="brand"><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.first_name}}</a></li>
-                            <li class="brand"><a routerLink="/" [ngStyle]="{'color': '#62717f'}">{{communityTitle?.last_name}}</a></li>
+                            <li><a routerLink="/" [ngStyle]="{'color': '#62717f'}">{{communityTitle?.last_name}}</a></li>
                         </ul>
                     </div>
 
