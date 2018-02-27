@@ -46,7 +46,8 @@
         "js/jquery.iosslider.js",
         "js/slick.js",
         "js/bootstrap.min.js",
-        "js/mapbox.js"
+        "js/mapbox.js",
+        "js/custom.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

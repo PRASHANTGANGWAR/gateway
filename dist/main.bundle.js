@@ -3204,6 +3204,7 @@ var HomeComponent = (function () {
         this.testimonialsImage = "";
         this.testimonialsImage2 = "";
         this.testimonialsImage3 = "";
+        this.blue_split = {};
         this.discover = {};
         this.bodyClasses = "home";
         this.submitted = false;
@@ -5418,7 +5419,6 @@ var FooterComponent = (function () {
         //this.getHomeForSales();
     }
     FooterComponent.prototype.ngAfterViewInit = function () {
-        $.getScript('js/slick.js');
         $.getScript('js/custom.js');
         $.getScript("js/wow.min.js");
         // $.getScript("js/modal-video.js"),

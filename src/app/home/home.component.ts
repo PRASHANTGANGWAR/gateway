@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
   Smallvideo1Img: any;
   Smallvideo2Img: any;
 
-  blue_split : any;
+  blue_split : any = {};
   sliderImg1 : any;
   sliderImg2 : any;
   sliderImg3 : any;
