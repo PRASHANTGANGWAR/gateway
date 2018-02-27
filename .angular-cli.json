@@ -40,17 +40,14 @@
         "css/owl.theme.default.min.css"
       ],
       "scripts": [
-         
         "js/jquery.min.js",
         "js/jquery-1.4.min.js",
         "js/jquery.min-1-9-1.js",
-        "js/bootstrap.min.js",
         "js/jquery.iosslider.js",
-        "js/custom.js",
-        
-        "js/bootstrap-select.js",
-        "js/wow.min.js",
-        "js/mapbox.js"
+        "js/slick.js",
+        "js/bootstrap.min.js",
+        "js/mapbox.js",
+        "js/custom.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

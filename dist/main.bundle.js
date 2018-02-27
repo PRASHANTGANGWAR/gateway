@@ -3204,6 +3204,7 @@ var HomeComponent = (function () {
         this.testimonialsImage = "";
         this.testimonialsImage2 = "";
         this.testimonialsImage3 = "";
+        this.blue_split = {};
         this.discover = {};
         this.bodyClasses = "home";
         this.submitted = false;

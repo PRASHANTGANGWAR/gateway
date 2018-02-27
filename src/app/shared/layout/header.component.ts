@@ -29,7 +29,6 @@ export class HeaderComponent implements OnInit {
   ) {this.getGenericInfopack();}
 
   ngOnInit() {
-  
     this.sharedService.caseNumber$.subscribe(data=>{
       this.communityTitle = data;
       let generic_data = JSON.parse(window.localStorage.getItem('generic_data'));
