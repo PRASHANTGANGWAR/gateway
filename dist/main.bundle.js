@@ -5418,6 +5418,7 @@ var FooterComponent = (function () {
         //this.getHomeForSales();
     }
     FooterComponent.prototype.ngAfterViewInit = function () {
+        $.getScript('js/slick.js');
         $.getScript('js/custom.js');
         $.getScript("js/wow.min.js");
         // $.getScript("js/modal-video.js"),
