@@ -34,6 +34,9 @@ export class HowitworksComponent implements OnInit {
   video : any;
   video_url :any;
   blue_cta : any;
+  standardCtaInfoPackDescription: any;
+  standardCtaInfoPackButtonText: any;
+  standardCtaInfoPackAfterButtonText: any;
   cost : any;
   why_smart : any;
   blue_gradient : any;
@@ -60,6 +63,9 @@ export class HowitworksComponent implements OnInit {
   blogBackgroundImage2: any;
   blogBackgroundImage3: any;
   submitted = false;
+
+  
+
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   genericInfo:any;
   constructor(private apiService: ApiService, private router: Router, private segment: SegmentService) {}
@@ -124,6 +130,14 @@ export class HowitworksComponent implements OnInit {
            that.blogBackgroundImage3= data.fields.file.url;
         });
       })
+
+      //standard CTA
+         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/5jeApqe6NiM6O2ugMQouQo?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
+        function(data, status){
+          that.standardCtaInfoPackDescription = data.fields.standardCtaInfoPackDescription;
+          that.standardCtaInfoPackButtonText = data.fields.standardCtaInfoPackButtonText;
+          that.standardCtaInfoPackAfterButtonText = data.fields.standardCtaInfoPackAfterButtonText;
+        });
       
       //How it work
      $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/1m0fmbTu0AAmoQo6u2qGem?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
@@ -277,6 +291,8 @@ export class HowitworksComponent implements OnInit {
       })
 
   }
+
+  
 
     getGenericInfopack(){
       this.apiService.get('/pdf_info_packs/featured_pack').subscribe((res:any)=>{
