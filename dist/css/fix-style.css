@@ -10081,3 +10081,6 @@ Font fixes responsive
 }
 
 
+body.modal-open {
+  position: fixed;
+}
