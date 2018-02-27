@@ -7,7 +7,7 @@
                     <div class="community-nav-name" *ngIf="communityTitle && communityTitle?.first_name != 'logo'">
                         <ul>
                             <li class="brand"><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.first_name}}</a></li>
-                            <li><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.last_name}}</a></li>
+                            <li><a routerLink="/" [ngStyle]="{'color': '#62717f'}">{{communityTitle?.last_name}}</a></li>
                         </ul>
                     </div>
 
@@ -89,7 +89,7 @@
                                         <a href="mailto:sales@gty.com.au"><i class="fa fa-envelope"></i> sales@gty.com.au</a>
                                         <a href="tel:1300 361 311"><i class="fa fa-phone"></i> 1300 361 311</a>
                                     </div>
-                                     <a data-toggle="modal" data-target="#get-an-info-pack-modal-header"><button class="btn">GET AN INFO PACK</button></a>
+                                     <a data-toggle="modal" data-target="#get-an-info-pack-modal-header"><button class="btn" id="getin2">GET AN INFO PACK</button></a>
                                 </div>
                             </ul>
 
@@ -193,7 +193,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                            <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text"  maxlength="9" #plan="ngModel">   
+                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text"  maxlength="9" #plan="ngModel">   
                                         </div>
                                     </div>  
                                     <div class="col-sm-6">

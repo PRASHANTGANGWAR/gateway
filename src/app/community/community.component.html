@@ -43,7 +43,7 @@
 
     <!--Belong section start-->
     <section class="belong-section">
-        <div class="secondary-nav-mobile">
+        <div class="secondary-nav-mobile" *ngIf= "comunityDetail.info_pack?.info_pdf?.url">
             <a href="tel:1300361311" class="nav-mobile-left" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
                 <div class="mob-data">
                     <div class="mob-img">
@@ -52,7 +52,7 @@
                     <span>call</span>
                 </div>
             </a>
-            <a href="#" class="nav-mobile-right" data-toggle="modal" data-target="#get-an-info-pack-modal" [ngStyle]="{'background': comunitylatestDetail.primary_color}">
+            <a href="#" class="nav-mobile-right" data-toggle="modal" data-target="#get-an-info-pack-modal" [ngStyle]="{'background': comunitylatestDetail.primary_color} " >
                 <div class="mob-data">
                     <div class="mob-img">
                         <img src="images/get-an-info.png" />
@@ -154,7 +154,8 @@
                             <img *ngIf="why_live_here.image_present" [src]='why_live_here.image.url'>
                             <h2 class="heading-orang" [ngStyle]="{'color': comunitylatestDetail.primary_color}">{{why_live_here.title}}</h2>
                             <p class="pera-textbig">
-                               {{why_live_here.description}}
+                            <markdown>{{why_live_here.description}}</markdown>
+                               
                             </p>
                         </div>
                     </div>
@@ -537,7 +538,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                            <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">   
                                         </div>
                                     </div>  
                                     <div class="col-sm-6">

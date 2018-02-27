@@ -65,7 +65,7 @@
             <div class="rg-box">
                 <h2>{{blue_gradient.headingText}}</h2>
                 <p>{{blue_gradient.contentText}}</p>
-                <div class="buttons"><a href="http://gatewayhtml.orangebicycle.online/community-listing-page-final.html" target="_blank" class="ods-btn">{{blue_gradient.buttonText}}</a></div>
+                <div class="buttons"><a href="{{blue_gradient.buttonUrl}}" target="_blank" class="ods-btn">{{blue_gradient.buttonText}}</a></div>
             </div>
         </div>
     </section>
@@ -239,13 +239,13 @@
     <!-- featured homes Section fixed version end -->
 
      <!-- start CTA block -->
-    <section class="cta-block scroll">
+    <section class="cta-block">
         <div class="container">
-            <h2 class="whithead">Let's chat about your next home <br> and discuss if Gateway is right <br>for you.</h2>
+            <h2 class="whithead">{{standardCtaInfoPackDescription}}</h2>
             <div class="buttons">
-                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">Get an info pack</a> 
+                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">{{standardCtaInfoPackButtonText}}</a>
             </div>
-            <p>Or give us a call on 1300 361 311.</p>
+            <p>{{standardCtaInfoPackAfterButtonText}}</p>
         </div>
     </section>
     <!-- end CTA block -->
@@ -315,7 +315,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                            <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying a home? Eg: 6 months, 3 months, etc." name="plan" type="text" #plan="ngModel">   
+                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">   
                                         </div>
                                     </div>  
                                     <div class="col-sm-6">

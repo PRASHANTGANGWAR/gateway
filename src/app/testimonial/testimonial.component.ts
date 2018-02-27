@@ -107,7 +107,6 @@ export class TestimonialComponent implements OnInit {
   data:any = [];
 
   ngOnInit() {
-
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
     this.getGenericInfopack();
