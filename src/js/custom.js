@@ -283,13 +283,16 @@ jQuery(document).ready(function(){
 
 
 $('#getin').click(function(){
-  	console.log("bhai chal ja please");
     $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show").toggleClass('open-men');
 });
 
 $('#getin2').click(function(){
-  	console.log("bhai chal ja please");
     $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show").toggleClass('open-men');
+
 });
 
 $('#send-sucess').click(function(){
