@@ -639,6 +639,7 @@ html {
 body.modal-open {
   overflow: hidden;
   height: 100vh;
+  position: absolute;
 }
 
 /*
