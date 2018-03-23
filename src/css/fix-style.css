@@ -186,6 +186,7 @@ p {
     right: 0px !important;
     padding-bottom: 30px !important;
     height: 265px;
+    border-bottom: 1px solid #E5E5E5;
   }
 }
 
@@ -829,11 +830,11 @@ Author: Hardik Pethani
 }
 
 .slick-prev:before {
-  content: "ÃƒÂ¢Ã¢â‚¬ Ã‚Â";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ Ãƒâ€šÃ‚Â";
 }
 
 [dir="rtl"] .slick-prev:before {
-  content: "ÃƒÂ¢Ã¢â‚¬ Ã¢â‚¬â„¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢";
 }
 
 .slick-next {
@@ -846,11 +847,11 @@ Author: Hardik Pethani
 }
 
 .slick-next:before {
-  content: "ÃƒÂ¢Ã¢â‚¬ Ã¢â‚¬â„¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢";
 }
 
 [dir="rtl"] .slick-next:before {
-  content: "ÃƒÂ¢Ã¢â‚¬ Ã‚Â";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ Ãƒâ€šÃ‚Â";
 }
 
 /* Dots */
@@ -905,7 +906,7 @@ Author: Hardik Pethani
   position: absolute;
   top: 0;
   left: 0;
-  content: "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢";
   width: 20px;
   height: 20px;
   font-family: "slick";
@@ -2273,7 +2274,7 @@ Author: bharat khairnar
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    border-bottom: 1px solid #E5E5E5;
+/*     border-bottom: 1px solid #E5E5E5; FK hidden */
   }
 }
 
@@ -2549,9 +2550,26 @@ Author: bharat khairnar
 
 @media screen and (max-width: 768px) {
   .belong-section .w642 {
-    width: 65%;
+    /*     width: 65%; - original */
+    width: 100%;
     padding: 0 26px;
   }
+  
+  /* FK added this to fix this padding underneath the why live here */
+  .slider .carousel-inner > .item h2{
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  /* FK added this to fix this padding underneath the why live here */
+  .slider .carousel-inner > .item h2{
+  margin: 10px 30px 5px !important;
+    font-size: 24px;
+  }
+  
 }
 
 @media screen and (max-width: 640px) {
