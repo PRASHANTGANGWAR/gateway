@@ -1,0 +1,95 @@
+/* Tiny Carousel */
+#slider1 {
+    overflow: hidden;
+    position: relative;
+}
+
+#slider1 .viewport {
+    height: 88px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider1 .buttons {
+    background: #003c6b;
+    border-radius: 0;
+    display: block;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 99;
+    opacity: 1;
+    text-indent: -9999px !important;
+}
+
+#slider1 .next {
+    right: 0;
+    left: auto;
+}
+#slider1 .next:before
+{       position: absolute;
+    content: '>';
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    z-index: 999;
+    text-indent: 0;
+}
+#slider1 .next:hover:before
+{   color: #003c6b;
+}
+#slider1 .buttons:hover {
+    color: #C01313;
+    background: #fff;
+}
+
+
+#slider1 .prev:before
+{       position: absolute;
+    content: '<';
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    z-index: 999;
+    text-indent: 0;
+}
+#slider1 .prev:hover:before
+{   color: #003c6b;
+}
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+#slider1 .overview li {
+    display: inline-block;
+    margin: 0px 1px 0 0;
+    width: 142px;
+    height: 88px; 
+    overflow: hidden;
+ }
+#slider1 .overview li img
+{   height: 100%; width: 100%;  
+}
