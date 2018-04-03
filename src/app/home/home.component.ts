@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
    standardCtaInfoPackDescription: any;
    standardCtaInfoPackButtonText: any;
    standardCtaInfoPackAfterButtonText: any;
-   bodyClasses:string = "home";
+   bodyClasses:string = "nav-v4";
   submitted = false;
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   genericInfo:any;
@@ -101,7 +101,7 @@ export class HomeComponent implements OnInit {
   data:any = [];
 
   ngOnInit() {
-    //$('body').addClass(this.bodyClasses);
+    $('body').addClass(this.bodyClasses);
     $.getScript("js/leaflet.markercluster.js");
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));

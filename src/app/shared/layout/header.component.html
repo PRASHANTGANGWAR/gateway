@@ -1,22 +1,12 @@
-    <!--  Fixed Mega menu -->
-    <header class="nav-v2">
+<!--  Fixed Mega menu -->
+    <header class="nav-v4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-sm-12 col-xs-12 logo-outer">
-
-                    <div class="community-nav-name" *ngIf="communityTitle && communityTitle?.first_name != 'logo'">
-                        <ul>
-                            <li class="brand"><a routerLink="/" [ngStyle]="{'color': communityTitle?.primary_color}">{{communityTitle?.first_name}}</a></li>
-                            <li><a routerLink="/" [ngStyle]="{'color': '#62717f'}">{{communityTitle?.last_name}}</a></li>
-                        </ul>
-                    </div>
-
-                    
-                    <div class="logo logo-res" *ngIf="!communityTitle || communityTitle?.first_name == 'logo'">
-                        <a routerLink="/"><img width="131" src="images/logo.svg" alt=""/></a>
+                    <div class="logo">
+                        <a href="index.html"><img width="215" src="images/gateway-inverse.png" alt=""/></a>
                     </div>
                 </div>
-
                 <div class="col-md-10 col-sm-12 col-sm-12 col-xs-12">
                     <nav class="navbar">
                         <div class="navbar-header">
@@ -26,18 +16,26 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <!--a class="navbar-brand logo-res" href="index.html"><img src="images/logo.png" alt=""></a-->
+                            
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="topmenu-v4">
+                                <li><a href="faq-final.html">FAQs</a></li>
+                                <li><a href="event-listing-page-final.html">Events</a></li>
+                                <li><a href="#">Investors</a></li>
+                                <li><a href="#">Holiday parks</a></li>
+                                <li><a href="#">Contact us</a></li>                         
+                                <li class="get-an-info-btn"><a class="btn-blue" href="get-in-touch-final.html">GET INFO PACK</a></li>                         
+                            </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="bold-menu"><a routerLink="/homes-for-sale">Homes for sale</a></li>
                                 <li class="bold-menu"><a routerLink="/communities">Communities</a></li>
                                 <li class="bold-menu"><a routerLink="/how-it-works">How it works</a></li>
-                                <li class="bold-menu"><a routerLink="/about">About us</a></li>
-                                <li  class="menu2" id="top-menu"><a routerLink="/enquire-now">Contact</a></li>
-                                <li  class="menu2" id="top-menu1"><a href="http://investor.gatewaylifestyle.com.au/Investor-Centre/" target="_blank">Investors</a></li>
-                                <li  class="menu2"><a href="http://glhp.com.au/" target="_blank">Holiday parks</a></li>
-                                <li class="dropdown mega-dropdown">
+                                <li class="bold-menu" class="desktop-none"><a routerLink="/about">About us</a></li>
+                                <li id="top-menu" class="desktop-none"><a routerLink="/enquire-now">Contact</a></li>
+                                <li id="top-menu1" class="desktop-none"><a href="http://investor.gatewaylifestyle.com.au/Investor-Centre/" target="blank">Investors</a></li>
+                                <li class="desktop-none"><a href="http://glhp.com.au/">Holiday parks</a></li>
+                                <li class="bold-menu dropdown mega-dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <i class="fa fa-chevron-down"></i></a>
                                     <div class="dropdown-menu mega-dropdown-menu">
                                         <div class="container width970">
@@ -45,14 +43,14 @@
                                                 <div class="col-sm-4">
                                                     <a routerLink="/home-designs" class="img-box-hover">
                                                         <div class="img-box">
-                                                            <img src="images/menu-img5.png" alt="" >
+                                                            <img src="images/menu-img1.jpg" alt="">
                                                             <h2>Explore our designs</h2>
                                                         </div>
                                                     </a>
-                                                    <a routerLink="/faqs" class="img-box-hover">    
+                                                    <a href="#" class="img-box-hover">    
                                                         <div class="img-box">
-                                                            <img src="images/menu-img6.png" alt="">
-                                                            <h2>Frequently Asked Questions</h2>
+                                                             <img src="images/menu-img6.png" alt="">
+                                                            <h2>Frequently asked questions</h2>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -64,16 +62,15 @@
                                                         <li><a routerLink="/careers">Careers</a></li>
                                                         <li><a routerLink="/events">Open days</a></li>
                                                         <li><a routerLink="/resident-stories">Resident stories</a></li>
-                                                        <li><a routerLink="/buying-process">Buying Process</a></li>
                                                         <li class="blog-link"><a href="http://live.gatewaylifestyle.com.au/" target="_blank">Latest news</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-4 in">
                                                     <h3 class="menuheading3 last-title">Get more info</h3>
-                                                    <p>Discover a rich, fulfilling over 50s lifestyle in our communities across NSW, QLD and VIC with hundreds of new and pre loved homes.</p>
-                                                    <a data-toggle="modal" data-target="#get-an-info-pack-modal-header"><button class="btn" id="getin">GET AN INFO PACK</button></a>
+                                                    <p>Discover a rich, fulfilling over 50s lifestyle in our communities across NSW, QLD adn VIC with hundreds of new and pre loved homes.</p>
+                                                     <a data-toggle="modal" data-target="#get-an-info-pack-modal-header"><button class="btn" id="getin">GET AN INFO PACK</button></a>
                                                     <div class="bot-ml">
-                                                        <a href="mailto:sales@gty.com.au"><i class="fa fa-envelope"></i>sales@gty.com.au</a>
+                                                        <a href="mailto:sales@gty.com.au"><i class="fa fa-envelope"></i> sales@gty.com.au</a>
                                                         <a href="tel:1300 361 311"><i class="fa fa-phone"></i> 1300 361 311</a>
                                                     </div>
 
@@ -83,7 +80,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="last-child"><a href="tel:1300  361 311">1300  361 311</a></li>
+                                <li class="last-child bold-menu"><a href="tel:1300  361 311">1300  361 311</a></li>
                                 <div class="bottom-section-mb">
                                     <div class="bot-ml">
                                         <a href="mailto:sales@gty.com.au"><i class="fa fa-envelope"></i> sales@gty.com.au</a>
@@ -101,23 +98,53 @@
                         <div class="searchform" id="show-sw">
                             <form id="search">
                                 <i class="search-icon ico2"></i>
-                                <input #box type="text" class="s" id="s" placeholder="Start typing here..."  (keyup.enter)="searchHeader(box.value,$event)">
-                                <a id="close" class="close"><i class="fa fa-times"></i></a>
+                                <input #box type="text" class="s" id="s" placeholder="Start typing here..." (keyup.enter)="searchHeader(box.value,$event)">
+                                <a href="#" id="close" class="close"><i class="fa fa-times"></i></a>
                                 <div class="search-container">
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">New Homes For Sale   <a routerLink="/homes-for-sale" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="hm">
+                                        <ul class="search-box">
+                                            <li><span><img src="images/search1.png" alt=""> </span>304/25 Mulloway Road, Chain Valley Bay, Central Coast</li>
+                                            <li><span><img src="images/search2.png" alt=""> </span>304/25 Mulloway Road, Chain Valley Bay, Central Coast</li>
+                                            <li><span><img src="images/search3.png" alt=""> </span>304/25 Mulloway Road, Chain Valley Bay, Central Coast</li>
+                                            <li><span><img src="images/search4.png" alt=""> </span>304/25 Mulloway Road, Chain Valley Bay, Central Coast</li>
                                         </ul>
                                     </div>
                                     <div class="col-sm-4">
-                                        <h3 class="search-mhead">Communities   <a routerLink="/communities" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="com">
+                                        <h3 class="search-mhead">Communities   <a outerLink="/communities" (click)= "closeSearch()">More</a></h3>
+                                        <ul class="search-box">
+                                            <li><span class="community"><img src="images/search5.png" alt=""> </span>Aspley by Gateway Lifestyle</li>
 
                                         </ul>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">Events   <a routerLink="/events" (click)= "closeSearch()">More</a></h3>
                                         <ul class="event-search">
+                                            <li>
+                                                <div class="event-search-box">
+                                                    <span>15</span>
+                                                    <span>June</span>
+                                                </div>
+                                                <p><strong>Aspley open day</strong></p>
+                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
+                                            </li>
+                                            <li>
+                                                <div class="event-search-box">
+                                                    <span>12</span>
+                                                    <span>Aug</span>
+                                                </div>
+                                                <p><strong>Aspley open day</strong></p>
+                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
+                                            </li>
+                                            <li>
+                                                <div class="event-search-box">
+                                                    <span>27</span>
+                                                    <span>Sep</span>
+                                                </div>
+                                                <p><strong>Aspley open day</strong></p>
+                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
+                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -128,112 +155,5 @@
                 </div>
             </div>
         </div>
-<!-- Get an info pack Modal -->
-  <div class="modal fade" id="get-an-info-pack-modal-header" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body no-pad">
-                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
-                                    (mouseout)="onHover($event)" >&times;</button>
-                    <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
-                        <div class="right-img-full">
-                            <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
-                            <!--  <img 
-                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
-                             "height: -webkit-fill-available;"> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-7 getinfowp">
-                   
-                        <div class="wp-main">
-                         <h3 style="color: #105dac;">
-                            <div class="title-img-round">
-                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
-                            </div>
-                            Get an info pack
-                         </h3>
-                         <div class="profile-row">
-                            <!-- <div class="profile-img"><img src="images/img11.png" alt=""></div> 
-                            <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p> -->
-                         </div>
-                         <div class="divider"></div>
-<!--                         <div class="form-getinfo-succes">
-                            <div class="row">
-                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
-                            <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
-                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
-                             class="btn btn-org">View the info pack Now</button></div>
-                            </div>
-                        </div> -->
-                         <div class="form-wp-getinfo">
-                             <div class="row">
-                                <!-- form starts here-->
-                                <form #infoForm="ngForm" novalidate>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.firstname" 
-                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" maxlength="20" 
-                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
-                                           <p class="requiedred" [hidden]="firstname.valid || submitted == false">
-                                            Please Enter First name
-                                            </p>  
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.lastname" 
-                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" maxlength="20" [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
-                                           <p class="requiedred" [hidden]="lastname.valid || submitted == false">
-                                            Please Enter Last name
-                                        </p>   
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text"  maxlength="9" #plan="ngModel">   
-                                        </div>
-                                    </div>  
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.phone" 
-                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.email" 
-                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
-                                           <p class="requiedred" [hidden]="email.valid || submitted == false">
-                                            Please Enter your email
-                                            </p> 
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                           <textarea [(ngModel)]="info.area" 
-                                           class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
-                                        </div>
-                                    </div> 
-                                    <div class="col-sm-12">
-                                    <button  class="btn btn-org"  id="send-sucess"
-                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
-                                    (mouseover)="changeColor($event)" 
-                                    (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
-                                    </div>
-                                </form>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <!--end  Get an info pack Modal -->
     </header>
     <!--  Fixed Mega menu end -->
