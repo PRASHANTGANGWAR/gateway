@@ -123,7 +123,17 @@ $(window).on("mousewheel", function(){
             });
 
         });
-	
+	// -----------------
+
+	$(document).ready(function() {
+            $("#show-search-btn_v4").click(function(){
+                $("#show-sw_v4").addClass("open");
+            });
+            $(".search-wp #close").click(function(){
+                $("#show-sw_v4").removeClass("open");
+            });
+
+        });
  /*----------mega menu--------*/
 $(document).ready(function(){
 	$("#navbar ul li#top-menu").click(function(){
@@ -145,6 +155,11 @@ $(document).ready(function(){
  $("#resbtn-show").click(function(){
     $("#navbar").slideToggle();
     $("#resbtn-show").toggleClass('open-men');
+});
+
+ $("#resbtn-show_v4").click(function(){
+    $("#navbar_v4").slideToggle();
+    $("#resbtn-show_v4").toggleClass('open-men');
 });
  
 
@@ -294,6 +309,21 @@ $('#getin2').click(function(){
     $("#resbtn-show").toggleClass('open-men');
 
 });
+
+$('#getin_v4').click(function(){
+    $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show").toggleClass('open-men');
+});
+
+$('#getin2_v4').click(function(){
+    $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show").toggleClass('open-men');
+
+});
+
+
 
 $('#send-sucess').click(function(){
     if($('body').hasClass('modal-open')){
