@@ -106,12 +106,12 @@
                                 <div class="search-container">
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">New Homes For Sale   <a routerLink="/homes-for-sale" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="hm">
+                                        <ul class="hm_search search-box" id="hm">
                                         </ul>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">Communities   <a routerLink="/communities" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="com">
+                                        <ul class="com_search search-box" id="com">
 
                                         </ul>
                                     </div>
@@ -258,9 +258,7 @@
 
 
 
-
-
-
+<!-- nav -v4 -->
 
 
 <!--  Fixed Mega menu -->
@@ -269,7 +267,7 @@
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-sm-12 col-xs-12 logo-outer">
                     <div class="logo">
-                        <a href="index.html"><img width="215" src="images/gateway-inverse.png" alt=""/></a>
+                        <a routerLink="/"><img width="215" src="images/gateway-inverse.png" alt=""/></a>
                     </div>
                    
                 </div>
@@ -288,7 +286,7 @@
                             <div >
                             <ul class="topmenu-v4">
                                 <li><a routerLink="/faqs">FAQs</a></li>
-                                <li><a href="event-listing-page-final.html">Events</a></li>
+                                <li><a routerLink="/events">Events</a></li>
                                 <li><a href="http://investor.gatewaylifestyle.com.au/Investor-Centre/">Investors</a></li>
                                 <li><a href="http://glhp.com.au/">Holiday parks</a></li>
                                 <li><a routerLink="/enquire-now">Contact us</a></li>                         
@@ -300,10 +298,10 @@
                                 <li class="bold-menu"><a routerLink="/communities">Communities</a></li>
                                 <li class="bold-menu"><a routerLink="/how-it-works">How it works</a></li>
                                 <li class="bold-menu" class="desktop-none"><a routerLink="/about">About us</a></li>
-                                <li id="top-menu" class="desktop-none"><a routerLink="/enquire-now">Contact</a></li>
-                                <li id="top-menu1" class="desktop-none"><a href="http://investor.gatewaylifestyle.com.au/Investor-Centre/" target="blank">Investors</a></li>
+                                <li id="top-menu_v4" class="desktop-none"><a routerLink="/enquire-now">Contact</a></li>
+                                <li id="top-menu1_v4" class="desktop-none"><a href="http://investor.gatewaylifestyle.com.au/Investor-Centre/" target="blank">Investors</a></li>
                                 <li class="desktop-none"><a href="http://glhp.com.au/">Holiday parks</a></li>
-                                <li class="bold-menu dropdown mega-dropdown">
+                                <li class="dropdown mega-dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <i class="fa fa-chevron-down"></i></a>
                                     <div class="dropdown-menu mega-dropdown-menu">
                                         <div class="container width970">
@@ -371,12 +369,12 @@
                                 <div class="search-container">
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">New Homes For Sale   <a routerLink="/homes-for-sale" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="hm">
+                                        <ul class="hm_search search-box" id="hm">
                                         </ul>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">Communities   <a outerLink="/communities" (click)= "closeSearch()">More</a></h3>
-                                        <ul class="search-box" id="com">
+                                        <ul class="com_search search-box" id="com">
                                             <!-- <li><span class="community"><img src="images/search5.png" alt=""> </span>Aspley by Gateway Lifestyle</li> -->
 
                                         </ul>
@@ -384,31 +382,7 @@
                                     <div class="col-sm-4">
                                         <h3 class="search-mhead">Events   <a routerLink="/events" (click)= "closeSearch()">More</a></h3>
                                         <ul class="event-search">
-                                            <!-- <li>
-                                                <div class="event-search-box">
-                                                    <span>15</span>
-                                                    <span>June</span>
-                                                </div>
-                                                <p><strong>Aspley open day</strong></p>
-                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
-                                            </li>
-                                            <li>
-                                                <div class="event-search-box">
-                                                    <span>12</span>
-                                                    <span>Aug</span>
-                                                </div>
-                                                <p><strong>Aspley open day</strong></p>
-                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
-                                            </li>
-                                            <li>
-                                                <div class="event-search-box">
-                                                    <span>27</span>
-                                                    <span>Sep</span>
-                                                </div>
-                                                <p><strong>Aspley open day</strong></p>
-                                                <p> 25 Mulloway Road, Chain Valley Bay, Central Cost</p>
-                                            </li> -->
-
+                                           
                                         </ul>
                                     </div>
                                 </div>
@@ -509,7 +483,7 @@
                                         </div>
                                     </div> 
                                     <div class="col-sm-12">
-                                    <button  class="btn btn-org"  id="send-sucess"
+                                    <button  class="btn btn-org"  id="send-sucess_v4"
                                      (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
                                     (mouseover)="changeColor($event)" 
                                     (mouseout)="changeColor($event)" type="submit">Get an info pack</button>

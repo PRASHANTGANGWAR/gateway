@@ -94,7 +94,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private apiService: ApiService,
-    private segment: SegmentService 
+    private segment: SegmentService ,
+    private sharedService: SharedService
   ) {
   }
   tags: Array<string> = [];
@@ -103,7 +104,7 @@ export class HomeComponent implements OnInit {
   data:any = [];
 
   ngOnInit() {
-
+    this.sharedService.publishPage("Home");
    
     $('body').addClass(this.bodyClasses);
     $(".nav-v2").hide();
@@ -372,6 +373,7 @@ export class HomeComponent implements OnInit {
         $('body').removeClass(this.bodyClasses);
         $(".nav-v2").show();
         $(".nav-v4").hide();
+        this.sharedService.publishPage("");
     }
 
 }

@@ -3,56 +3,56 @@
       <div class="header-slider-main">
         <div class="owl-carousel owl-theme">
           <div class="item">            
-              <div class="slider-bg" style="background-image: url('images/home-slider-img1.png');">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image1 + ')','background-repeat': 'no-repeat','background-position': 'center'}" >
                 <div class="slider-text">
                   <div class="slider-text-inner">
-                    <h2>Discover More. Enjoy More.</h2>
-                    <p>Live, laugh and enjoy over 50s living at one of our 50+ lifestyle communities.</p>
+                    <h2>{{slider1Title}}</h2>
+                    <p>{{slider1Description}}</p>
                     <hr>
                     <div class="buttons">
-                      <a href="#" class="btn-blue">FIND A HOME</a> 
+                      <a href="{{slider1ButtonUrl}}" class="btn-blue">{{slider1ButtonText}}</a> 
                   </div>
               </div>
                 </div>
               </div>
           </div>
           <div class="item">            
-              <div class="slider-bg" style="background-image: url('images/home-slider-img2.png');">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image2 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
                 <div class="slider-text">
                   <div class="slider-text-inner">
-                    <h2>Discover More. Enjoy More.</h2>
-                    <p>Live, laugh and enjoy over 50s living at one of our 50+ lifestyle communities.</p>
+                    <h2>{{slider2Title}}</h2>
+                    <p>{{slider2Description}}</p>
                     <hr>
                     <div class="buttons">
-                      <a href="#" class="btn-blue">FIND A HOME</a> 
+                      <a href="{{slider2ButtonUrl}}" class="btn-blue">{{slider2ButtonText}}</a> 
                   </div>
               </div>
                 </div>
               </div>
           </div>
           <div class="item">            
-              <div class="slider-bg" style="background-image: url('images/home-slider-img3.png');">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image3 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
                 <div class="slider-text">
                   <div class="slider-text-inner">
-                    <h2>Discover More. Enjoy More.</h2>
-                    <p>Live, laugh and enjoy over 50s living at one of our 50+ lifestyle communities.</p>
+                    <h2>{{slider3Title}}</h2>
+                    <p>{{slider3Description}}</p>
                     <hr>
                     <div class="buttons">
-                      <a href="#" class="btn-blue">FIND A HOME</a> 
+                      <a href="{{slider4ButtonUrl}}" class="btn-blue">{{slider3ButtonText}}</a> 
                   </div>
               </div>
                 </div>
               </div>
           </div>
           <div class="item">            
-              <div class="slider-bg" style="background-image: url('images/home-slider-img1.png');">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image4 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
                 <div class="slider-text">
                   <div class="slider-text-inner">
-                    <h2>Discover More. Enjoy More.</h2>
-                    <p>Live, laugh and enjoy over 50s living at one of our 50+ lifestyle communities.</p>
+                    <h2>{{slider4Title}}</h2>
+                    <p>{{slider4Description}}</p>
                     <hr>
                     <div class="buttons">
-                      <a href="#" class="btn-blue">FIND A HOME</a> 
+                      <a href="{{slider4ButtonUrl}}" class="btn-blue">{{slider4ButtonText}}</a> 
                   </div>
               </div>
                 </div>
@@ -66,22 +66,22 @@
           <div class="container">         
               <ul>
                 <li class="open-days">
-                  <a href="#">                   
+                  <a routerLink="/events">
                      <h4>Open days</h4>  
                   </a>
                 </li>
                 <li class="resident-stories">
-                  <a href="#">                   
+                  <a routerLink="/resident-stories">
                    <h4>Resident stories</h4>  
                   </a>
                 </li>
                 <li class="explore-design">
-                  <a href="#">                  
+                  <a routerLink="/home-designs">
                    <h4>Explore our designs</h4>  
                   </a>
                 </li>
                 <li class="latest-news">
-                  <a href="#">                   
+                  <a href="http://live.gatewaylifestyle.com.au/" target="_blank">
                    <h4>Latest news</h4>  
                   </a>
                 </li>                         
@@ -97,25 +97,25 @@
         <div class="container">         
             <ul>
                <li>
-                <a href="#">
+                <a routerLink="/events">
                  <div class="img-box"><img src="images/open-days-icon.png" alt=""></div>
                  <h4>Open days</h4>  
               </a>
                </li>
                <li>
-                <a href="#">
+                  <a routerLink="/resident-stories">
                  <div class="img-box"><img src="images/resident-stories-icon.png" alt=""></div>
                  <h4>Resident stories</h4>  
               </a>
                </li>
                <li>
-                <a href="#">
+                  <a routerLink="/home-designs">
                  <div class="img-box"><img src="images/explore-our-designs-icon.png" alt=""></div>
                  <h4>Explore our designs</h4>  
               </a>
                </li>
                <li>
-                <a href="#">
+                  <a href="http://live.gatewaylifestyle.com.au/" target="_blank">
                  <div class="img-box"><img src="images/latest-news-icon.png" alt=""></div>
                  <h4>Latest news</h4>  
               </a>
