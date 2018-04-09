@@ -17,10 +17,8 @@ $(document).ready(function () {
 	  var sticky = $('body'),
 		  scroll = $(window).scrollTop();
 	  if (scroll >= 1){ sticky.addClass('sticky-in-home');
-	  $('.search-icon').css("top","5px");
 	}
 	  else { sticky.removeClass('sticky-in-home');
-	  	$('.search-icon').css("top","11px");
 				}
 
 
