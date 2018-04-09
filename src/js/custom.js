@@ -16,8 +16,14 @@ $(document).ready(function () {
 	$(window).scroll(function(){
 	  var sticky = $('body'),
 		  scroll = $(window).scrollTop();
-	  if (scroll >= 1){ sticky.addClass('sticky-in-home')}
-	  else { sticky.removeClass('sticky-in-home');}
+	  if (scroll >= 1){ sticky.addClass('sticky-in-home');
+	  $('.search-icon').css("top","5px");
+	}
+	  else { sticky.removeClass('sticky-in-home');
+	  	$('.search-icon').css("top","11px");
+				}
+
+
 	});
 
 	/*sticky nav*/
@@ -180,7 +186,7 @@ $(document).ready(function(){
  $("#resbtn-show_v4").click(function(){
     $("#navbar_v4").slideToggle();
     $("#resbtn-show_v4").toggleClass('open-men');
-    $('body').toggleClass('nav-v4');
+    //$('body').toggleClass('nav-v4');
 
 });
  
@@ -385,7 +391,9 @@ $('#send-sucess_v4').click(function(){
 
 $('.close').click(function(){
     $('body').addClass('header-fixed');
-    $("#resbtn-show").removeClass('open-men');
+    $("#resbtn-show").removeClass('open-men');//v2
+        $("#resbtn-show_v4").removeClass('open-men');
+
 });
 
 

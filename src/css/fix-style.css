@@ -11238,6 +11238,17 @@ header.nav-v4 .search-wp .search-icon.ico2 {
     top: 11px;
   }
 }
+
+
+
+@media (max-width: 980px) {
+  header.nav-v4 .sticky-in-home .search-wp .search-icon {
+    top: 5px;
+  }
+}
+/*---------*/
+
+
 header.nav-v4 .search-wp .searchform {
   position: absolute;
   top: 0px;
@@ -11462,6 +11473,7 @@ header.nav-v4 .search-wp .event-search .event-search-box span {
     background: url(../images/search-icon.svg) no-repeat right center;
   }
 }
+
 .home header .search-wp .searchform .search-icon {
   background: url(../images/search-icon.png) no-repeat right center;
 }
@@ -11507,6 +11519,8 @@ body.home.sticky-in-home header .navbar-nav li a:hover {
 body.home.sticky-in-home header .search-wp .search-icon {
   background: url(../images/search-icon.png) no-repeat right center;
   background-size: 22px;
+  margin-bottom: auto;
+
 }
 
 
