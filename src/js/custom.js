@@ -15,13 +15,15 @@ $(document).ready(function () {
 
 	$(window).scroll(function(){
 	  var sticky = $('body'),
-		  scroll = $(window).scrollTop();
-	  if (scroll >= 1){ sticky.addClass('sticky-in-home');
-	}
-	  else { sticky.removeClass('sticky-in-home');
-				}
-
-
+		scroll = $(window).scrollTop();
+	  if (scroll >= 1){
+	   sticky.addClass('sticky-in-home');
+	  	$('.search-icon').css("top","15px");
+		}
+	  else {
+	  	sticky.removeClass('sticky-in-home');
+	  	$('.search-icon').css("top","15px");
+		}
 	});
 
 	/*sticky nav*/
