@@ -84,15 +84,18 @@ export class HomeComponent implements OnInit {
    standardCtaInfoPackDescription: any;
    standardCtaInfoPackButtonText: any;
    standardCtaInfoPackAfterButtonText: any;
-   bodyClasses:string = "home";
+   bodyClasses:string = "nav-v4";
   submitted = false;
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   genericInfo:any;
+ public href: string = "";
+  public hr:boolean=false;
 
   constructor(
     private router: Router,
     private apiService: ApiService,
-    private segment: SegmentService 
+    private segment: SegmentService ,
+    private sharedService: SharedService
   ) {
   }
   tags: Array<string> = [];
@@ -101,7 +104,11 @@ export class HomeComponent implements OnInit {
   data:any = [];
 
   ngOnInit() {
-    //$('body').addClass(this.bodyClasses);
+    this.sharedService.publishPage("Home");
+   
+    $('body').addClass(this.bodyClasses);
+    $(".nav-v2").hide();
+    $(".nav-v4").show();
     $.getScript("js/leaflet.markercluster.js");
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
@@ -364,6 +371,9 @@ export class HomeComponent implements OnInit {
 
   ngOnDestroy() { 
         $('body').removeClass(this.bodyClasses);
+        $(".nav-v2").show();
+        $(".nav-v4").hide();
+        this.sharedService.publishPage("");
     }
 
 }

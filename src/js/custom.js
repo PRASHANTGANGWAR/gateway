@@ -4,16 +4,26 @@ $(document).ready(function () {
 	
 
 	$('.navbar-toggle').click(function(){
+		
 		$('.home .search-wp .search-icon').toggleClass('open-menu');
 		$('body').toggleClass('scroll-off');
+
+
+
 	});
 
 
 	$(window).scroll(function(){
 	  var sticky = $('body'),
-		  scroll = $(window).scrollTop();
-	  if (scroll >= 1){ sticky.addClass('sticky-in-home')}
-	  else { sticky.removeClass('sticky-in-home');}
+		scroll = $(window).scrollTop();
+	  if (scroll >= 1){
+	   sticky.addClass('sticky-in-home');
+	  	$('.search-icon').css("top","15px");
+		}
+	  else {
+	  	sticky.removeClass('sticky-in-home');
+	  	$('.search-icon').css("top","15px");
+		}
 	});
 
 	/*sticky nav*/
@@ -123,7 +133,17 @@ $(window).on("mousewheel", function(){
             });
 
         });
-	
+	// -----------------
+
+	$(document).ready(function() {
+            $("#show-search-btn_v4").click(function(){
+                $("#show-sw_v4").addClass("open");
+            });
+            $(".search-wp #close").click(function(){
+                $("#show-sw_v4").removeClass("open");
+            });
+
+        });
  /*----------mega menu--------*/
 $(document).ready(function(){
 	$("#navbar ul li#top-menu").click(function(){
@@ -138,6 +158,22 @@ $(document).ready(function(){
 		//$(this).toggleClass("open-menu");
 	});
  });		
+ 
+$(document).ready(function(){
+	$("#navbar_v4 ul li#top-menu_v4").click(function(){
+
+		alert("navbar");
+		$("#navbar_v4").slideToggle();
+    	$("#resbtn-show_v4").toggleClass('open-men');
+   	});
+
+	$( "ul > li.bold-menu.dropdown.mega-dropdown" ).click(function()
+	{
+		$("#navbar_v4").slideToggle();
+    	$("#resbtn-show_v4").toggleClass('open-men');
+		//$(this).toggleClass("open-menu");
+	});
+ });
 		
 
 
@@ -145,6 +181,13 @@ $(document).ready(function(){
  $("#resbtn-show").click(function(){
     $("#navbar").slideToggle();
     $("#resbtn-show").toggleClass('open-men');
+});
+
+ $("#resbtn-show_v4").click(function(){
+    $("#navbar_v4").slideToggle();
+    $("#resbtn-show_v4").toggleClass('open-men');
+    //$('body').toggleClass('nav-v4');
+
 });
  
 
@@ -256,6 +299,17 @@ $(".hint-disk").click(function(event) {
 	   //Displays selected text on dropdown-toggle button
 	   $(this).parents('.dropdown-select').find('.dropdown-toggle').html(target + ' <span class="caret"></span>');
 	});
+
+		$('.dropdown-select').on( 'click', '.dropdown-menu li a', function() { 
+	   var target = $(this).html();
+
+	   //Adds active class to selected item
+	   $(this).parents('.dropdown-menu').find('li').removeClass('active');
+	   $(this).parent('li').addClass('active');
+
+	   //Displays selected text on dropdown-toggle button
+	   $(this).parents('.dropdown-select').find('.dropdown-toggle').html(target + ' <span class="caret"></span>');
+	});
 /*---------END Listing page filter dropdown---------*/
 
 
@@ -295,7 +349,38 @@ $('#getin2').click(function(){
 
 });
 
+$('#getin_v4').click(function(){
+    $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show_v4").toggleClass('open-men');
+});
+
+
+$(document).ready(function(){
+    $('.btn').click(function(){
+    $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show_v4").toggleClass('open-men');
+
+});
+
+    $('btn-blue').click(function(){
+    $('body').removeClass('header-fixed');
+    $(".navbar-collapse").css("display", "none");
+    $("#resbtn-show_v4").toggleClass('open-men');
+});
+});
+
 $('#send-sucess').click(function(){
+    if($('body').hasClass('modal-open')){
+		$('body').removeClass('header-fixed');
+	}
+	else{
+		$('body').addClass('header-fixed');
+	}
+});
+
+$('#send-sucess_v4').click(function(){
     if($('body').hasClass('modal-open')){
 		$('body').removeClass('header-fixed');
 	}
@@ -306,13 +391,24 @@ $('#send-sucess').click(function(){
 
 $('.close').click(function(){
     $('body').addClass('header-fixed');
+    $("#resbtn-show").removeClass('open-men');//v2
+        $("#resbtn-show_v4").removeClass('open-men');
+
 });
 
 
 $('.bold-menu a').click(function(){
 
      $(".navbar-collapse").css("display", "none");
-     $("#resbtn-show").toggleClass('open-men');
+     $("#resbtn-show").removeClass('open-men');
+
+});
+
+
+$('.bold-menu a').click(function(){
+
+     $(".navbar-collapse").css("display", "none");
+     $("#resbtn-show_v4").removeClass('open-men');
 
 });
 

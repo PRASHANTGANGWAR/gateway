@@ -3,6 +3,7 @@ import { ApiService,SharedService } from '../services';
 import { NgForm } from '@angular/forms';
 import { SegmentService } from 'ngx-segment-analytics';
 import { Router,ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 declare var $: any;
 @Component({
@@ -20,39 +21,58 @@ export class HeaderComponent implements OnInit {
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   submitted = false;
   genericInfo:any;
-
+  public href: string = "";
+  public hideElement:boolean=false;
+ route : any;
   constructor(
+    //public nav: NavbarService,
     private router: Router,
   	private apiService : ApiService,
     private segment: SegmentService,
-    private sharedService : SharedService
-  ) {this.getGenericInfopack();}
+    private sharedService : SharedService,
+    private location: Location
+  ) {this.getGenericInfopack();
+
+
+
+  }
 
   ngOnInit() {
-  
-    this.sharedService.caseNumber$.subscribe(data=>{
+         // this.nav.show();
+         this.sharedService.caseNumber$.subscribe(data=>{
       this.communityTitle = data;
       let generic_data = JSON.parse(window.localStorage.getItem('generic_data'));
       console.log(this.communityTitle,"communityTitle");
     })
+
+    this.sharedService.pageInfo$.subscribe(data=>{
+      console.log("page info here"+data)
+        this.route = data;
+    })
+         
+
   }
+
+
+
+
 
   searchHeader(value: string,event:any){
     event.preventDefault();
-    $("#hm").empty();
+    $(".hm_search").empty();
     $(".event-search").empty();
-    $("#com").empty();
+    $(".com_search").empty();
     //show loading inside the fields until we get api response
-  	$('<li>Loading...</li>').appendTo("#hm");
+  	$('<li>Loading...</li>').appendTo(".hm_search");
     $('<li>Loading...</li>').appendTo( ".event-search" );
-    $('<li>Loading...</li>').appendTo("#com");
+    $('<li>Loading...</li>').appendTo(".com_search");
 
   	let data = {"search": value};
   	this.apiService.post("/communities/universal_search",data).subscribe(res=>{
     	//hide loading inside the fields
-      $("#hm").empty();
+      $(".hm_search").empty();
       $(".event-search").empty();
-      $("#com").empty();
+      $(".com_search").empty();
       console.log(res);
   		this.communities = res.community;
   		this.events = res.events;
@@ -67,12 +87,12 @@ export class HeaderComponent implements OnInit {
 
   searchCommunity(){
     if(!this.communities.length){
-      $('<li>No result found</li>').appendTo("#com");
+      $('<li>No result found</li>').appendTo(".com_search");
     }
     else{
   	  for(var i=0;i<this.communities.length;i++){
         if (i === 3) { break; }
-  	  	$('<a href= "/community/'+this.communities[i].slug+'">'+'<li>'+'<span>'+'<img src="'+this.communities[i].community_icon.url+'" alt="">'+'</span>'+this.communities[i].first_name+' '+this.communities[i].last_name+'</li>'+'</a>').appendTo("#com");
+  	  	$('<a href= "/community/'+this.communities[i].slug+'">'+'<li>'+'<span>'+'<img src="'+this.communities[i].community_icon.url+'" alt="">'+'</span>'+this.communities[i].first_name+' '+this.communities[i].last_name+'</li>'+'</a>').appendTo(".com_search");
   	  }
     }	
   }
@@ -92,7 +112,7 @@ export class HeaderComponent implements OnInit {
 
   searchHomes(){
     if(!this.homeForSales.length){
-      $('<li>No result found</li>').appendTo("#hm");
+      $('<li>No result found</li>').appendTo(".hm_search");
     }
     else{
     	for(var i=0;i<this.homeForSales.length;i++){
@@ -100,7 +120,7 @@ export class HeaderComponent implements OnInit {
         if(this.homeForSales[i].images == null){
           this.homeForSales[i].images = [];
         }
-  	  	$('<a href= "/homes-for-sale/'+this.homeForSales[i].id+'">'+'<li>'+'<span>'+'<img src="'+this.homeForSales[i].images[0]+'" alt="">'+'</span>'+this.homeForSales[i].address+' '+this.homeForSales[i].address1+'</li>'+'</a>').appendTo("#hm");
+  	  	$('<a href= "/homes-for-sale/'+this.homeForSales[i].id+'">'+'<li>'+'<span>'+'<img src="'+this.homeForSales[i].images[0]+'" alt="">'+'</span>'+this.homeForSales[i].address+' '+this.homeForSales[i].address1+'</li>'+'</a>').appendTo(".hm_search");
   	  }
     }	
   }
