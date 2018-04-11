@@ -394,6 +394,11 @@ Base section spacing fix-ups
   padding-top: 0px !important;
 }
 
+.sale-at-Aspley-home {
+  margin-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
 .margbot80 {
   margin-bottom: 0px !important;
 }
@@ -6400,7 +6405,7 @@ Author: Bharat Khairnar
 
 */
 .home-getmore {
-  padding: 43px 0 70px 0;
+  padding: 100px 0 70px 0;
 }
 
 .home-getmore .getmore-left a {
@@ -8550,7 +8555,7 @@ Author: Bharat Khairnar
   box-sizing: border-box;
   height: 66px;
   width: 66px;
-  border: 1px solid #979797;
+ /* border: 1px solid #979797;*/ Hidden
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -10526,6 +10531,7 @@ body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li .dropdown-menu 
 body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li .dropdown-menu a {
   padding-top: 0px;
   padding-bottom: 0px;
+   display: inline-block;
 }
 body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li:nth-last-child(2) a {
   font-weight: 300 !important;
@@ -10903,6 +10909,7 @@ header.nav-v4 .navbar .nav .mega-dropdown-menu .img-box-hover .img-box {
   overflow: hidden;
   box-shadow: 0 0 10px #ccc;
   margin: 15px 0;
+  display: inline-block;
 }
 header.nav-v4 .navbar .nav .mega-dropdown-menu .img-box-hover .img-box:before {
   content: '';
