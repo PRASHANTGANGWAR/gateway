@@ -7131,7 +7131,7 @@ Our home design
 }
 
 .media-gallery-our-home-designe {
-  padding-bottom: 115px;
+  padding-bottom: 0px;
 }
 
 .media-gallery-our-home-designe .media-gallery.premium .aphotos {
@@ -7325,7 +7325,7 @@ Our home design Slider
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link1 {
   top: 40%;
-  left: 10%;
+  left: 29%;
 }
 
 @media (max-width: 480px) {
@@ -7364,8 +7364,14 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link3 {
-  top: 40%;
+  top: 8%;
   right: 30%;
+  left: inherit;
+}
+
+.why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link33 {
+  top: 17%;
+  right: 48%;
   left: inherit;
 }
 
@@ -7397,8 +7403,14 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link4 {
-  top: 50%;
-  right: 10%;
+  top: 36%;
+  right: 29%;
+  left: inherit;
+}
+
+.why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 {
+  top: 60%;
+  right: 29%;
   left: inherit;
 }
 
@@ -7418,8 +7430,8 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link5 {
-  top: 30%;
-  left: 20%;
+  top: 14%;
+  left: 5%;
 }
 
 @media (max-width: 480px) {
@@ -7436,8 +7448,8 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link6 {
-  top: 15%;
-  left: 40%;
+  top: 41%;
+  left: 34%;
 }
 
 @media (max-width: 480px) {
@@ -7459,7 +7471,7 @@ Our home design Slider
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link7 {
   top: 20%;
-  right: 35%;
+  right: 48%;
   left: inherit;
 }
 
@@ -7491,7 +7503,7 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 {
-  top: 50%;
+  top: 74%;
   right: 30%;
   left: inherit;
 }

@@ -19,10 +19,12 @@ $(document).ready(function () {
 	  if (scroll >= 1){
 	   sticky.addClass('sticky-in-home');
 	  	$('.search-icon').css("top","15px");
+	  	$("#homelogoimg").attr('src',"images/logo.svg");
 		}
 	  else {
 	  	sticky.removeClass('sticky-in-home');
 	  	$('.search-icon').css("top","15px");
+	  	$("#homelogoimg").attr('src',"images/gateway-homelogo.png");
 		}
 	});
 
