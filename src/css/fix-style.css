@@ -499,7 +499,7 @@ Base section spacing fix-ups
 }
 
 .hfsl-banner.our-team-hero {
-  background: url(../images/team-banner.jpg) no-repeat center center/cover;
+  background: url(../images/our-team-bg1.png) no-repeat center center/cover;
   height: 500px;
 }
 
@@ -8585,7 +8585,7 @@ Author: Bharat Khairnar
 
 */
 .join-our-team {
-  background: url(../images/our-team-bg.png) no-repeat top;
+  background: url(../images/team-banner.jpg) no-repeat top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
