@@ -475,7 +475,12 @@ Base section spacing fix-ups
 }
 
 .hfsl-banner.home-for-sale-listing-hero {
-  background: url(../images/bnr.jpg) no-repeat center center/cover;
+  background: url(../images/home-for-sales.jpg) no-repeat center center/cover;
+  margin-bottom: 0px;
+}
+
+.hfsl-banner.home-for-sale-listing-hero-pre-loved {
+  background: url(../images/pre-loved.jpg) no-repeat center center/cover;
   margin-bottom: 0px;
 }
 
@@ -494,7 +499,7 @@ Base section spacing fix-ups
 }
 
 .hfsl-banner.our-team-hero {
-  background: url(../images/our-team-bg1.png) no-repeat center center/cover;
+  background: url(../images/team-banner.jpg) no-repeat center center/cover;
   height: 500px;
 }
 

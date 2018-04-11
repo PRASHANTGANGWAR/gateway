@@ -220,13 +220,13 @@ export class HomeComponent implements OnInit {
           function(data,status){
           that.image2= data.fields.file.url;
         });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider2Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-          that.image4= data.fields.file.url;
-        });
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider3Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
           that.image3= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider4Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+          that.image4= data.fields.file.url;
           $.getScript("js/owl-carouselCustom.js");
         });
       })
