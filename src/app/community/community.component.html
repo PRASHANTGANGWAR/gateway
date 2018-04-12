@@ -617,11 +617,11 @@
                                         <li *ngFor="let home of comunityDetail?.homes">
                                             <div class="img-show-box">
                                                 <div class="homefor-sale-box-img">
-                                                <a routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><img 
+                                                <a href ="/homes-for-sale/{{home.id}}" ><img 
                                                   *ngIf="home?.images?.length"  [src]="home.images[0]" alt=""></a>
                                                 </div>
-                                                <a routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{home.address}}</h4></a>
-                                                <a *ngIf="home?.list_price" routerLink="/homes-for-sale/{{home.id}}" data-dismiss="modal"><p>${{home.list_price | number : '1.0'}}</p></a>
+                                                <a href ="/homes-for-sale/{{home.id}}" ><h4 [ngStyle]="{'color': comunitylatestDetail?.primary_color}">{{home.address}}</h4></a>
+                                                <a *ngIf="home?.list_price" href="/homes-for-sale/{{home.id}}" ><p>${{home.list_price | number : '1.0'}}</p></a>
                                             </div>
                                         </li>
                                     </div>

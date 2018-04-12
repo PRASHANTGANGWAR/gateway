@@ -55,6 +55,8 @@ export class HomeDesignsComponent implements OnInit {
           this.isDataAvailable = true;
           this.featuredHomes = res.homes;
           $.getScript('js/customSlick.js');
+          $.getScript('js/homedesign_hotspot.js');
+
           this.getGenericInfopack();
         },
         err=>{
