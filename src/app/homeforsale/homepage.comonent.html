@@ -11,8 +11,10 @@
         </div>
         <!-- end of hero display -->
         <!-- modal triggers -->
-        <a href="javascript:;" id="firstImageTrigger" data-eventname="photoView"   class="aphotos detail_btn" (mouseover)="changeColor($event)" 
+        <div class="container">
+        <a href="javascript:void(0);" id="firstImageTrigger" data-eventname="photoView"   class="aphotos detail_btn" (mouseover)="changeColor($event)" 
         (mouseout)="changeColor($event)" [ngStyle]="{'color': linkedCommunity?.primary_color}">All Photos</a> 
+        </div>
         <!-- modal assets here -->
         <ul id="lightGallery" class="gallery hidden-xs">
             <li class="gallery-image" attr.data-img-src="{{home_detail?.images[0]}}" attr.data-src="{{home_detail?.images[0]}}">
