@@ -181,6 +181,7 @@ p {
   position: relative;
 }
 
+/*
 @media (max-width: 1023px) and (min-width: 736px) {
   .belong-section .container .right-top {
     right: 0px !important;
@@ -201,7 +202,7 @@ p {
     padding: 0px !important;
   }
 }
-
+*/
 .buttons .ods-btn {
   margin: 5px;
   border: 2px solid #fff;
@@ -288,11 +289,22 @@ p {
   }
 }
 
-
+.media-gallery .container
+{   position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 100%;
+}
+@media (max-width:768px)
+{  
+  .media-gallery .container
+  {   padding: 0px 26px;
+  }
+}
 .aphotos {
   position: absolute;
-  bottom: 30px;
-  left: 98px;
+  bottom: 30px;  
   background: #fff;
   color: #414952 !important;
   min-width: 113px;
@@ -313,9 +325,9 @@ p {
 }
 
 @media (max-width: 768px) {
-  .aphotos {
+  /*.aphotos {
     left: 26px;
-  }
+  }*/
 }
 
 .modal {
@@ -2045,16 +2057,16 @@ Author: Priyanka
 }
 
 @media screen and (max-width: 767px) {
-  .media-gallery.premium .aphotos {
+  /*.media-gallery.premium .aphotos {
     transition: none !important;
     left: 22px;
-  }
+  }*/
 }
 
 @media (max-width: 375px) {
-  .media-gallery.premium .aphotos {
+  /*.media-gallery.premium .aphotos {
     left: 5px;
-  }
+  }*/
 }
 
 .media-gallery.premium .sm-imgba {
@@ -2274,7 +2286,7 @@ Author: bharat khairnar
   width: 387px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block {
     position: relative !important;
     top: 0;
@@ -2300,7 +2312,7 @@ Author: bharat khairnar
   color: #414952;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .glance-logo {
     width: 50%;
     float: left;
@@ -2312,7 +2324,7 @@ Author: bharat khairnar
   width: 211px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .glance-logo img {
     max-width: 157px;
   }
@@ -2339,7 +2351,7 @@ Author: bharat khairnar
   border-top: 1px solid #E5E5E5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top h3 {
     display: none;
   }
@@ -2352,7 +2364,7 @@ Author: bharat khairnar
   padding: 31px 27px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .bot {
     width: 50%;
     float: left;
@@ -2372,7 +2384,7 @@ Author: bharat khairnar
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .bot .img-b {
     float: none;
     margin: auto;
@@ -2391,7 +2403,7 @@ Author: bharat khairnar
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .bot .rt-col {
     margin-left: 0;
     text-align: center;
@@ -2423,7 +2435,7 @@ Author: bharat khairnar
   outline: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .glance-block .right-box-top .btn-org {
     display: none;
   }
