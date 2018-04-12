@@ -4696,7 +4696,7 @@ Listing page Hero & Heading
   position: relative;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-position: center center !important;
+  background-position: center center !important; 
 } 
 
 .hfsl-banner .context {
