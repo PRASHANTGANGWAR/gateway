@@ -164,7 +164,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#navbar_v4 ul li#top-menu_v4").click(function(){
 
-		alert("navbar");
 		$("#navbar_v4").slideToggle();
     	$("#resbtn-show_v4").toggleClass('open-men');
    	});
