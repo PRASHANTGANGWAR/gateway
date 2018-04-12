@@ -4694,6 +4694,7 @@ Listing page Hero & Heading
 .hfsl-banner {
   padding: 0;
   position: relative;
+  background-repeat: no-repeat !important;
 }
 
 .hfsl-banner .context {
