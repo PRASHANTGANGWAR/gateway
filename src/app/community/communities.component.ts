@@ -131,6 +131,7 @@ export class communitiesComponent implements OnInit {
     if (map.scrollWheelZoom) {
       map.scrollWheelZoom.disable();
     }
+    map.scrollZoom.disable();
     var that = this;
     setTimeout(function(){
       var markers = new L.MarkerClusterGroup();
@@ -144,6 +145,8 @@ export class communitiesComponent implements OnInit {
         });
           marker.bindPopup(content);
           markers.addLayer(marker);
+
+
       }
       map.addLayer(markers);
     },4000)
@@ -288,4 +291,6 @@ export class communitiesComponent implements OnInit {
   onHover($event){
     $event.target.style.color = $event.type=="mouseover" ? '#105dac':'#414952';
   }
+
+  
 }
