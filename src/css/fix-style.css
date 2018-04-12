@@ -1185,8 +1185,7 @@ button.close:hover {
   color: #414952;
   padding-bottom: 13px;
   display: inline-block;
-  width: 100%;
-  font-weight: 300;
+  width: 100%;  
   margin: 0px;
 }
 
@@ -1527,7 +1526,7 @@ Author: Priyanka
 }
 
 .secondary-nav .nav-container .sec-nav-left .nav-add p {
-  font-weight: 300;
+  
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -2946,8 +2945,7 @@ Author: Bharat Khairnar
 
 .community-masterplan .masterplan-wp .box .right-side-image .text-highlight .highlight-text {
   color: #62717F;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -3231,8 +3229,7 @@ Author: Bharat khairnar
 
 @media screen and (max-width: 768px) {
   .community-filter .margtb .search-section .input-group-lg .addon-lg .texts {
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 10px;    
     line-height: 12px;
     height: 44px;
     padding: 0 0 0 30px;
@@ -3725,8 +3722,7 @@ Bottom CTA
 
 .leaving-at-aspley span {
   font-size: 18px;
-  padding-left: 15px;
-  font-weight: 300;
+  padding-left: 15px;  
 }
 
 .leaving-at-aspley img {
@@ -4728,7 +4724,7 @@ Listing page Hero & Heading
 
 .hfsl-banner .context p {
   font-size: 18px;
-  font-weight: 400;
+  
   line-height: 24px;
   color: #fff;
   width: 430px;
@@ -4962,7 +4958,7 @@ Description: Added read more
 .leaflet-popup-content-wrapper .leaflet-popup-content .map_title {
   color: #6D6177;
   font-size: 16px;
-  font-weight: 400;
+  
   line-height: 22px;
   padding: 45px 15px 10px 15px;
 }
@@ -5536,8 +5532,7 @@ header.nav-v2 .navbar .nav .mega-dropdown-menu li.blog-link a {
 }
 
 header.nav-v2 .navbar .nav .mega-dropdown-menu p {
-  color: #62717f;
-  font-weight: 300;
+  color: #62717f;  
 }
 
 header.nav-v2 .navbar .nav .mega-dropdown-menu button.btn {
@@ -6154,8 +6149,7 @@ Author: Bharat Khairnar
 
 .hometestimonial .hometestimonial-left .testi-warp .owl-item .testimonial4_slide .testimonial_text_inner p {
   color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -6441,8 +6435,7 @@ Author: Bharat Khairnar
 
 .home-getmore .getmore-left p {
   color: #414952;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 18px;  
   line-height: 24px;
   margin: 0 0 15px 0;
   max-width: 420px;
@@ -6552,8 +6545,7 @@ Author: Bharat Khairnar
 
 .home-getmore .getmore-right ul li p {
   color: #414952;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 14px;  
   line-height: 20px;
 }
 
@@ -6665,8 +6657,7 @@ Author: Bharat Khairnar
 
 .how-work .work-title p {
   color: #414952;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
   text-align: center;
 }
@@ -6727,8 +6718,7 @@ Author: Bharat Khairnar
   height: 480px;
 }
 
-.our-home-design-hero.how-it-work .context p {
-  font-weight: 300;
+.our-home-design-hero.how-it-work .context p {  
   width: 100%;
   max-width: 550px;
   font-size: 18px;
@@ -6744,8 +6734,7 @@ Author: Bharat Khairnar
 }
 
 .home-getmore.how-it-work .getmore-left p {
-  color: #414952;
-  font-weight: 300;
+  color: #414952;  
 }
 
 .home-getmore.how-it-work .getmore-right ul li {
@@ -6796,8 +6785,7 @@ Author: Bharat Khairnar
 
 .how-it-works .top-heading p {
   color: #414952;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
   text-align: center;
 }
@@ -6822,8 +6810,7 @@ Author: Bharat Khairnar
 
 .how-it-works .work-col p {
   color: #414952;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -6878,8 +6865,7 @@ Author: Bharat Khairnar
   }
 }
 
-.offer-headline-admin.how-it-work .rg-box p {
-  font-weight: 300;
+.offer-headline-admin.how-it-work .rg-box p {  
   font-size: 18px;
   line-height: 24px;
 }
@@ -6954,7 +6940,7 @@ Author: Bharat Khairnar
 }
 
 .offer-headline-admin.homes-for-sale .rg-box p {
-  font-weight: 300;
+  
   font-size: 18px;
   line-height: 24px;
 }
@@ -7329,7 +7315,7 @@ Our home design Slider
   color: #414952;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  
   padding: 0px;
 }
 
@@ -7623,8 +7609,7 @@ Author: Hardik Pethani
 .from-our-blog .blog-section-heading p {
   margin: 0px;
   color: #414952;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -7815,8 +7800,7 @@ Author: Bharat Khairnar
 
 .discover-whole .lefcol .box-t p {
   color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -8651,7 +8635,7 @@ Author: Bharat Khairnar
 .join-our-team .join-our-team-inner p {
   color: #414952;
   font-size: 18px;
-  font-weight: 300;
+  
   line-height: 24px;
   text-align: center;
   margin: 0 0 44px 0;
@@ -8754,7 +8738,6 @@ Author: Bharat Khairnar
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner p {
   color: #FFFFFF;
   font-size: 24px;
-  font-weight: 300;
   line-height: 30px;
   max-width: 407px;
 }
@@ -8994,8 +8977,7 @@ video background
 
 .video-background .container .center-info p {
   color: #4A535C;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
   display: block;
 }
@@ -9188,8 +9170,7 @@ Author: Bharat Khairnar
 
 .directors-block .directors-col p {
   color: #414952;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 18px;  
   line-height: 24px;
 }
 
@@ -9456,7 +9437,7 @@ footer .footer-icon {
 }
 
 .hfsl-banner.resident-stories .context p {
-  font-weight: 300;
+  
   width: 100%;
   max-width: 550px;
 }
@@ -9520,7 +9501,7 @@ footer .footer-icon {
 .single-testimonial .testimonial-text {
   color: #414952;
   font-size: 40px;
-  font-weight: 300;
+  
   line-height: 59px;
   text-align: center;
 }
@@ -9622,13 +9603,13 @@ footer .footer-icon {
 .hometestimonial.resident-stories .hometestimonial-left .testi-warp .owl-item .testimonial4_slide .testimonial_text_inner p {
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: 300;
+  
   line-height: 24px;
 }
 
 @media (max-width: 768px) {
   .hometestimonial.resident-stories .hometestimonial-left .testi-warp .owl-item .testimonial4_slide .testimonial_text_inner p {
-    max-width: 400px;
+   
     margin: 0 auto;
   }
 }
@@ -9651,7 +9632,7 @@ footer .footer-icon {
 
 .hometestimonial.resident-stories .hometestimonial-left .testi-warp .owl-item .testimonial4_slide .testimonial_text_inner span {
   font-size: 18px;
-  font-weight: 300;
+  
   line-height: 24px;
   color: #FFFFFF;
   padding-top: 10px;
@@ -10377,7 +10358,7 @@ body.modal-open {
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner p {
   color: #FFFFFF;
   font-size: 24px;
-  font-weight: 300;
+  
   line-height: 30px;
   max-width: 407px;
 }
@@ -11019,7 +11000,7 @@ header.nav-v4 .navbar .nav .mega-dropdown-menu li.blog-link a {
 }
 header.nav-v4 .navbar .nav .mega-dropdown-menu p {
   color: #62717f;
-  font-weight: 300;
+  
 }
 header.nav-v4 .navbar .nav .mega-dropdown-menu button.btn {
   background: #105DAC;
