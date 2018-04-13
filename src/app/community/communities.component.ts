@@ -131,7 +131,21 @@ export class communitiesComponent implements OnInit {
     if (map.scrollWheelZoom) {
       map.scrollWheelZoom.disable();
     }
-    map.scrollZoom.disable();
+    var width = $(window).width();
+    if (width < 812) {
+      map.scrollWheelZoom.disable();
+      map.doubleClickZoom.disable();
+      map.dragging.disable();
+      if (map.tap) map.tap.disable();
+    }
+    else {
+      map.scrollWheelZoom.enable();
+      map.doubleClickZoom.enable();
+      map.dragging.enable();
+      if (map.tap) map.tap.enable();
+    }
+
+
     var that = this;
     setTimeout(function(){
       var markers = new L.MarkerClusterGroup();
