@@ -41,11 +41,11 @@ export class HowitworksComponent implements OnInit {
   why_smart : any;
   blue_gradient : any;
   started1 : any;
-  started2 : any;
-  started3 : any;
+
   startedimg1 : any;
   startedimg2 : any;
   startedimg3 : any;
+  startedimg4 : any;
   img : any;
   featuredHomes : any;
   isDataAvailable: boolean = false;
@@ -63,7 +63,9 @@ export class HowitworksComponent implements OnInit {
   blogBackgroundImage2: any;
   blogBackgroundImage3: any;
   submitted = false;
-
+  cost1 : any;
+  cost2 : any;
+  cost3 : any;
   
 
   info: any = { firstname: '', lastname: '', phone:'', email:''};
@@ -232,22 +234,28 @@ export class HowitworksComponent implements OnInit {
       function(data, status){
         that.started1 = data.fields;
 
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["showcaseImageTitleMedia"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["featureIcon1"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
         function(data,status){
           console.log(data);
           that.startedimg1= data.fields.file.url;
         });
 
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["showcaseImage2"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["featureIcon2"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
         function(data,status){
           console.log(data);
           that.startedimg2= data.fields.file.url;
         });
 
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["showcaseImage3"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["featureIcon3"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
         function(data,status){
           console.log(data);
           that.startedimg3= data.fields.file.url;
+        });
+
+         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["featureIcon4"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        function(data,status){
+          console.log(data);
+          that.startedimg4= data.fields.file.url;
         });
         
       })
@@ -270,6 +278,25 @@ export class HowitworksComponent implements OnInit {
       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/7gCyVkppjquiwKCYWo0Kes?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
       function(data, status){
         that.cost = data.fields;
+
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["headingIcon1"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        function(data,status){
+          console.log(data);
+          that.cost1= data.fields.file.url;
+        });
+
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["headingIcon2"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        function(data,status){
+          console.log(data);
+          that.cost2= data.fields.file.url;
+        });
+
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields["headingIcon3"].sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        function(data,status){
+          console.log(data);
+          that.cost3= data.fields.file.url;
+        });
+
       });
 
       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/5jeApqe6NiM6O2ugMQouQo?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
