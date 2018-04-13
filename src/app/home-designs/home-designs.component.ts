@@ -110,7 +110,9 @@ export class HomeDesignsComponent implements OnInit {
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+self.hhsection.ourHomeHotspotSliderImage4.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
             function(data,status){
               self.hotspotImage4 = data.fields.file.url;
-              $.getScript('js/homedesign_hotspot.js');
+              setTimeout(function(){
+                $.getScript('js/homedesign_hotspot.js');
+              },5000)              
             });
       })
 
