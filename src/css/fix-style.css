@@ -11371,6 +11371,8 @@ header.nav-v4 .search-wp .search-box li {
   margin-bottom: 20px;
   display: inline-block;
   margin-top: 10px;
+  float: left;
+  clear: left;
 }
 header.nav-v4 .search-wp .search-box li span {
   float: left;
