@@ -4362,7 +4362,6 @@ var HowitworksComponent = (function () {
     }
     HowitworksComponent.prototype.ngOnInit = function () {
         var _this = this;
-        $.getScript('js/modal-video.js');
         window.scrollTo(0, 0);
         this.segment.page().then(function () { return console.log("Event sended"); });
         //fetching the list of featured homes
