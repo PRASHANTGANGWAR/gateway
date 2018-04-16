@@ -5676,6 +5676,16 @@ var HeaderComponent = (function () {
                 $('.modal-backdrop').remove();
                 console.log("Event sended");
             });
+            /*-------------Segment----------*/
+            this.segment.identify(this.info.email, {
+                firstname: this.info.firstname,
+                lastname: this.info.lastname,
+                plan: this.info.plan,
+                phone: this.info.phone,
+                email: this.info.email,
+                description: this.info.area
+            });
+            /*-----------------------*/
         }
         else {
             console.log('validation failed!');
