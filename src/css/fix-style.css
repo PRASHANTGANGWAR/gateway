@@ -1420,7 +1420,7 @@ Author: Bharat Khairnar
   border: 1px solid #e5e5e5;
   box-shadow: none;
   height: 49px;
-  color: #A3ACB5;
+  color: #414042;
   padding: 0 15px;
 }
 
@@ -10858,7 +10858,9 @@ header.nav-v4 .navbar .nav li a i.fa.fa-chevron-down {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-header.nav-v4 .navbar .nav li.bold-menu a {
+header.nav-v4 .navbar .nav li.bold-menu a,
+header.nav-v4 .navbar .nav li.mega-dropdown a.dropdown-toggle
+ {
   font-weight: 500;
 }
 @media (max-width: 980px) {
