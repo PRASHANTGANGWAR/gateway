@@ -1,5 +1,5 @@
   <section class="hfsl-banner our-home-design-hero" [ngStyle]="{'background-image': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}" *ngIf="showData">
-    <div class="overlay"></div>   
+    <div class="overlay"></div>
     <div class="context">
       <div class="container">
          <h2>{{hsection.heroheading}}</h2>
@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="dwn-pdf">
-      <a href="{{hdownPDF}}">Download <span>pdf</span></a>
+      <a href="{{hdownPDF}}" target="_blank">Download <span>pdf</span></a>
     </div>
   </section>
    <!-- Header width bg - fixed version  end -->
@@ -18,7 +18,7 @@
         <!-- heading starts here -->
         <div class="container">
             <div class="hotspot-heading">
-        <h2 class="heading">{{msection.headingText}}</h2>            
+        <h2 class="heading">{{msection.headingText}}</h2>
         <div class="hedig-sub">{{msection.description}}</div>
           </div>
         </div>
@@ -55,12 +55,12 @@
                                 <div class="hint-disk">
                                   <markdown [data]="hhsection.ourHomeHotspotDescription4"></markdown>
                                 </div>
-                              </div>                           
+                              </div>
                             </div>
                         </div>
                        <div class="item">
                             <div class="item-inner">
-                              <img src="{{hotspotImage2}}">                                                        
+                              <img src="{{hotspotImage2}}">
                               <div class="hotspot-hint link5">
                   <a class="" href="javascript:void(0);">click</a>
                   <div class="hint-disk">
@@ -85,11 +85,11 @@
                     <markdown [data]="hhsection.ourHomeHotspotDescription4Slide2"></markdown>
                   </div>
                 </div>
-              </div>              
+              </div>
                         </div>
                         <div class="item">
                             <div class="item-inner">
-                              <img src="{{hotspotImage3}}">                            
+                              <img src="{{hotspotImage3}}">
                               <div class="hotspot-hint link1">
                                 <a class="" href="javascript:void(0);">click</a>
                                 <div class="hint-disk">
@@ -113,12 +113,12 @@
                                 <div class="hint-disk">
                                   <markdown [data]="hhsection.ourHomeHotspotDescription4Slide3"></markdown>
                                 </div>
-                              </div> 
-              </div>                          
+                              </div>
+              </div>
                         </div>
                         <div class="item">
                             <div class="item-inner">
-                              <img src="{{hotspotImage4}}">  
+                              <img src="{{hotspotImage4}}">
                               <div class="hotspot-hint link1">
                   <a class="" href="javascript:void(0);">click</a>
                   <div class="hint-disk">
@@ -146,7 +146,7 @@
                   <markdown [data]="hhsection.ourHomeHotspotDescription4Slide4"></markdown>
                     <!-- <h2>{{hhsection.ourHomeHotspotDescription4Slide4}}</h2> -->
                   </div>
-                </div>                                                      
+                </div>
               </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
               <h4>{{dbsection.title1}}</h4>
               <p>{{dbsection.description1}} </p>
               <div class="dwn-pdf">
-                <a href="{{dbpdf1}}">{{dbsection.downloadPdfTitle1}}</a>
+                <a href="{{dbpdf1}}" target="_blank">{{dbsection.downloadPdfTitle1}}</a>
               </div>
             </div>
           </div>
@@ -193,8 +193,8 @@
               <h4>{{dbsection.title2}}</h4>
               <p>{{dbsection.description2}}</p>
               <div class="dwn-pdf">
-                <a href="{{dbpdf2}}">{{dbsection.downloadPdfTitle2}}</a>
-              </div>  
+                <a href="{{dbpdf2}}" target="_blank">{{dbsection.downloadPdfTitle2}}</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
@@ -203,8 +203,8 @@
               <h4>{{dbsection.title3}}</h4>
               <p>{{dbsection.description3}}</p>
               <div class="dwn-pdf">
-                <a href="{{dbpdf3}}">{{dbsection.downloadPdfTitle3}}</a>
-              </div>  
+                <a href="{{dbpdf3}}" target="_blank">{{dbsection.downloadPdfTitle3}}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -220,12 +220,12 @@
       <div class="banner-res">
         <div class="ban-slider">
           <img src="{{sliderImages[0]}}">
-        </div>        
+        </div>
       </div>
       <!-- end of hero display -->
       <!-- modal triggers -->
       <div class="container">
-          <a href="javascript:;" id="firstImageTrigger" data-eventname="photoView"   class="aphotos design">{{imgslisection.ourHomeFullWidthSliderText}}</a> 
+          <a href="javascript:;" id="firstImageTrigger" data-eventname="photoView"   class="aphotos design">{{imgslisection.ourHomeFullWidthSliderText}}</a>
       </div>
       <!-- modal assets here -->
       <ul id="lightGallery" class="gallery hidden-xs">
@@ -264,7 +264,7 @@
     </div>
     </section>
     <!-- end of Media gallery -fixed version end -->
-    
+
     <!--How we started block - fixed version -->
   <section class="about-top-sec image-with-text-home" *ngIf="showData">
     <div class="container">
@@ -275,7 +275,7 @@
           <p>{{showsection.showcaseImageTitleDescription}}</p>
           <div class="circle-blue"></div>
         </div>
-      </div>    
+      </div>
       <div class="row-first row-second">
         <!--<div class="circle-blue"></div>-->
         <div class="img-box"><img [src]="secondImage" alt=""></div>
@@ -327,10 +327,10 @@
 
                                                     <span *ngIf="home.status=='under_offer'" class="paid-btn" style="background: #f89923;">Under Offer</span>
                           <div id="carousel{{jj}}" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner home-carousel">                              
+                            <div class="carousel-inner home-carousel">
                             <div class="item" *ngFor="let _image of home.images;let ii = index" [ngClass]="{active: ii===0}">
-                                                <img 
-                                                [src]="_image" 
+                                                <img
+                                                [src]="_image"
                                                 alt="">
                                             </div>
                             </div>
@@ -387,35 +387,35 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body no-pad">
-                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
+                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)"
                                     (mouseout)="onHover($event)" >&times;</button>
                     <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
                         <div class="right-img-full">
                             <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
-                            <!--  <img 
-                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                            <!--  <img
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style=
                              "height: -webkit-fill-available;"> -->
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-7 getinfowp">
-                   
+
                         <div class="wp-main">
                          <h3 style="color: #105dac;">
                             <div class="title-img-round">
-                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
+                                <img src="images/Gateway-icon-only-square.png" alt="" class="">
                             </div>
                             Get an info pack
                          </h3>
                          <!-- <div class="profile-row">
-                            <div class="profile-img"><img src="images/img11.png" alt=""></div> 
+                            <div class="profile-img"><img src="images/img11.png" alt=""></div>
                             <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p>
                          </div> -->
                          <div class="divider"></div>
 <!--                         <div class="form-getinfo-succes">
                             <div class="row">
-                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>
                             <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
-                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
+                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)"
                              class="btn btn-org">View the info pack Now</button></div>
                             </div>
                         </div> -->
@@ -425,55 +425,55 @@
                                 <form #infoForm="ngForm" novalidate>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.firstname" 
-                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
-                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <input [(ngModel)]="info.firstname"
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel"
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required>
                                            <p class="requiedred" [hidden]="firstname.valid || submitted == false">
                                             Please Enter First name
-                                            </p>  
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.lastname" 
-                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           <input [(ngModel)]="info.lastname"
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel"
                                            [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
                                            <p class="requiedred" [hidden]="lastname.valid || submitted == false">
                                             Please Enter Last name
-                                        </p>   
+                                        </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">   
-                                        </div>
-                                    </div>  
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.phone" 
-                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                           <input [(ngModel)]="info.plan"
+                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.email" 
-                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <input [(ngModel)]="info.phone"
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email"
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
                                            <p class="requiedred" [hidden]="email.valid || submitted == false">
                                             Please Enter your email
-                                            </p> 
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                           <textarea [(ngModel)]="info.area" 
+                                           <textarea [(ngModel)]="info.area"
                                            class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="col-sm-12">
                                     <button  class="btn btn-org"  id="send-sucess"
-                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
-                                    (mouseover)="changeColor($event)" 
+                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;"
+                                    (mouseover)="changeColor($event)"
                                     (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
                                     </div>
                                 </form>
