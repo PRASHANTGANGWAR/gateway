@@ -11172,6 +11172,7 @@ header.nav-v4 .navbar .nav .mega-dropdown-menu .menuheading3 {
     font-size: 14px;
     font-weight: bold;
     line-height: 11px;
+    clear: left;
   }
 }
 @media (max-width: 980px) {
