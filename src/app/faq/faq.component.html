@@ -2,7 +2,7 @@
 
     <!-- Header width bg - fixed version -->
 	<section class="hfsl-banner faq-hero-section faq-banner" [ngStyle]="{'background-image': 'url(' + bgimg + ')','background-repeat': 'no-repeat','background-position': 'center'}">
-		<div class="overlay"></div>		
+		<div class="overlay"></div>
 		<div class="context">
 			<div class="container">
 				 <h2>{{howworkHeroheading}}</h2>
@@ -10,13 +10,13 @@
 			</div>
 		</div>
 		<div class="dwn-pdf">
-			<a download href="{{howworkpdf}}">Download <span>pdf</span></a>
+			<a download href="{{howworkpdf}}" target="_blank">Download <span>pdf</span></a>
 		</div>
 	</section>
     <!-- Header width bg - fixed version end -->
 
 
-    
+
 	<!-- faq white section - fixed version -->
     <section class="faq white" *ngIf="showData">
     	<div class="container">
@@ -26,19 +26,19 @@
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse{{j}}">{{query.Question}} </a>
     				</div>
-    			  
+
     			  <div id="collapse{{j}}" class="panel-collapse collapse">
     				<div class="panel-data">{{query.Description}}</div>
     				</div>
     			  </div>
-    			
+
     			</div>
-    		
+
     		</div>
-    		
+
       </div>
     </section>
-    <!-- faq white section - fixed version end --> 
+    <!-- faq white section - fixed version end -->
 
     <section class="how-work" [ngStyle]="{'background-image': 'url(' + imageId + ')','background-repeat': 'no-repeat','background-position': 'center'}">
     <div class="container">
@@ -55,7 +55,7 @@
                             <div  class="icon"><img src="{{image1}}"></div>
                             <h4>{{howItWorksHeading.howItWorksHeadingBold}}</h4>
                             <p>{{howItWorksHeading.paragraphText}}</p>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -63,7 +63,7 @@
                             <div  class="icon"><img src="{{image2}}"></div>
                             <h4>{{howItWorksHeading.howItWorksHeadingBold2}}</h4>
                             <p>{{howItWorksHeading.sectionParagraph2}}</p>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -71,7 +71,7 @@
                             <div  class="icon"><img src="{{image3}}"></div>
                             <h4>{{howItWorksHeading.howItWorksHeadingBold3}}</h4>
                             <p>{{howItWorksHeading.sectionParagraph3}}</p>
-                            
+
                         </div>
                     </div>
         </div>
@@ -91,38 +91,38 @@
    <!--  <section class="faq white">
     	<div class="container">
     		<div class="panel-group">
-    		
+
     			<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse11">Are there any legal costs or stamp duty payable when I purchase? </a>
     				</div>
-    			  
+
     			  <div id="collapse11" class="panel-collapse collapse">
     				<div class="panel-data">No, there are no Government charges such as stamp duty, you are not even required to engage a Solicitor unless you desire to do so.</div>
     				</div>
     			  </div>
-    			
+
     			</div>
-    			
+
     			<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse12">How secure is my tenure? </a>
     				</div>
-    			  
+
     			  <div id="collapse12" class="panel-collapse collapse">
     				<div class="panel-data">The tenure is secured by a site agreement which is similar to a lease. Each state is governed by different legislation, so site agreements may vary from state to state.</div>
     				</div>
     			  </div>
     			</div>
-    			  
+
     			<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse13">Can my family or friends stay with me? </a>
     				</div>
-    			  
+
     				 <div id="collapse13" class="panel-collapse collapse">
     					<div class="panel-data">Yes, your guests can stay and enjoy the community facilities and activities. As a security measure you will need to advise management for any extended stay by visitors. Children are also welcome, but they do need to be supervised whilst in the community.</div>
     				</div>
@@ -133,7 +133,7 @@
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse14">Are singles welcome? </a>
     				</div>
-    			  
+
     				 <div id="collapse14" class="panel-collapse collapse">
     					<div class="panel-data">Yes, most defnitely, our single residents bloom when they are welcomed into the community, quickly making new friends and taking up new interests.</div>
     				</div>
@@ -144,59 +144,59 @@
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse15">Can I bring my own pet? </a>
     				</div>
-    			  
+
     				 <div id="collapse15" class="panel-collapse collapse">
     					<div class="panel-data">Most of our communities are pet friendly, however a pet agreement needs to be signed prior to moving into the community.</div>
     				</div>
     			  </div>
     			</div>
-    			
+
     			<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse16">Are the homes covered by builder’s warranties? </a>
     				</div>
-    			  
+
     				 <div id="collapse16" class="panel-collapse collapse">
     					<div class="panel-data">Yes, there is a six year structural warranty on all new homes including a three month maintenance period. If you purchase a pre-loved home in an existing community the remaining warranties are transferred to you.</div>
     				</div>
     			  </div>
     			</div>
-				
+
 				<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse17">Can I bequeath my home?</a>
     				</div>
-    			  
+
     				 <div id="collapse17" class="panel-collapse collapse">
     					<div class="panel-data">Yes, the home becomes a part of your estate. Your beneficiaries can reside in the community if they meet the criteria, or they simply sell the home.</div>
     				</div>
     			  </div>
     			</div>
-				
+
 				<div class="panel panel-default">
     			  <div class="panel-heading">
     				<div class="panel-title">
     				  <a data-toggle="collapse" class="collapsed" href="#collapse18">Are the homes treated for pests or termites? </a>
     				</div>
-    			  
+
     				 <div id="collapse18" class="panel-collapse collapse">
     					<div class="panel-data">Yes, the homes are constructed with termite resistant products and are treated in accordance with the local Council building regulations and Australian Standards. Each home will need to be treated annually at the owner’s expense.</div>
     				</div>
     			  </div>
     			</div>
-    			
-    			
-    	  
+
+
+
     		</div>
-    		
+
       </div>
     </section> -->
      <!-- faq white section - fixed version  end -->
-    
-    
-	<!--from-our-blog section - fixed version -->  	
+
+
+	<!--from-our-blog section - fixed version -->
    	<section class="from-our-blog">
 		<div class="container">
 			<div class="blog-section-heading">
@@ -232,9 +232,9 @@
                 <a href="https://live.gatewaylifestyle.com.au/" target="_blank">{{exploreMoreButton}}</a>
             </div>
 		</div>
-	</section>   
-    <!--from-our-blog section - fixed version end --> 
-	
+	</section>
+    <!--from-our-blog section - fixed version end -->
+
 
     <!-- featured homes Section - fixed version -->
 	<section class="sale-at-Aspley our-home-designe padtop90" id="featured-home">
@@ -263,10 +263,10 @@
 
                                                     <span *ngIf="home.status=='under_offer'" class="paid-btn" style="background: #f89923;">Under Offer</span>
 													<div id="carousel{{jj}}" class="carousel slide" data-interval="false">
-														<div class="carousel-inner home-carousel">															
+														<div class="carousel-inner home-carousel">
 														<div class="item" *ngFor="let _image of home.images;let ii = index" [ngClass]="{active: ii===0}">
-							                                  <img 
-							                                  [src]="_image" 
+							                                  <img
+							                                  [src]="_image"
 							                                  alt="">
 							                              </div>
 														</div>
@@ -316,7 +316,7 @@
         </div>
     </section>
      <!-- start CTA block - fixed version end -->
-     
+
     <!-- Get an info pack Modal -->
   <div class="modal fade" id="get-an-info-pack-modal-static" role="dialog">
         <div class="modal-dialog">
@@ -324,35 +324,35 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body no-pad">
-                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)" 
+                     <button type="button" class="close" data-dismiss="modal"  (mouseover)="onHover($event)"
                                     (mouseout)="onHover($event)" >&times;</button>
                     <div class="col-sm-5 col-md-5 right-img-main no-pad hidden-xs hidden-sm">
                         <div class="right-img-full">
                             <div class="right-img-full" style="background: url(images/generic-info.jpg) no-repeat center;"></div>
-                            <!--  <img 
-                             [src]="comunitylatestDetail.featured_image.url" alt="" style= 
+                            <!--  <img
+                             [src]="comunitylatestDetail.featured_image.url" alt="" style=
                              "height: -webkit-fill-available;"> -->
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-7 getinfowp">
-                   
+
                         <div class="wp-main">
                          <h3 style="color: #105dac;">
                             <div class="title-img-round">
-                                <img src="images/Gateway-icon-only-square.png" alt="" class="">    
+                                <img src="images/Gateway-icon-only-square.png" alt="" class="">
                             </div>
                             Get an info pack
                          </h3>
                          <!-- <div class="profile-row">
-                            <div class="profile-img"><img src="images/img11.png" alt=""></div> 
+                            <div class="profile-img"><img src="images/img11.png" alt=""></div>
                             <p><strong> Melinda James</strong> | +61 421 223 221 | melinda.james@gty.com.au</p>
                          </div> -->
                          <div class="divider"></div>
 <!--                         <div class="form-getinfo-succes">
                             <div class="row">
-                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>    
+                            <div class="col-sm-2"><img src="images/form-sucess.png" alt=""></div>
                             <div class="col-sm-10"><p class="pera-textbig"> Thank you for your enquiry. We've emailed you the info pack. You can view it by clicking the button below.</p>
-                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)" 
+                            <button (click)="infoPdf(genericInfo.info_pack?.info_pdf.url)"
                              class="btn btn-org">View the info pack Now</button></div>
                             </div>
                         </div> -->
@@ -362,55 +362,55 @@
                                 <form #infoForm="ngForm" novalidate>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.firstname" 
-                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel" 
-                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required> 
+                                           <input [(ngModel)]="info.firstname"
+                                           class="form-control" placeholder = "First name*" name="firstname" type="text" #firstname="ngModel"
+                                           [ngClass]="{'red-border-class': firstname.invalid && submitted == true }" required>
                                            <p class="requiedred" [hidden]="firstname.valid || submitted == false">
                                             Please Enter First name
-                                            </p>  
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.lastname" 
-                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel" 
+                                           <input [(ngModel)]="info.lastname"
+                                           class="form-control" placeholder = "Last name*" name="lastname" type="text" #lastname="ngModel"
                                            [ngClass]="{'red-border-class': lastname.invalid && submitted == true }" required>
                                            <p class="requiedred" [hidden]="lastname.valid || submitted == false">
                                             Please Enter Last name
-                                        </p>   
+                                        </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.plan" 
-                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">   
-                                        </div>
-                                    </div>  
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                           <input [(ngModel)]="info.phone" 
-                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">   
+                                           <input [(ngModel)]="info.plan"
+                                           class="form-control" placeholder ="When are you planning on buying?" name="plan" type="text" #plan="ngModel">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                           <input [(ngModel)]="info.email" 
-                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>  
+                                           <input [(ngModel)]="info.phone"
+                                           class="form-control" placeholder = "Phone" name="phone" type="tel" #phone="ngModel">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                           <input [(ngModel)]="info.email"
+                                           class="form-control" placeholder = "Email*" name="email" type="email" #email="ngModel" [ngClass]="{'red-border-class': email.invalid && submitted == true }" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
                                            <p class="requiedred" [hidden]="email.valid || submitted == false">
                                             Please Enter your email
-                                            </p> 
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                           <textarea [(ngModel)]="info.area" 
+                                           <textarea [(ngModel)]="info.area"
                                            class="form-control" placeholder="Anything else you'd like to tell us?" name="area" type="text" #area="ngModel" rows="7" ></textarea>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="col-sm-12">
                                     <button  class="btn btn-org"  id="send-sucess"
-                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;" 
-                                    (mouseover)="changeColor($event)" 
+                                     (click)="getInfo(infoForm)" style="background: #105dac; border-color:#105dac;"
+                                    (mouseover)="changeColor($event)"
                                     (mouseout)="changeColor($event)" type="submit">Get an info pack</button>
                                     </div>
                                 </form>
@@ -425,5 +425,3 @@
         </div>
     </div>
     <!--end  Get an info pack Modal -->
-
-  

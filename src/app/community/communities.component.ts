@@ -139,7 +139,7 @@ export class communitiesComponent implements OnInit {
       if (map.tap) map.tap.disable();
     }
     else {
-      map.scrollWheelZoom.enable();
+      map.scrollWheelZoom.disable();
       map.doubleClickZoom.enable();
       map.dragging.enable();
       if (map.tap) map.tap.enable();
