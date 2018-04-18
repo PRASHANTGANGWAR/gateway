@@ -5837,6 +5837,9 @@ header.nav-v2 .search-wp .search-mhead {
   border-bottom: 1px solid #e9e9e9;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  clear: left;
+  float: left;
+  width: 100%;
 }
 
 header.nav-v2 .search-wp .search-mhead a {
@@ -5855,6 +5858,8 @@ header.nav-v2 .search-wp .search-box li {
   margin-bottom: 20px;
   display: inline-block;
   margin-top: 10px;
+  clear: left;
+  float: left;
 }
 
 header.nav-v2 .search-wp .search-box li span {
