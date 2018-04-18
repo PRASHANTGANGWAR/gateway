@@ -5187,9 +5187,9 @@ header.nav-v2 .navbar .navbar-right {
 header.nav-v2 .navbar .nav {
   background: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 812px) {
   header.nav-v2 .navbar .nav {
-    max-height: 450px;
+    max-height: 280px;
     overflow: auto;
   }
 }
@@ -10596,7 +10596,7 @@ header.nav-v4 .logo-outer .logo img {
     margin-bottom: -8px !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 812px) {
   header.nav-v4 .navbar-collapse {
     height: 280px;
     overflow: auto;
@@ -10959,6 +10959,8 @@ header.nav-v4 .navbar .nav .mega-dropdown-menu .img-box-hover .img-box:before {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     padding: 3px 18px 3px 18px;
+    float: left;
+    clear: left;
   }
 }
 header.nav-v4 .navbar .nav .mega-dropdown-menu .img-box-hover .img-box img {
@@ -11015,7 +11017,7 @@ header.nav-v4 .navbar .nav .mega-dropdown-menu li a {
 }
 @media screen and (max-width: 980px) {
   header.nav-v4 .navbar .nav .mega-dropdown-menu li a {
-    padding: 1px 18px 1px 18px;
+    padding: 1px 18px 1px 18px !important;
   }
 }
 header.nav-v4 .navbar .nav .mega-dropdown-menu li a:hover {
