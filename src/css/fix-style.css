@@ -5778,7 +5778,7 @@ header.nav-v2 .search-wp .searchform {
 
 @media (width: 768px) {
   header.nav-v2 .search-wp .searchform {
-    width: 105%;
+    width: 720px;
   }
 }
 
@@ -5889,6 +5889,9 @@ header.nav-v2 .search-wp .event-search li {
   margin-bottom: 20px;
   display: inline-block;
   margin-top: 10px;
+  float: left;
+  clear: left;
+  width: 100%;
 }
 
 @media (max-width: 736px) {
@@ -11305,7 +11308,7 @@ header.nav-v4 .search-wp .searchform {
 }
 @media (width: 768px) {
   header.nav-v4 .search-wp .searchform {
-    width: 105%;
+    width: 720px;
   }
 }
 header.nav-v4 .search-wp .searchform.open {
@@ -11373,6 +11376,7 @@ header.nav-v4 .search-wp .search-box li {
   margin-top: 10px;
   float: left;
   clear: left;
+  width: 100%;
 }
 header.nav-v4 .search-wp .search-box li span {
   float: left;
@@ -11403,6 +11407,9 @@ header.nav-v4 .search-wp .event-search li {
   margin-bottom: 20px;
   display: inline-block;
   margin-top: 10px;
+  float: left;
+  clear: left;
+  width: 100%;
 }
 @media (max-width: 736px) {
   header.nav-v4 .search-wp .event-search li {
