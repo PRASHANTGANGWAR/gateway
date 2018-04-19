@@ -1171,19 +1171,19 @@ var communitiesComponent = (function () {
     };
     communitiesComponent.prototype.newLocation = function (state) {
         if (state == "nsw") {
-            this.newmap.setView([-32.542627, 147.997233], 7);
+            this.newmap.setView([-32.7506344, 145.5529504], 7);
             $("#nsw").addClass('active-map');
             $("#qsl").removeClass('active-map');
             $("#vct").removeClass('active-map');
         }
         else if (state == "qsl") {
-            this.newmap.setView([-23.832221, 145.937710], 6);
+            this.newmap.setView([-19.1390567, 141.3202005], 6);
             $("#qsl").addClass('active-map');
             $("#nsw").removeClass('active-map');
             $("#vct").removeClass('active-map');
         }
         else if (state == "vct") {
-            this.newmap.setView([-37.4713, 144.7852], 7);
+            this.newmap.setView([-36.5607967, 143.2413592], 7);
             $("#vct").addClass('active-map');
             $("#nsw").removeClass('active-map');
             $("#qsl").removeClass('active-map');
@@ -2978,7 +2978,7 @@ var HomeDesignsComponent = (function () {
                 self.hotspotImage4 = data.fields.file.url;
                 setTimeout(function () {
                     $.getScript('js/homedesign_hotspot.js');
-                }, 5000);
+                }, 1000);
             });
         });
         // download brochure section
