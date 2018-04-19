@@ -1288,6 +1288,7 @@ Author: Bharat Khairnar
   background-size: cover !important;
   height: 750px;
   min-height: 110vh;
+  background-position: center center !important;
 }
 
 .modal .modal-dialog .modal-content .modal-body .getinfowp {
