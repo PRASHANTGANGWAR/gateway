@@ -10544,7 +10544,7 @@ body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li .dropdown-menu 
 body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li .dropdown-menu a {
   padding-top: 0px;
   padding-bottom: 0px;
-   display: inline-block;
+  display: inline;
 }
 body.header-fixed.nav-v4.sticky-in-home header.nav-v4 .navbar li:nth-last-child(2) a {
   font-weight: 300 !important;
