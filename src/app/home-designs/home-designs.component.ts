@@ -112,7 +112,7 @@ export class HomeDesignsComponent implements OnInit {
               self.hotspotImage4 = data.fields.file.url;
               setTimeout(function(){
                 $.getScript('js/homedesign_hotspot.js');
-              },5000)              
+              },1000)              
             });
       })
 
