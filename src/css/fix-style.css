@@ -7311,8 +7311,8 @@ Our home design Slider
 }
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint .hint-disk:before {
-  width: 8;
-  height: 8;
+  width: 8px;
+  height: 8px;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
   border-bottom: 16px solid #fff;
@@ -7531,13 +7531,10 @@ Our home design Slider
   left: inherit;
 }
 
-.why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk {
-  right: 0px;
-}
 
 .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk:before {
-  left: inherit;
-  right: 115px;
+  left: 10px;
+
 }
 
 @media (max-width: 1024px) {
@@ -7573,6 +7570,138 @@ Our home design Slider
     min-height: 400px;
   }
 }
+
+
+
+
+@media (max-width:812px)
+{
+    .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link5 .hint-disk:before
+    { left: 5px;
+    }
+}
+
+@media (max-width:812px)
+{
+    .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 .hint-disk
+    {   right: 0px;
+    }
+    .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 .hint-disk:before
+    { left: inherit; right: 5px;
+    }
+}
+
+
+@media (max-width:812px)
+{
+    .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk
+    {   right: 0px;
+    }
+}
+
+
+@media (max-width: 480px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link1 .hint-disk {
+    left: -60px;
+    right: inherit;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link1 .hint-disk:before {
+    left: 66px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 767px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link4 .hint-disk {
+    right: -70px;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link4 .hint-disk:before
+  { right: 72px;    
+  }
+}
+
+
+@media (max-width: 767px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link5 .hint-disk
+  { left: 0px;    
+  }
+}
+
+
+@media (max-width: 767px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link33 .hint-disk {
+      left: -130px;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link33 .hint-disk:before
+  {    left: 135px;   
+  }
+}
+
+@media (max-width: 375px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 .hint-disk {
+      left: -190px;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 .hint-disk:before
+  {    left: 196px;   
+  }
+}
+
+@media (max-width: 375px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link7 .hint-disk {
+      right: -135px;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link7 .hint-disk:before {
+    right: 142px;
+  }
+}
+
+@media (max-width: 812px)
+{
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk {
+      right: -80px;
+  }
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk:before {
+    right: 92px;
+    left: inherit;
+  }
+
+}
+@media (max-width: 480px)
+{
+ 
+  .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk:before {
+    right: 86px;
+    left: inherit;
+  }
+
+}
+
+
+@media (max-width:320px)
+{
+.why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link6 .hint-disk {
+    left: -100px;
+    right: inherit;
+}
+}
+
+
+.why-live-here.hotspot-page .slider .carousel-inner
+{ overflow: inherit;  
+}
+
+
+
 
 /*
 Author: Hardik Pethani
