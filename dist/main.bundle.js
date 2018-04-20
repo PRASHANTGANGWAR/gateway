@@ -929,6 +929,7 @@ var CareersComponent = (function () {
             $.getScript('js/modal-video.js');
             $.getScript('js/jquery.tubular.1.0.js');
             $.getScript("js/customCarousel.js");
+            $.getScript('js/custom.js');
         });
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/3TGc10BLDW2SuAg4a0CAos?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", function (data, status) {
             that.careersCTA = data.fields;
@@ -4526,6 +4527,7 @@ var HowitworksComponent = (function () {
             $.getScript('js/modal-video.js');
             $.getScript('js/jquery.tubular.1.0.js');
             $.getScript("js/customCarousel.js");
+            $.getScript('js/custom.js');
         });
     };
     HowitworksComponent.prototype.getGenericInfopack = function () {
