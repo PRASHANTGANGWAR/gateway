@@ -121,7 +121,7 @@ export class communitiesComponent implements OnInit {
 
   updateMap(){
     var content,marker;
-    L.mapbox.accessToken = 'pk.eyJ1Ijoic2VtYWwtemVhbG91cyIsImEiOiJjaWt4bHNoa20wMHp1dWFtM20yZjIzYXg0In0.MkDy4_XRL-MKTWHBh7swDw';   
+    L.mapbox.accessToken = 'pk.eyJ1Ijoic2VtYWwtemVhbG91cyIsImEiOiJjaWt4bHNoa20wMHp1dWFtM20yZjIzYXg0In0.MkDy4_XRL-MKTWHBh7swDw';
 
     var map = L.mapbox.map('map', 'mapbox.streets').setView([-32.105143, 149.209900], 6).on('dblclick', function(e) {
       // Zoom exactly to each double-clicked point
@@ -169,13 +169,15 @@ export class communitiesComponent implements OnInit {
   newLocation(state:string)
   {
     if(state == "nsw"){
-       this.newmap.setView([-32.7506344,145.5529504],7);
+       // original this.newmap.setView([-32.7506344,145.5529504],7);
+        this.newmap.setView([-31.425165,153.076421],6);
         $("#nsw").addClass('active-map');
         $("#qsl").removeClass('active-map');
         $("#vct").removeClass('active-map');
     }
     else if(state == "qsl"){
-      this.newmap.setView([-19.1390567,141.3202005],6);
+      // original this.newmap.setView([-19.1390567,141.3202005],6);
+      this.newmap.setView([-27.456412,153.100749],8);
       $("#qsl").addClass('active-map');
       $("#nsw").removeClass('active-map');
       $("#vct").removeClass('active-map');
@@ -199,7 +201,7 @@ export class communitiesComponent implements OnInit {
     } else{
       (this.states).splice((this.states).indexOf(value),1);
     }
-    this.checkFilters();  
+    this.checkFilters();
   }
 
   checkitnow(page:string){
@@ -260,7 +262,7 @@ export class communitiesComponent implements OnInit {
 
     getGenericInfopack(){
       this.apiService.get('/pdf_info_packs/featured_pack').subscribe((res:any)=>{
-       this.genericInfo = res; 
+       this.genericInfo = res;
         window.localStorage.setItem('generic_url',this.genericInfo.info_pack.info_pdf.url);
       });
     }
@@ -306,5 +308,5 @@ export class communitiesComponent implements OnInit {
     $event.target.style.color = $event.type=="mouseover" ? '#105dac':'#414952';
   }
 
-  
+
 }
