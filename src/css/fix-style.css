@@ -11446,6 +11446,9 @@ header.nav-v4 .search-wp .searchform {
   display: none;
   box-shadow: 0 0px 20px rgba(64, 64, 64, 0.5);
 }
+header.nav-v4 .search-wp .searchform.open .search-icon.ico2
+{   background-position: right bottom;
+}
 @media (width: 768px) {
   header.nav-v4 .search-wp .searchform {
     width: 720px;
