@@ -138,10 +138,10 @@
                         <li class="width-fullnomarg">
                             <div class="img-show-box">
                                 <div class="homefor-sale-box-img">
-                                <a routerLink="/homes-for-sale/{{new.id}}"><img *ngIf="new?.images?.length" [src]="new.images[0]" alt=""></a>
+                                <a href="/homes-for-sale/{{new.id}}"><img *ngIf="new?.images?.length" [src]="new.images[0]" alt=""></a>
                                 </div>
-                                <a routerLink="/homes-for-sale/{{new.id}}"><h4 [ngStyle]="{'color': eventDetail?.event_community.primary_color}">{{new.address}}</h4></a>
-                                <a *ngIf="new?.list_price" routerLink="/homes-for-sale/{{new.id}}"> <p>${{new.list_price | number : '1.0'}}</p> </a>
+                                <a href="/homes-for-sale/{{new.id}}"><h4 [ngStyle]="{'color': eventDetail?.event_community.primary_color}">{{new.address}}</h4></a>
+                                <a *ngIf="new?.list_price" href="/homes-for-sale/{{new.id}}"> <p>${{new.list_price | number : '1.0'}}</p> </a>
                             </div>
 
                         </li>
