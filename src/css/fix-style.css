@@ -4747,6 +4747,10 @@ Listing page Hero & Heading
   max-width: 100%;
   margin: 0px auto;
 }
+.hfsl-banner .context p.about-hero-text
+{  width: 700px;
+  max-width: 100%;
+}
 
 @media (max-width: 767px) {
   .hfsl-banner .context p {
