@@ -7947,6 +7947,11 @@ Author: Bharat Khairnar
     width: 100%;
   }
 }
+@media screen and (max-width: 812px) {
+  .discover-whole {
+    padding-top: 60px;
+  }
+}
 
 .discover-whole .lefcol .box-t {
   box-shadow: 0 0 20px 0 rgba(222, 222, 222, 0.5);
@@ -8072,11 +8077,15 @@ Author: Bharat Khairnar
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  overflow: hidden;
 }
 
 
 /*responsive */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 812px){
+  .box-video-sm a .box-video-img-sml
+  { height: auto;    
+  }
   .box-video-sm a .box-video-img-sml {
     position: relative;
     height: 100%;
@@ -8086,6 +8095,18 @@ Author: Bharat Khairnar
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
   }
+  .box-video-sm a .box-video-img-sml:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, transparent 0%, #000000 100%);
+  border-radius: 6px;
+}
 
 }
 
