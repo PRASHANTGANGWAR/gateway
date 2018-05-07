@@ -4784,10 +4784,6 @@ Listing page Hero & Heading
   max-width: 100%;
   margin: 0px auto;
 }
-.hfsl-banner .context p.about-hero-text
-{  width: 700px;
-  max-width: 100%;
-}
 
 @media (max-width: 767px) {
   .hfsl-banner .context p {
@@ -5241,8 +5237,10 @@ header.nav-v2 .navbar .nav {
     overflow: auto;
   }
 }
-
-header.nav-v2 .navbar .nav li:hover a {
+header.nav-v2 .navbar .nav li a
+{ display: inline-block;  
+}
+header.nav-v2 .navbar .nav li a:hover {
   color: #105DAC;
 }
 
@@ -5324,8 +5322,8 @@ header.nav-v2 .navbar .nav li a {
   font-weight: 300;
   padding-top: 26px;
   padding-bottom: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 header.nav-v2 .navbar .nav li a:hover {
@@ -5381,14 +5379,14 @@ header.nav-v2 .navbar .nav li a i.fa.fa-chevron-down {
   }
 }
 
-header.nav-v2 .navbar .nav li.bold-menu:nth-child(4) {
+header.nav-v2 .navbar .nav li.bold-menu:nth-child(3) {
   border-right: 1px #efefef solid;
   padding-right: 5px;
   margin-right: 5px;
 }
 
 @media (max-width: 980px) {
-  header.nav-v2 .navbar .nav li.bold-menu:nth-child(4) {
+  header.nav-v2 .navbar .nav li.bold-menu:nth-child(3) {
     border-right: none;
     border-bottom: 1px #efefef solid;
     padding-bottom: 10px;
@@ -11795,4 +11793,392 @@ Edit to fix event info padding
 */
 .padding-event {
   padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* Menu V5 */ 
+
+
+
+.globalNav{    
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    position:absolute;
+    left:0;
+    top:10px;
+    right:0;
+    z-index:500;
+    height:50px;
+    -webkit-perspective:2000px;
+    perspective:2000px
+}
+.globalNav ul{
+    padding:0;
+    margin:0
+}
+.globalNav li{
+    list-style:none
+}
+.globalNav a{
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+    color:#6772e5;
+    -webkit-transition:color .1s;
+    transition:color .1s
+}
+.globalNav a:hover{
+    color:#32325d
+}
+.globalNav>.container-lg{
+    padding:0
+}
+.globalNav .navRoot{
+    position:relative
+}
+
+
+.globalNav.compact .navRoot{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex
+}
+
+.globalNav .rootLink{
+    display:inline-block;
+    height:50px;
+    white-space:nowrap;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    font-size:17px;
+    font-weight:400;
+    margin:0;
+    padding:0 10px
+}
+@media (min-width:670px){
+    .globalNav .rootLink{
+        padding:0 calc(-17.16247px + 4.0541vw)
+    }
+}
+@media (min-width:1040px){
+    .globalNav .rootLink{
+        padding:0 25px
+    }
+}
+.globalNav .rootLink>*{
+    position:relative;
+    display:block
+}
+.globalNav .hasDropdown{
+    cursor:default
+}
+
+.globalNav .dropdownRoot{
+    position:absolute;
+    z-index:1000;
+    left:0;
+    right:0;
+    top:50px;
+    pointer-events:none;
+    -webkit-transform:rotateX(-15deg);
+    transform:rotateX(-15deg);
+    -webkit-transform-origin:50% -50px;
+    transform-origin:50% -50px;
+    opacity:0;
+    will-change:transform,opacity;
+    -webkit-transition-property:opacity,-webkit-transform;
+    transition-property:opacity,-webkit-transform;
+    transition-property:transform,opacity;
+    transition-property:transform,opacity,-webkit-transform;
+    -webkit-transition-duration:.25s;
+    transition-duration:.25s;
+    display:none
+}
+@media (min-width:670px){
+    .globalNav.initialized .dropdownRoot{
+        display:block
+    }
+}
+.globalNav.dropdownActive .dropdownRoot{
+    opacity:1;
+    pointer-events:auto;
+    -webkit-transform:none;
+    transform:none
+}
+.globalNav .dropdownBackground{
+    background:#fff;
+    border-radius:4px;
+    overflow:hidden;
+    -webkit-box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);
+    box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);
+    width:380px;
+    height:400px;
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0
+}
+.globalNav .alternateBackground,.globalNav .dropdownBackground{
+    position:absolute;
+    top:20px;
+    left:0;
+    will-change:transform;
+    -webkit-transition-property:-webkit-transform;
+    transition-property:-webkit-transform;
+    transition-property:transform;
+    transition-property:transform,-webkit-transform;
+    -webkit-transition-duration:.25s;
+    transition-duration:.25s
+}
+.globalNav .alternateBackground{
+    right:0;
+    height:1000px;
+    background:#f6f9fc
+}
+.globalNav .dropdownArrow{
+    top:15px;
+    margin:0 0 0 -6px;
+    width:12px;
+    height:12px;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    border-radius:6px;
+    background:#fff;
+    -webkit-box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);
+    box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);
+    will-change:transform;
+    -webkit-transition-property:-webkit-transform;
+    transition-property:-webkit-transform;
+    transition-property:transform;
+    transition-property:transform,-webkit-transform;
+
+}
+.globalNav .dropdownArrow,.globalNav .dropdownContainer{
+    position:absolute;
+    left:0;
+    -webkit-transition-duration:.25s;
+    transition-duration:.25s
+}
+.globalNav .dropdownContainer{
+    overflow:hidden;
+    width:500px;
+    top:0;
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    will-change:transform,width,height;
+    -webkit-transition-property:width,height,-webkit-transform;
+    transition-property:width,height,-webkit-transform;
+    transition-property:transform,width,height;
+    transition-property:transform,width,height,-webkit-transform
+}
+.globalNav .dropdownSection{
+    opacity:0;
+    pointer-events:none;
+    will-change:transform,opacity;
+    -webkit-transition-property:opacity,-webkit-transform;
+    transition-property:opacity,-webkit-transform;
+    transition-property:transform,opacity;
+    transition-property:transform,opacity,-webkit-transform;
+    -webkit-transition-duration:.25s;
+    transition-duration:.25s;
+    background:red
+}
+.globalNav .dropdownSection.active{
+    opacity:1;
+    -webkit-transform:translateX(0);
+    transform:translateX(0)
+}
+.globalNav .dropdownSection.left{
+    -webkit-transform:translateX(-150px);
+    transform:translateX(-150px)
+}
+.globalNav .dropdownSection.right{
+    -webkit-transform:translateX(150px);
+    transform:translateX(150px)
+}
+.globalNav.dropdownActive .dropdownSection.active{
+    pointer-events:auto
+}
+.globalNav.noDropdownTransition .alternateBackground,.globalNav.noDropdownTransition .dropdownArrow,.globalNav.noDropdownTransition .dropdownBackground,.globalNav.noDropdownTransition .dropdownContainer,.globalNav.noDropdownTransition .dropdownSection{
+    -webkit-transition:none;
+    transition:none
+}
+.globalNav .dropdownContent{
+    position:absolute;
+    top:0;
+    left:0
+}
+.globalNav .linkGroup{
+    padding:0px;  padding-right: 10px;
+}
+.globalNav .linkContainer{
+    display:block;
+    padding:9px 0;
+    outline:none;
+    position:relative
+}
+.keyboard-navigation .globalNav .linkContainer:focus:before{
+    opacity:.5
+}
+.globalNav .linkContainer:before{
+    content:"";
+    position:absolute;
+    left:-10px;
+    top:0;
+    right:-10px;
+    bottom:0;
+    -webkit-box-shadow:0 0 0 1.5px #8898aa;
+    box-shadow:0 0 0 1.5px #8898aa;
+    border-radius:4px;
+    opacity:0;
+    -webkit-transition:opacity .15s;
+    transition:opacity .15s
+}
+
+
+
+
+.productNav{    
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    position:absolute;
+    left:0;
+    top:70px;
+    right:0;
+    z-index:499;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.025em;
+    text-transform:uppercase;
+    padding:12px 0
+}
+@media (max-width:980px)
+{
+  .globalNav .rootLink
+  { height: auto;    
+  }
+}
+.globalNav .linkGroup ul li:first-child
+{ margin-top: 20px;
+}
+.globalNav .linkGroup ul li:last-child
+{  margin-bottom: -20px;  
+}
+.globalNav .linkGroup ul li a
+{   display: inline-block; color: #62717F; font-size: 16px; font-weight: 500; white-space: nowrap;  padding:28px 35px; padding-left: 57px; display: block;
+}
+.globalNav .linkGroup ul li a:hover
+{ background: #105DAC; color: #fff;  
+}
+
+
+.globalNav .linkGroup ul li a.new-home-for-sale
+{   background: #fff url(../images/new-homes.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.new-home-for-sale:hover
+{   background: #105DAC url(../images/new-homes-hover.png) no-repeat 15px center / 34px auto;
+}
+
+.globalNav .linkGroup ul li a.pre-loved-home
+{   background: #fff url(../images/pre-loved.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.pre-loved-home:hover
+{   background: #105DAC url(../images/pre-loved-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.our-home-design
+{   background: #fff url(../images/home-designs.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.our-home-design:hover
+{   background: #105DAC url(../images/home-designs-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.communities
+{   background: #fff url(../images/communities.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.communities:hover
+{   background: #105DAC url(../images/communities-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.resident-stories
+{   background: #fff url(../images/resident-stories.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.resident-stories:hover
+{   background: #105DAC url(../images/resident-stories-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.how-it-works
+{   background: #fff url(../images/how-it-works.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.how-it-works:hover
+{   background: #105DAC url(../images/how-it-works-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.faqs
+{   background: #fff url(../images/faqs.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.faqs:hover
+{   background: #105DAC url(../images/faqs-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.buying-process
+{   background: #fff url(../images/buy-process.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.buying-process:hover
+{   background: #105DAC url(../images/buy-process-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+
+.globalNav .linkGroup ul li a.about-us
+{   background: #fff url(../images/about.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.about-us:hover
+{   background: #105DAC url(../images/about-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.our-team
+{   background: #fff url(../images/team.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.our-team:hover
+{   background: #105DAC url(../images/team-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.careers
+{   background: #fff url(../images/careers.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.careers:hover
+{   background: #105DAC url(../images/careers-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.investors
+{   background: #fff url(../images/investors.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.investors:hover
+{   background: #105DAC url(../images/investors-hover.png) no-repeat 15px center / 34px auto;
+}
+
+
+.globalNav .linkGroup ul li a.holiday-parks
+{   background: #fff url(../images/holiday-parks.png) no-repeat 15px center / 34px auto;
+}
+.globalNav .linkGroup ul li a.holiday-parks:hover
+{   background: #105DAC url(../images/holiday-parks-hover.png) no-repeat 15px center / 34px auto;
 }
