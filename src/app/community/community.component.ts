@@ -52,6 +52,12 @@ export class communityComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  $(".nav-v2.innerpage-header").show();
+  $(".nav-v2.home-header").hide();
+  $(".nav-v2.innerpage-header").addClass('globalNav');
+  $(".nav-v2.home-header").removeClass('globalNav');
+
     this.route.params.subscribe(params => {
        $('body').addClass(this.bodyClasses);
         window.scrollTo(0, 0);

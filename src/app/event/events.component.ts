@@ -24,6 +24,12 @@ export class EventsComponent implements OnInit {
   constructor(private router: Router,private apiService: ApiService, private segment: SegmentService) { }
 
   ngOnInit() {
+
+    $(".nav-v2.innerpage-header").show();
+  $(".nav-v2.home-header").hide();
+  $(".nav-v2.innerpage-header").addClass('globalNav');
+  $(".nav-v2.home-header").removeClass('globalNav');
+
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
   	this.apiService.getEventsList('/events').subscribe(res=>{

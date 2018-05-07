@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SegmentService } from 'ngx-segment-analytics';
-
+declare var $: any;
 
 @Component({
   selector: 'enquiry-page',
@@ -30,6 +30,12 @@ export class enquiryComponent implements OnInit {
   }
 
     ngOnInit(){
+
+      $(".nav-v2.innerpage-header").show();
+      $(".nav-v2.home-header").hide();
+      $(".nav-v2.innerpage-header").addClass('globalNav');
+      $(".nav-v2.home-header").removeClass('globalNav');
+      
       window.scrollTo(0, 0);
       this.segment.page().then(() => console.log("Event sended"));
     }

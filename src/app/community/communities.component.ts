@@ -56,6 +56,13 @@ export class communitiesComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    
+    $(".nav-v2.innerpage-header").show();
+    $(".nav-v2.home-header").hide();
+    $(".nav-v2.innerpage-header").addClass('globalNav');
+    $(".nav-v2.home-header").removeClass('globalNav');
+
      $.getScript("js/leaflet.markercluster.js");
      window.scrollTo(0, 0);
      this.sharedService.publishData(this.headerTitle);

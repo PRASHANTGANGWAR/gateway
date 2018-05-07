@@ -29,6 +29,11 @@ careersCTA:any={};
 
   ngOnInit() {
 
+  $(".nav-v2.innerpage-header").show();
+  $(".nav-v2.home-header").hide();
+  $(".nav-v2.innerpage-header").addClass('globalNav');
+  $(".nav-v2.home-header").removeClass('globalNav');
+
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
      let that = this;

@@ -7,21 +7,21 @@ import { ApiService,SharedService } from '../shared';
 declare var $: any;
 declare var google: any;
 @Component({
-  selector: 'testimonial',
-  templateUrl: './testimonial.component.html'
+  selector: 'home-page',
+  templateUrl: './home.component.html'
 })
-export class TestimonialComponent implements OnInit {
+export class HomeComponent implements OnInit {
   header: any = "";
   headerBelow: any = {};
   image1: any = "";
   image2: any = "";
   image3: any = "";
+  image4: any = "";
   icon1: any = "";
   icon2: any = "";
   icon3: any = "";
   icon4: any = "";
   steps: any = "";
-  video1 : any;
   HowIcon1: any = "";
   HowIcon2: any = "";
   HowIcon3: any = "";
@@ -38,18 +38,10 @@ export class TestimonialComponent implements OnInit {
   testimonialsImage3: any = "";
   featuredHomes : any;
   homeCount : any;
-  heading1 : any;
-  heading2 : any;
-  blue_split : any;
-  info_pack : any;
-  video2 : any;
-  video1_text : any;
   featuredComunities: any;
   comunitiesCount: any;
   chatData : any;
-  video_text : any;
   descoverMore : any;
-  discover1 : any;
   discoverHeadingBlueBlock: any;
   discoverMoreDescription: any;
   smallVideoBlock1Text: any;
@@ -62,13 +54,11 @@ export class TestimonialComponent implements OnInit {
   largeVideoBlock2YoutubeLink: any;
 
   Bigvideo1Img: any;
-  VImg : any;
   Bigvideo2Img: any;
   Smallvideo1Img: any;
   Smallvideo2Img: any;
-  Smallvideo3Img: any;
-  Smallvideo4Img: any;
 
+  blue_split : any = {};
   sliderImg1 : any;
   sliderImg2 : any;
   sliderImg3 : any;
@@ -84,21 +74,28 @@ export class TestimonialComponent implements OnInit {
   slider1ButtonUrl:any;
   slider2ButtonUrl:any;
   slider3ButtonUrl:any;
+  slider4Title: any;
+  slider4Description: any;
+  slider4ButtonText: any;
+  slider4ButtonUrl:any;
   videoImage: any;
   discover: any = {};
 
    standardCtaInfoPackDescription: any;
    standardCtaInfoPackButtonText: any;
    standardCtaInfoPackAfterButtonText: any;
-   bodyClasses:string = "home";
+   bodyClasses:string = "nav-v4";
   submitted = false;
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   genericInfo:any;
+ public href: string = "";
+  public hr:boolean=false;
 
   constructor(
     private router: Router,
     private apiService: ApiService,
-    private segment: SegmentService 
+    private segment: SegmentService ,
+    private sharedService: SharedService
   ) {
   }
   tags: Array<string> = [];
@@ -107,13 +104,12 @@ export class TestimonialComponent implements OnInit {
   data:any = [];
 
   ngOnInit() {
-
-  $(".nav-v2.innerpage-header").show();
-  $(".nav-v2.home-header").hide();
-  $(".nav-v2.innerpage-header").addClass('globalNav');
-  $(".nav-v2.home-header").removeClass('globalNav');
-
-
+    this.sharedService.publishPage("Home");
+   
+    $('body').addClass(this.bodyClasses);
+    $(".nav-v2").hide();
+    $(".nav-v4").show();
+    $.getScript("js/leaflet.markercluster.js");
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
     this.getGenericInfopack();
@@ -141,29 +137,12 @@ export class TestimonialComponent implements OnInit {
           console.log(err);
       });
 
-       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/vszV3g9Ts4IGMAIMswQQS?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
+       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/3NEHHnI8BqUY0koaiGQ4SQ?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
       function(data, status){
-        data.fields.video1 = data.fields.youtubeUrl.replace("https://youtu.be/", "");
-
-
-        that.discover1=data.fields;
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.Fullwidthbackgroundimage.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.VImg= data.fields.file.url;
-        });
-
-       });
-
-       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/7pyApp1eFia86qo00aSAKa?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-      function(data, status){
-        data.fields.smallVideoBlock1YoutubeLinkId = data.fields.xYoutubeId1.replace("https://youtu.be/", "");
-        data.fields.smallVideoBlock2YoutubeLinkId = data.fields.xYoutubeId2.replace("https://youtu.be/", "");
-        data.fields.largeVideoBlock1YoutubeLinkId = data.fields.xYoutubeId3.replace("https://youtu.be/", "");
-        data.fields.smallVideoBlock3YoutubeLinkId = data.fields.youtubeId4.replace("https://youtu.be/", "");
-        data.fields.smallVideoBlock4YoutubeLinkId = data.fields.youtubeId5.replace("https://youtu.be/", "");
-        data.fields.smallVideoBlock5YoutubeLinkId = data.fields.youtubeId6.replace("https://youtu.be/", "");
-
+        data.fields.smallVideoBlock1YoutubeLinkId = data.fields.smallVideoBlock1YoutubeLink.replace("https://youtu.be/", "");
+        data.fields.smallVideoBlock2YoutubeLinkId = data.fields.smallVideoBlock2YoutubeLink.replace("https://youtu.be/", "");
+        data.fields.largeVideoBlock1YoutubeLinkId = data.fields.largeVideoBlock1YoutubeLink.replace("https://youtu.be/", "");
+        data.fields.largeVideoBlock2YoutubeLinkId = data.fields.largeVideoBlock2YoutubeLink.replace("https://youtu.be/", "");
         that.discover=data.fields;
         that.discoverHeadingBlueBlock=data.fields.discoverHeadingBlueBlock;
         that.discoverMoreDescription=data.fields.discoverMoreDescription;
@@ -176,37 +155,21 @@ export class TestimonialComponent implements OnInit {
         that.largerVideoBlock2Name=data.fields.largerVideoBlock2Name;
         that.largeVideoBlock2Quote=data.fields.largeVideoBlock2Quote;
         that.largeVideoBlock2YoutubeLink=data.fields.largeVideoBlock2YoutubeLink;
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/7pyApp1eFia86qo00aSAKa?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.video_text= data.fields;
-        });
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.xImageBackground1.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.largeVideoBlock1Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
            that.Bigvideo1Img= data.fields.file.url;
         });
-        
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.xImageBackground2.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.largeVideoBlock2Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
            that.Bigvideo2Img= data.fields.file.url;
         });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.xImageBackground3.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.smallVideoBlock1Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
            that.Smallvideo1Img= data.fields.file.url;
         });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.imageBackground4.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.smallVideoBlock2Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
            that.Smallvideo2Img= data.fields.file.url;
-        });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.imageBackground5.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.Smallvideo3Img= data.fields.file.url;
-        });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.imageBackground6.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.Smallvideo4Img= data.fields.file.url;
         });
       })
 
@@ -243,6 +206,10 @@ export class TestimonialComponent implements OnInit {
         that.slider3ButtonUrl=data.fields.slider3ButtonUrl;
         that.slider3Description = data.fields.slider3Description;
         that.slider3ButtonText = data.fields.slider3ButtonText;
+        that.slider4Title = data.fields.slider4Title;
+        that.slider4ButtonUrl=data.fields.slider4ButtonUrl;
+        that.slider4Description = data.fields.slider4Description;
+        that.slider4ButtonText = data.fields.slider4ButtonText;
 
 
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider1Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
@@ -256,6 +223,10 @@ export class TestimonialComponent implements OnInit {
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider3Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
           that.image3= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.slider4Image.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+          that.image4= data.fields.file.url;
           $.getScript("js/owl-carouselCustom.js");
         });
       })
@@ -282,51 +253,10 @@ export class TestimonialComponent implements OnInit {
         $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.featureIcon4.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
           function(data,status){
           that.icon4= data.fields.file.url;
-
+          $.getScript("js/modal-video.js");
+          $.getScript('js/customCarousel.js');
         });
-
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/7pyApp1eFia86qo00aSAKa?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-          function(data, status){
-            that.video2=data.fields;
-            $.getScript('js/modal-video.js');
-            $.getScript('js/jquery.tubular.1.0.js');
-            $.getScript("js/customCarousel.js");
-        })
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/cGSRPLJGI8Wsy6KQqiAEA?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-          function(data, status){
-            that.heading1=data.fields;
-        })
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/34aiQXEiKQwuCI0iysO28c?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-          function(data, status){
-            that.heading2=data.fields;
-        })
         
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/uJj7daZX20WcmOe2sSGCI?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-          function(data, status){
-            that.blue_split=data.fields;
-        
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage1.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.sliderImg1= data.fields.file.url;
-        });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage2.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.sliderImg2= data.fields.file.url;
-        });
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage3.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
-          function(data,status){
-           that.sliderImg3= data.fields.file.url;
-        });
-        })
-
-        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/3qKDRwKGJqQGYKEcmQUeGK?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
-          function(data, status){
-            that.info_pack=data.fields;
-        })
-
       })
        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/1F0bexMbKcmkaOkEW4UEIg?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
       function(data, status){
@@ -348,6 +278,25 @@ export class TestimonialComponent implements OnInit {
           that.backimage= data.fields.file.url;
         });
       })
+
+       $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/uJj7daZX20WcmOe2sSGCI?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
+          function(data, status){
+            that.blue_split=data.fields;
+        
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage1.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg1= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage2.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg2= data.fields.file.url;
+        });
+        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/assets/"+data.fields.sliderImage3.sys.id+"?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85",
+          function(data,status){
+           that.sliderImg3= data.fields.file.url;
+        });
+        })
+
        $.get("https://cdn.contentful.com/spaces/4gfgcxsypl03/entries/5GSasSCYo0KsSKK8cCmCi6?access_token=c1cb40d94d06b02f3d2591e546e33e39f80e1dae8764365afbd287bd89b43e85", 
       function(data, status){
         that.testimonialsQuote=data.fields.quote;
@@ -422,6 +371,9 @@ export class TestimonialComponent implements OnInit {
 
   ngOnDestroy() { 
         $('body').removeClass(this.bodyClasses);
+        $(".nav-v2").show();
+        $(".nav-v4").hide();
+        this.sharedService.publishPage("");
     }
 
 }

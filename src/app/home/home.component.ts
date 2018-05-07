@@ -85,7 +85,7 @@ export class HomeComponent implements OnInit {
    standardCtaInfoPackDescription: any;
    standardCtaInfoPackButtonText: any;
    standardCtaInfoPackAfterButtonText: any;
-   bodyClasses:string = "nav-v4";
+   bodyClasses:string = "home-header";
   submitted = false;
   info: any = { firstname: '', lastname: '', phone:'', email:''};
   genericInfo:any;
@@ -108,8 +108,11 @@ export class HomeComponent implements OnInit {
     this.sharedService.publishPage("Home");
    
     $('body').addClass(this.bodyClasses);
-    $(".nav-v2").hide();
-    $(".nav-v4").show();
+    $(".nav-v2.innerpage-header").hide();
+    $(".nav-v2.home-header").show();
+    $(".nav-v2.innerpage-header").removeClass('globalNav');
+    $(".nav-v2.home-header").addClass('globalNav');
+
     $.getScript("js/leaflet.markercluster.js");
     window.scrollTo(0, 0);
     this.segment.page().then(() => console.log("Event sended"));
@@ -373,8 +376,10 @@ export class HomeComponent implements OnInit {
 
   ngOnDestroy() { 
         $('body').removeClass(this.bodyClasses);
-        $(".nav-v2").show();
-        $(".nav-v4").hide();
+        $(".nav-v2.innerpage-header").show();
+        $(".nav-v2.home-header").hide();
+        $(".nav-v2.innerpage-header").addClass('globalNav');
+        $(".nav-v2.home-header").removeClass('globalNav');
         this.sharedService.publishPage("");
     }
 
