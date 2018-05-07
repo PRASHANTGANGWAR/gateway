@@ -315,6 +315,7 @@ export class HowitworksComponent implements OnInit {
         $.getScript('js/modal-video.js');
         $.getScript('js/jquery.tubular.1.0.js');
         $.getScript("js/customCarousel.js");
+        $.getScript('js/custom.js');
       })
 
   }
