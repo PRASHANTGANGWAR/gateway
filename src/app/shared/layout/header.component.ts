@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-        $.getScript("js/custom.js");
+        $.getScript("js/mega-dropdown.js");
 
          // this.nav.show();
          this.sharedService.caseNumber$.subscribe(data=>{
