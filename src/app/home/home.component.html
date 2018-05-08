@@ -1,4 +1,4 @@
- <!--  Owl slider for the homepage - fixed version -->
+    <!--  Owl slider for the homepage - fixed version -->
     <section class="home-slider home-v3-slider">
       <div class="header-slider-main">
         <div class="owl-carousel owl-theme">
@@ -11,8 +11,49 @@
                     <hr>
                     <div class="buttons">
                       <a href="{{slider1ButtonUrl}}" class="btn-blue">{{slider1ButtonText}}</a>
-                      <a class="js-modal-btn home-slider-video" href="javascript:void(0)" [attr.data-video-id]="youtubeVideo1Id">Watch the video</a>
-                    </div>
+                  </div>
+              </div>
+                </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image2 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                <div class="slider-text">
+                  <div class="slider-text-inner">
+                    <h2>{{slider2Title}}</h2>
+                    <p>{{slider2Description}}</p>
+                    <hr>
+                    <div class="buttons">
+                      <a href="{{slider2ButtonUrl}}" class="btn-blue">{{slider2ButtonText}}</a>
+                  </div>
+              </div>
+                </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image3 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                <div class="slider-text">
+                  <div class="slider-text-inner">
+                    <h2>{{slider3Title}}</h2>
+                    <p>{{slider3Description}}</p>
+                    <hr>
+                    <div class="buttons">
+                      <a href="{{slider3ButtonUrl}}" class="btn-blue">{{slider3ButtonText}}</a>
+                  </div>
+              </div>
+                </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="slider-bg" [ngStyle]="{'background-image': 'url(' + image4 + ')','background-repeat': 'no-repeat','background-position': 'center'}">
+                <div class="slider-text">
+                  <div class="slider-text-inner">
+                    <h2>{{slider4Title}}</h2>
+                    <p>{{slider4Description}}</p>
+                    <hr>
+                    <div class="buttons">
+                      <a href="{{slider4ButtonUrl}}" class="btn-blue">{{slider4ButtonText}}</a>
+                  </div>
               </div>
                 </div>
               </div>
@@ -532,13 +573,27 @@
   <!--Newsletter section - fixed version -->
 
   <!-- start CTA block - fixed version -->
-   <section class="cta-block">
+    <section class="cta-block">
         <div class="container">
-            <h2 class="whithead">{{standardCtaInfoPackDescription}}</h2>
-            <div class="buttons">
-                <a href='#' data-toggle="modal" data-target="#get-an-info-pack-modal-static" class="borbtn">{{standardCtaInfoPackButtonText}}</a>
+            <h2 class="whithead">Let's discuss what you're looking for. Call <a href="tel:1300361311">1300 361 311</a> or:</h2>
+            <div class="buttons four-button-main">
+                <a href="/enquire-now" class="make-enquiry-main comman-cta-four">
+                     <img src="../images/mail-white.png">
+                  <span>Make an enquiry</span>
+                </a>
+                <a href="/enquire-now" class="get-call-main comman-cta-four">
+                  <img src="../images/call-back-white.png">
+                  <span>Get a call back</span>
+                </a>
+                <a href="/arrange-inspection" class="arrange-inspection-main comman-cta-four">
+                  <img src="../images/inspection-white.png">
+                  <span>Arrange inspection</span>
+                </a>
+                <a href="#" class="get-info-main comman-cta-four" data-toggle="modal" data-target="#get-an-info-pack-modal-static">
+                  <img src="../images/pdf-white.png">
+                  <span>Get an info pack</span>
+                </a>
             </div>
-            <p>{{standardCtaInfoPackAfterButtonText}}</p>
         </div>
     </section>
   <!-- start CTA block - fixed version -->
