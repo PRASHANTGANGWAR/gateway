@@ -11963,7 +11963,6 @@ Edit to fix event info padding
     width:500px;
     top:0;
     border-radius:6px;
-    overflow: hidden;
     -webkit-transform:translateX(0);
     transform:translateX(0);
     will-change:transform,width,height;
@@ -12012,7 +12011,7 @@ Edit to fix event info padding
     left:0
 }
 .globalNav .linkGroup{
-    padding:0px;  padding-right: 10px;
+    padding:0px;  padding-right: 10px; 
 }
 .globalNav .linkContainer{
     display:block;
@@ -12243,7 +12242,7 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 {  margin-top: 0px;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a
-{ padding-left: 40px;   
+{ padding-left: 40px;  color: #62717f; 
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown .dropdown-toggle
 {   display: block; padding-bottom: 10px;

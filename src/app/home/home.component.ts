@@ -375,11 +375,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnDestroy() { 
-        //$('body').removeClass(this.bodyClasses);
-        //$(".nav-v2.innerpage-header").show();
-        //$(".nav-v2.home-header").hide();
-        //$(".nav-v2.innerpage-header").addClass('globalNav');
-        //$(".nav-v2.home-header").removeClass('globalNav');
+        $('body').removeClass(this.bodyClasses);
+        $(".nav-v2.innerpage-header").show();
+        $(".nav-v2.home-header").hide();
+        $(".nav-v2.innerpage-header").addClass('globalNav');
+        $(".nav-v2.home-header").removeClass('globalNav');
         this.sharedService.publishPage("");
     }
 
