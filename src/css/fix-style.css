@@ -12076,12 +12076,20 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.new-home-for-sale:hover
 {   background: #105DAC url(../images/new-homes-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.new-home-for-sale
+{  background: #fff url(../images/new-homes.png) no-repeat 15px center / 20px auto; 
+}
+
+
 
 .globalNav .linkGroup ul li a.pre-loved-home
 {   background: #fff url(../images/pre-loved.png) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.pre-loved-home:hover
 {   background: #105DAC url(../images/pre-loved-hover.png) no-repeat 15px center / 34px auto;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.pre-loved-home
+{  background: #fff url(../images/pre-loved.png) no-repeat 15px center / 20px auto;
 }
 
 
@@ -12091,6 +12099,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.our-home-design:hover
 {   background: #105DAC url(../images/home-designs-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.our-home-design
+{  background: #fff url(../images/home-designs.png) no-repeat 15px center / 20px auto;
+}
 
 
 .globalNav .linkGroup ul li a.communities
@@ -12099,7 +12110,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.communities:hover
 {   background: #105DAC url(../images/communities-hover.png) no-repeat 15px center / 34px auto;
 }
-
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.communities
+{  background: #fff url(../images/communities.png) no-repeat 15px center / 20px auto;
+}
 
 .globalNav .linkGroup ul li a.resident-stories
 {   background: #fff url(../images/resident-stories.png) no-repeat 15px center / 34px auto;
@@ -12107,6 +12120,10 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.resident-stories:hover
 {   background: #105DAC url(../images/resident-stories-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.resident-stories
+{  background: #fff url(../images/resident-stories.png) no-repeat 15px center / 20px auto;
+}
+
 
 
 .globalNav .linkGroup ul li a.how-it-works
@@ -12114,6 +12131,9 @@ Edit to fix event info padding
 }
 .globalNav .linkGroup ul li a.how-it-works:hover
 {   background: #105DAC url(../images/how-it-works-hover.png) no-repeat 15px center / 34px auto;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.how-it-works
+{  background: #fff url(../images/how-it-works.png) no-repeat 15px center / 20px auto;
 }
 
 
@@ -12123,6 +12143,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.faqs:hover
 {   background: #105DAC url(../images/faqs-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.faqs
+{  background: #fff url(../images/faqs.png) no-repeat 15px center / 20px auto;
+}
 
 
 .globalNav .linkGroup ul li a.buying-process
@@ -12130,6 +12153,9 @@ Edit to fix event info padding
 }
 .globalNav .linkGroup ul li a.buying-process:hover
 {   background: #105DAC url(../images/buy-process-hover.png) no-repeat 15px center / 34px auto;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.buying-process
+{   background: #fff url(../images/buy-process.png) no-repeat 15px center / 20px auto;
 }
 
 
@@ -12140,6 +12166,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.about-us:hover
 {   background: #105DAC url(../images/about-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.about-us
+{   background: #fff url(../images/about.png) no-repeat 15px center / 20px auto;
+}
 
 
 .globalNav .linkGroup ul li a.our-team
@@ -12147,6 +12176,9 @@ Edit to fix event info padding
 }
 .globalNav .linkGroup ul li a.our-team:hover
 {   background: #105DAC url(../images/team-hover.png) no-repeat 15px center / 34px auto;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.our-team
+{   background: #fff url(../images/team.png) no-repeat 15px center / 20px auto;
 }
 
 
@@ -12156,6 +12188,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.careers:hover
 {   background: #105DAC url(../images/careers-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.careers
+{   background: #fff url(../images/careers.png) no-repeat 15px center / 20px auto;
+}
 
 
 .globalNav .linkGroup ul li a.investors
@@ -12164,6 +12199,9 @@ Edit to fix event info padding
 .globalNav .linkGroup ul li a.investors:hover
 {   background: #105DAC url(../images/investors-hover.png) no-repeat 15px center / 34px auto;
 }
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.investors
+{   background: #fff url(../images/investors.png) no-repeat 15px center / 20px auto;
+}
 
 
 .globalNav .linkGroup ul li a.holiday-parks
@@ -12171,4 +12209,46 @@ Edit to fix event info padding
 }
 .globalNav .linkGroup ul li a.holiday-parks:hover
 {   background: #105DAC url(../images/holiday-parks-hover.png) no-repeat 15px center / 34px auto;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.holiday-parks
+{   background: #fff url(../images/holiday-parks.png) no-repeat 15px center / 20px auto;
+}
+
+
+
+header.nav-v2 .navbar-collapse.collapse.mobile-menu
+{   height: 285px; overflow: auto;  
+}
+.navbar-collapse.collapse.mobile-menu ul
+{ display: none;  
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul
+{   display: none;  
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown:nth-child(6)
+{   border-bottom: 1px solid #E5E5E5;  
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown.open ul
+{   display: block;  
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
+{  margin-top: 0px;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a
+{ padding-left: 40px;   
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown .dropdown-toggle
+{   display: block; padding-bottom: 10px;
+}
+header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown i.fa.fa-chevron-down
+{   float: right;  
+}
+@media (max-width:980px)
+{
+    .desktop-menu
+    {   display: none !important;      
+    }  
+    .navbar-collapse.collapse.mobile-menu ul
+    {   display: block;      
+    }
 }
