@@ -335,22 +335,22 @@ p {
 }
 
 :-ms-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 :-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-webkit-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
@@ -11759,7 +11759,10 @@ Edit to fix event info padding
 
 
 .arrange-header .container h2
-{   max-width: 900px; margin: 0 auto;  
+{   max-width: 890px; margin: 0 auto;  
+}
+.arrange-header .container h2 b
+{   color:#105DAC  
 }
 
 .arrange-inspection-from .arrange-inner-main .git-form
@@ -11778,6 +11781,20 @@ Edit to fix event info padding
 {  width: 100%; margin-top: 23px;
 }
 
+
+@media (max-width:1024px)
+{
+    .arrange-header .container h2
+    {   font-size: 72px;     
+    }
+
+}
+@media (max-width:812px)
+{
+  .arrange-header
+  {   padding-bottom: 0px !important;    
+  }
+}
 @media (max-width:768px)
 {
   .arrange-header .container h2
