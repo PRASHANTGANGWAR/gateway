@@ -852,11 +852,11 @@ Author: Hardik Pethani
 }
 
 .slick-prev:before {
-  content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ Ãƒâ€šÃ‚Â";
 }
 
 [dir="rtl"] .slick-prev:before {
-  content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢";
 }
 
 .slick-next {
@@ -869,11 +869,11 @@ Author: Hardik Pethani
 }
 
 .slick-next:before {
-  content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢";
 }
 
 [dir="rtl"] .slick-next:before {
-  content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ Ãƒâ€šÃ‚Â";
 }
 
 /* Dots */
@@ -928,7 +928,7 @@ Author: Hardik Pethani
   position: absolute;
   top: 0;
   left: 0;
-  content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢";
+  content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢";
   width: 20px;
   height: 20px;
   font-family: "slick";
@@ -4592,7 +4592,7 @@ Author: Bharat Khairnar
 }
 
 .cta-block .container {
-  max-width: 775px;
+  max-width: 900px;
 }
 
 .cta-block .whithead {
@@ -4601,7 +4601,44 @@ Author: Bharat Khairnar
   font-weight: normal;
   margin: 0;
 }
+.cta-block .whithead a
+{
+  color: #fff;
+}
 
+.cta-block .buttons.four-button-main
+{
+  margin-top: 80px;
+  display: inline-block;
+  width: 100%;
+}
+.cta-block .buttons.four-button-main .comman-cta-four
+{
+  width: 25%; float: left;
+}
+.cta-block .buttons.four-button-main .comman-cta-four img
+{
+  width: 50px; height: auto; vertical-align: top;
+}
+.cta-block .buttons.four-button-main .comman-cta-four span
+{
+    width: 100%;
+    display: block;
+    color: #fff;
+    float: left;
+    font-weight: normal;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+@media screen and (max-width: 480px)
+{
+  .cta-block .buttons.four-button-main .comman-cta-four
+  {
+    width: 50%; margin-top: 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .cta-block .whithead {
     font-size: 30px;
@@ -8084,7 +8121,7 @@ Author: Bharat Khairnar
 /*responsive */
 @media screen and (max-width: 812px){
   .box-video-sm a .box-video-img-sml
-  { height: auto;    
+  { height: auto;
   }
   .box-video-sm a .box-video-img-sml {
     position: relative;
@@ -8905,16 +8942,16 @@ Author: Bharat Khairnar
 
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner h2 {
   color: #FFFFFF;
-  font-size: 62px !important;
+  font-size: 72px;
   font-weight: 500;
-  line-height: 72px !important;
+  line-height: 78px;
   margin: 0 0 10px 0;
 }
 
 @media screen and (max-width: 768px) {
   .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner h2 {
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 52px;
+    line-height: 58px;
   }
 }
 
@@ -8927,8 +8964,8 @@ Author: Bharat Khairnar
 
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner p {
   color: #FFFFFF;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 30px;
   max-width: 407px;
 }
 
@@ -10366,17 +10403,6 @@ body.modal-open {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 375px) {
-  .home-four-button-v2 ul li h4 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .home-four-button-v2 ul li .img-box {
-    height: 60px;
-    margin: 30px auto 20px;
-  }
-}
-
 .home-slider.home-v3-slider {
   position: relative;
 }
@@ -10518,7 +10544,7 @@ body.modal-open {
 }
 
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner {
-  max-width: 600px;
+  max-width: 547px;
   position: absolute;
   left: 0;
   top: 50%;
@@ -10558,8 +10584,9 @@ body.modal-open {
 
 .home-slider .owl-carousel .item .slider-bg .slider-text .slider-text-inner p {
   color: #FFFFFF;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 24px;
+
+  line-height: 30px;
   max-width: 407px;
 }
 
