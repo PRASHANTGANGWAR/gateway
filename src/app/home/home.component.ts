@@ -63,6 +63,7 @@ export class HomeComponent implements OnInit {
   sliderImg2 : any;
   sliderImg3 : any;
   slider1Title: any;
+  youtubeVideo1Id: any;
   slider1Description: any;
   slider1ButtonText: any;
   slider2Title: any;
@@ -195,6 +196,7 @@ export class HomeComponent implements OnInit {
       function(data, status){
         that.header=data.fields;
         that.slider1Title = data.fields.slider1Title;
+        that.youtubeVideo1Id = data.fields.youtubeVideo1Id;
         that.slider1Description = data.fields.slider1Description;
         that.slider1ButtonUrl=data.fields.slider1ButtonUrl;
         that.slider1ButtonText = data.fields.slider1ButtonText;
