@@ -12066,6 +12066,9 @@ Edit to fix event info padding
   { height: auto;    
   }
 }
+.globalNav .desktop-menu ul.navbar-right li a
+{ cursor: pointer;  
+}
 .globalNav .linkGroup ul li:first-child
 { margin-top: 20px;
 }
