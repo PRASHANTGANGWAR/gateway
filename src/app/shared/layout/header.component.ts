@@ -38,6 +38,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+        $.getScript("js/custom.js");
+
          // this.nav.show();
          this.sharedService.caseNumber$.subscribe(data=>{
       this.communityTitle = data;
