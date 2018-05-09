@@ -13,3 +13,9 @@ git push branch_name
 take pull of that branch where you pushed the code in step 5 by running below commands:
 10. git checkout branch_name
 11. git pull
+
+- To tunnel localhost code to a url to check on mobile browser run the following command(assuming you've install ngrok):
+
+1. on new terminal window run: "ngrok http 4200"
+
+2. Go back to working directory and run "ng serve --port 4200 --host 0.0.0.0 --disableHostCheck true"
