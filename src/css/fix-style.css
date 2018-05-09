@@ -5325,6 +5325,12 @@ header.nav-v2 .navbar .nav li a {
   padding-left: 18px;
   padding-right: 18px;
 }
+@media (max-width:1380px)
+{
+	header.nav-v2 .navbar .nav li a
+	{	padding-left: 12px; padding-right: 12px;		
+	}
+}
 
 header.nav-v2 .navbar .nav li a:hover {
   color: #105DAC;
