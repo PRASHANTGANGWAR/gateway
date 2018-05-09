@@ -4758,6 +4758,11 @@ Listing page Hero & Heading
   text-align: center;
 }
 
+.hfsl-banner .context p.about-hero-text
+{  width: 700px;
+  max-width: 100%;
+}
+
 .hfsl-banner .context h2 {
   font-size: 72px;
   /*font-weight: 600;*/
@@ -5238,7 +5243,7 @@ header.nav-v2 .navbar .nav {
   }
 }
 header.nav-v2 .navbar .nav li a
-{ display: inline-block;  
+{ display: inline-block;
 }
 header.nav-v2 .navbar .nav li a:hover {
   color: #105DAC;
@@ -5328,10 +5333,10 @@ header.nav-v2 .navbar .nav li a {
 @media (max-width:1380px)
 {
 	header.nav-v2 .navbar .nav li a
-	{	padding-left: 12px; padding-right: 12px;		
+	{	padding-left: 12px; padding-right: 12px;
 	}
 	header.nav-v2 .navbar
-	{	margin-right: 25px;		
+	{	margin-right: 25px;
 	}
 }
 
@@ -11812,11 +11817,11 @@ Edit to fix event info padding
 
 
 
-/* Menu V5 */ 
+/* Menu V5 */
 
 
 
-.globalNav{    
+.globalNav{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     position:absolute;
@@ -11975,7 +11980,7 @@ Edit to fix event info padding
     left:0;
     -webkit-transition-duration:.25s;
     transition-duration:.25s;
-    
+
 }
 .globalNav .dropdownContainer{
     overflow:hidden;
@@ -12002,7 +12007,7 @@ Edit to fix event info padding
     transition-duration:.25s;
     background:red;
     border-radius:6px;
-    
+
 }
 .globalNav .dropdownSection.active{
     opacity:1;
@@ -12030,7 +12035,7 @@ Edit to fix event info padding
     left:0
 }
 .globalNav .linkGroup{
-    padding:0px;  padding-right: 10px; 
+    padding:0px;  padding-right: 10px;
 }
 .globalNav .linkContainer{
     display:block;
@@ -12059,7 +12064,7 @@ Edit to fix event info padding
 
 
 
-.productNav{    
+.productNav{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     position:absolute;
@@ -12076,23 +12081,23 @@ Edit to fix event info padding
 @media (max-width:980px)
 {
   .globalNav .rootLink
-  { height: auto;    
+  { height: auto;
   }
 }
 .globalNav .desktop-menu ul.navbar-right li a
-{ cursor: pointer;  
+{ cursor: pointer;
 }
 .globalNav .linkGroup ul li:first-child
 { margin-top: 20px;
 }
 .globalNav .linkGroup ul li:last-child
-{  margin-bottom: -20px;  
+{  margin-bottom: -20px;
 }
 .globalNav .linkGroup ul li a
 {   display: inline-block; color: #62717F; font-size: 16px; font-weight: 500; white-space: nowrap;  padding:28px 35px; padding-left: 57px; display: block;
 }
 .globalNav .linkGroup ul li a:hover
-{ background: #105DAC; color: #fff;  
+{ background: #105DAC; color: #fff;
 }
 
 
@@ -12103,7 +12108,7 @@ Edit to fix event info padding
 {   background: #105DAC url(../images/new-homes-hover.png) no-repeat 15px center / 34px auto;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.new-home-for-sale
-{  background: #fff url(../images/new-homes.png) no-repeat 15px center / 20px auto; 
+{  background: #fff url(../images/new-homes.png) no-repeat 15px center / 20px auto;
 }
 
 
@@ -12243,38 +12248,38 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 
 
 header.nav-v2 .navbar-collapse.collapse.mobile-menu
-{   height: 285px; overflow: auto;  
+{   height: 285px; overflow: auto;
 }
 .navbar-collapse.collapse.mobile-menu ul
-{ display: none;  
+{ display: none;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul
-{   display: none;  
+{   display: none;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown:nth-child(6)
-{   border-bottom: 1px solid #E5E5E5;  
+{   border-bottom: 1px solid #E5E5E5;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown.open ul
-{   display: block;  
+{   display: block;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 {  margin-top: 0px;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a
-{ padding-left: 40px;  color: #62717f; 
+{ padding-left: 40px;  color: #62717f;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown .dropdown-toggle
 {   display: block; padding-bottom: 10px;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown i.fa.fa-chevron-down
-{   float: right;  
+{   float: right;
 }
 @media (max-width:980px)
 {
     .desktop-menu
-    {   display: none !important;      
-    }  
+    {   display: none !important;
+    }
     .navbar-collapse.collapse.mobile-menu ul
-    {   display: block;      
+    {   display: block;
     }
 }
