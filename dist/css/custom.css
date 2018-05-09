@@ -1,0 +1,23 @@
+.requiedred{
+  color: red;
+  position: absolute;
+  top: -23px;
+}
+
+.red-border-class{
+  border: 1px solid red !important;
+}
+
+.sc > a{
+  cursor: pointer;
+}
+
+body.modal-open
+{	overflow: hidden; height: 100vh;	
+}
+
+@media (max-width: 767px){
+	.detail_btn {
+	    /*bottom: 150px !important;*/
+	}
+}
