@@ -5330,6 +5330,9 @@ header.nav-v2 .navbar .nav li a {
 	header.nav-v2 .navbar .nav li a
 	{	padding-left: 12px; padding-right: 12px;		
 	}
+	header.nav-v2 .navbar
+	{	margin-right: 25px;		
+	}
 }
 
 header.nav-v2 .navbar .nav li a:hover {
