@@ -101,7 +101,7 @@ constructor(private apiService: ApiService, private router: Router, private segm
         userData.description = this.info.area;
         window.localStorage.setItem('generic_data',JSON.stringify(userData));
         console.log('success!');
-         this.segment.track('GetInfoPack',{
+         this.segment.track(this.info.email,{
          firstname: this.info.firstname,
          lastname: this.info.lastname,
          community: this.info.community,
@@ -114,6 +114,20 @@ constructor(private apiService: ApiService, private router: Router, private segm
             this.router.navigateByUrl('/success');
             console.log("Event sended");
           });
+
+
+          /*-------------Segment----------*/
+           this.segment.identify(this.info.email, {
+                firstname: this.info.firstname,
+                lastname: this.info.lastname,
+                plan: this.info.plan,
+                phone: this.info.phone,
+                email: this.info.email,
+                description: this.info.area
+           });
+           /*-----------------------*/
+
+        
       }else{
         console.log('validation failed!');
       }
