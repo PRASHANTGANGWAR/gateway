@@ -18,7 +18,7 @@ getinTouchHeading:any=[];
 featuredHomes : any;
 homeCount : any;
 submitted = false;
-info: any = { firstname: '', lastname: '', phone:'', email:''};
+info: any = { firstname: '', lastname: '', phone:'', email:'',};
 genericInfo:any;
 constructor(private apiService: ApiService, private router: Router, private segment: SegmentService) {}
 
@@ -101,7 +101,7 @@ constructor(private apiService: ApiService, private router: Router, private segm
         userData.description = this.info.area;
         window.localStorage.setItem('generic_data',JSON.stringify(userData));
         console.log('success!');
-         this.segment.track(this.info.email,{
+         this.segment.track("ArrangeInspection",{
          firstname: this.info.firstname,
          lastname: this.info.lastname,
          community: this.info.community,
@@ -123,7 +123,9 @@ constructor(private apiService: ApiService, private router: Router, private segm
                 plan: this.info.plan,
                 phone: this.info.phone,
                 email: this.info.email,
-                description: this.info.area
+                description: this.info.area,
+                community: this.info.community,
+
            });
            /*-----------------------*/
 
