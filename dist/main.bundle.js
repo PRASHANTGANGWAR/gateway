@@ -509,7 +509,12 @@ var arrangeComponent = (function () {
         this.info = { firstname: '', lastname: '', phone: '', email: '', };
     }
     arrangeComponent.prototype.ngOnInit = function () {
+        // $.getScript('js/custom.js');
         var _this = this;
+        $(".nav-v2.innerpage-header").show();
+        $(".nav-v2.home-header").hide();
+        $(".nav-v2.innerpage-header").addClass('globalNav');
+        $(".nav-v2.home-header").removeClass('globalNav');
         window.scrollTo(0, 0);
         this.segment.page().then(function () { return console.log("Event sended"); });
         //fetching the list of featured homes
