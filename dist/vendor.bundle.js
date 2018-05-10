@@ -13912,7 +13912,7 @@ L.control.layers = function (baseLayers, overlays, options) {
 /***/ "../../../../mapbox.js/package.json":
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[["mapbox.js@3.1.1","/home/hari/workspace/gateway-lifestyle-front-end-app"]],"_from":"mapbox.js@3.1.1","_id":"mapbox.js@3.1.1","_inBundle":false,"_integrity":"sha1-Tr5BvYm1M/UH+zRV9PSQ5BfqHo8=","_location":"/mapbox.js","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"mapbox.js@3.1.1","name":"mapbox.js","escapedName":"mapbox.js","rawSpec":"3.1.1","saveSpec":null,"fetchSpec":"3.1.1"},"_requiredBy":["/"],"_resolved":"https://registry.npmjs.org/mapbox.js/-/mapbox.js-3.1.1.tgz","_spec":"3.1.1","_where":"/home/hari/workspace/gateway-lifestyle-front-end-app","author":{"name":"Mapbox"},"bugs":{"url":"https://github.com/mapbox/mapbox.js/issues"},"config":{"commitizen":{"path":"./node_modules/cz-conventional-changelog"}},"dependencies":{"corslite":"0.0.6","isarray":"0.0.1","leaflet":"1.0.2","mustache":"2.2.1","sanitize-caja":"0.1.4"},"description":"mapbox javascript api","devDependencies":{"browserify":"^13.0.0","clean-css":"~2.0.7","cz-conventional-changelog":"1.2.0","eslint":"^0.23.0","expect.js":"0.3.1","happen":"0.1.3","leaflet-fullscreen":"0.0.4","leaflet-hash":"0.2.1","marked":"~0.3.0","minifyify":"^6.1.0","minimist":"0.0.5","mocha":"2.4.5","mocha-phantomjs-core":"2.0.1","phantomjs-prebuilt":"2.1.12","sinon":"1.10.2"},"engines":{"node":"*"},"homepage":"http://mapbox.com/","license":"BSD-3-Clause","main":"src/index.js","name":"mapbox.js","optionalDependencies":{},"repository":{"type":"git","url":"git://github.com/mapbox/mapbox.js.git"},"scripts":{"test":"eslint --no-eslintrc -c .eslintrc src && phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html"},"version":"3.1.1"}
+module.exports = {"_from":"mapbox.js@^3.1.1","_id":"mapbox.js@3.1.1","_inBundle":false,"_integrity":"sha1-Tr5BvYm1M/UH+zRV9PSQ5BfqHo8=","_location":"/mapbox.js","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"mapbox.js@^3.1.1","name":"mapbox.js","escapedName":"mapbox.js","rawSpec":"^3.1.1","saveSpec":null,"fetchSpec":"^3.1.1"},"_requiredBy":["/"],"_resolved":"https://registry.npmjs.org/mapbox.js/-/mapbox.js-3.1.1.tgz","_shasum":"4ebe41bd89b533f507fb3455f4f490e417ea1e8f","_spec":"mapbox.js@^3.1.1","_where":"/home/enbake/Documents/gatewaylifestyle","author":{"name":"Mapbox"},"bugs":{"url":"https://github.com/mapbox/mapbox.js/issues"},"bundleDependencies":false,"config":{"commitizen":{"path":"./node_modules/cz-conventional-changelog"}},"dependencies":{"corslite":"0.0.6","isarray":"0.0.1","leaflet":"1.0.2","mustache":"2.2.1","sanitize-caja":"0.1.4"},"deprecated":false,"description":"mapbox javascript api","devDependencies":{"browserify":"^13.0.0","clean-css":"~2.0.7","cz-conventional-changelog":"1.2.0","eslint":"^0.23.0","expect.js":"0.3.1","happen":"0.1.3","leaflet-fullscreen":"0.0.4","leaflet-hash":"0.2.1","marked":"~0.3.0","minifyify":"^6.1.0","minimist":"0.0.5","mocha":"2.4.5","mocha-phantomjs-core":"2.0.1","phantomjs-prebuilt":"2.1.12","sinon":"1.10.2"},"engines":{"node":"*"},"homepage":"http://mapbox.com/","license":"BSD-3-Clause","main":"src/index.js","name":"mapbox.js","optionalDependencies":{},"repository":{"type":"git","url":"git://github.com/mapbox/mapbox.js.git"},"scripts":{"test":"eslint --no-eslintrc -c .eslintrc src && phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html"},"version":"3.1.1"}
 
 /***/ }),
 
@@ -18580,7 +18580,7 @@ delete Prism.languages.c['boolean'];
 /***/ (function(module, exports) {
 
 Prism.languages.cpp = Prism.languages.extend('c', {
-	'keyword': /\b(?:alignas|alignof|asm|auto|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,
+	'keyword': /\b(?:alignas|alignof|asm|auto|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,
 	'boolean': /\b(?:true|false)\b/,
 	'operator': /--?|\+\+?|!=?|<{1,2}=?|>{1,2}=?|->|:{1,2}|={1,2}|\^|~|%|&{1,2}|\|\|?|\?|\*|\/|\b(?:and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\b/
 });
@@ -18599,6 +18599,7 @@ Prism.languages.insertBefore('cpp', 'string', {
 		greedy: true
 	}
 });
+
 
 /***/ }),
 
@@ -19341,7 +19342,8 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 
 Prism.languages.typescript = Prism.languages.extend('javascript', {
 	// From JavaScript Prism keyword list and TypeScript language spec: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#221-reserved-words
-	'keyword': /\b(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield|false|true|module|declare|constructor|string|Function|any|number|boolean|Array|symbol|namespace|abstract|require|type)\b/
+	'keyword': /\b(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield|false|true|module|declare|constructor|namespace|abstract|require|type)\b/,
+	'builtin': /\b(?:string|Function|any|number|boolean|Array|symbol|console)\b/,
 });
 
 Prism.languages.ts = Prism.languages.typescript;

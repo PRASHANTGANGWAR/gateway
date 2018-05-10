@@ -3072,16 +3072,16 @@ Author: Bharat Khairnar
 }
 
 /*
-Author: Bharat khairnar
+Author: Bharat khairnar - fk edit
 */
 .community-filter {
   padding-bottom: 0;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 @media (max-width: 768px) {
   .community-filter {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
@@ -11806,7 +11806,6 @@ Edit to fix event info padding
 
 
 
-
 /* Menu V5 */
 
 
@@ -12136,7 +12135,7 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 }
 
 .globalNav .linkGroup ul li a.resident-stories
-{   background: #fff url(../images/resident-stories.png) no-repeat 15px center / 34px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939194/resident-stories-new_ulo3rs.png) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.resident-stories:hover
 {   background: #105DAC url(../images/resident-stories-hover.png) no-repeat 15px center / 34px auto;
@@ -12170,30 +12169,30 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 
 
 .globalNav .linkGroup ul li a.buying-process
-{   background: #fff url(../images/buy-process.png) no-repeat 15px center / 34px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939302/buy-process-new_h6ooe5.png ) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.buying-process:hover
 {   background: #105DAC url(../images/buy-process-hover.png) no-repeat 15px center / 34px auto;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.buying-process
-{   background: #fff url(../images/buy-process.png) no-repeat 15px center / 20px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939302/buy-process-new_h6ooe5.png) no-repeat 15px center / 20px auto;
 }
 
 
 
 .globalNav .linkGroup ul li a.about-us
-{   background: #fff url(../images/about.png) no-repeat 15px center / 34px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939357/about-new_sdympk.png) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.about-us:hover
 {   background: #105DAC url(../images/about-hover.png) no-repeat 15px center / 34px auto;
 }
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.about-us
-{   background: #fff url(../images/about.png) no-repeat 15px center / 20px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939357/about-new_sdympk.png) no-repeat 15px center / 20px auto;
 }
 
 
 .globalNav .linkGroup ul li a.our-team
-{   background: #fff url(../images/team.png) no-repeat 15px center / 34px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939152/team-new_slxtjj.png) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.our-team:hover
 {   background: #105DAC url(../images/team-hover.png) no-repeat 15px center / 34px auto;
@@ -12226,7 +12225,7 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 
 
 .globalNav .linkGroup ul li a.holiday-parks
-{   background: #fff url(../images/holiday-parks.png) no-repeat 15px center / 34px auto;
+{   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939237/holiday-parks-new_ylk0r7.png) no-repeat 15px center / 34px auto;
 }
 .globalNav .linkGroup ul li a.holiday-parks:hover
 {   background: #105DAC url(../images/holiday-parks-hover.png) no-repeat 15px center / 34px auto;
@@ -12272,4 +12271,95 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
     .navbar-collapse.collapse.mobile-menu ul
     {   display: block;
     }
+}
+/* home for sale four CTA */
+
+section.four-cta-button
+{  padding: 0px; margin-top: -40px;
+}
+section.four-cta-button ul
+{ margin: 0px -24px;
+}
+section.four-cta-button ul li
+{ float: left; width: 25%; padding: 0px 24px;
+}
+section.four-cta-button ul li a
+{   display: inline-block; width: 100%; background: #fff;  box-shadow: 0 0 20px 0 rgba(173,171,171,0.5); border-radius: 6px; height: 80px; padding-left: 82px;
+    font-size: 18px; font-weight: bold; line-height: 80px; color: #105DAC;
+}
+section.four-cta-button ul li a:hover
+{   color: #fff;
+}
+section.four-cta-button ul li a.how-it-work
+{   background: #fff url(../images/how-it-works.png) no-repeat 25px center / 41px auto;
+}
+section.four-cta-button ul li a.how-it-work:hover
+{   background: #105DAC url(../images/how-it-works-hover.png) no-repeat 25px center / 41px auto;
+}
+
+
+section.four-cta-button ul li a.buying-process
+{   background: #fff url(../images/buying-process.png) no-repeat 36px center / 30px auto;
+}
+section.four-cta-button ul li a.buying-process:hover
+{   background: #105DAC url(../images/buying-process-hover.png) no-repeat 36px center / 30px auto;
+}
+
+
+section.four-cta-button ul li a.home-designs
+{   background: #fff url(../images/home-for-sale.png) no-repeat 36px center / 30px auto;
+}
+section.four-cta-button ul li a.home-designs:hover
+{  background: #105DAC url(../images/home-for-sale-hover.png) no-repeat 36px center / 30px auto;
+}
+
+
+section.four-cta-button ul li a.faqs
+{  background: #fff url(../images/faqs.png) no-repeat 33px center / 36px auto;
+}
+section.four-cta-button ul li a.faqs:hover
+{  background: #105DAC url(../images/faqs-hover.png) no-repeat 33px center / 36px auto;
+}
+
+
+@media (max-width:1200px)
+{
+  section.four-cta-button ul li a
+  {   font-size: 16px; padding-left: 62px; background-position: 15px center !important;
+  }
+
+}
+
+@media (max-width:980px)
+{
+  section.four-cta-button ul li
+  {  width: 50%; padding: 15px;
+  }
+  section.four-cta-button{
+    margin-top: 0px;
+    /* padding-top: 100px;     */
+    padding-top: 40px;
+  }
+  section.four-cta-button .container
+  {    max-width: 540px;
+  }
+  section.four-cta-button ul li a
+  {   padding: 15px !important; padding-top: 100px !important; height: auto; text-align: center; background-position: center 20px !important; background-size: 60px auto !important;
+      line-height: normal;
+  }
+  section.four-cta-button ul
+  {   margin:0px; padding: 0px 15px;
+  }
+}
+@media (max-width: 480px)
+{
+  section.four-cta-button ul li
+  {  padding: 5px;
+  }
+}
+@media (max-width: 360px)
+{
+  section.four-cta-button ul li a
+  {   font-size: 14px;
+  }
 }
