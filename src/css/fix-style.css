@@ -7637,7 +7637,7 @@ Our home design Slider
     right: -70px;
   }
   .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link4 .hint-disk:before
-  { right: 72px;    
+  { right: 72px;
   }
 }
 
@@ -7645,7 +7645,7 @@ Our home design Slider
 @media (max-width: 767px)
 {
   .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link5 .hint-disk
-  { left: 0px;    
+  { left: 0px;
   }
 }
 
@@ -7656,7 +7656,7 @@ Our home design Slider
       left: -130px;
   }
   .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link33 .hint-disk:before
-  {    left: 135px;   
+  {    left: 135px;
   }
 }
 
@@ -7666,7 +7666,7 @@ Our home design Slider
       left: -190px;
   }
   .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link44 .hint-disk:before
-  {    left: 196px;   
+  {    left: 196px;
   }
 }
 
@@ -7693,7 +7693,7 @@ Our home design Slider
 }
 @media (max-width: 480px)
 {
- 
+
   .why-live-here.hotspot-page .slider .carousel-inner .item .item-inner .hotspot-hint.link8 .hint-disk:before {
     right: 86px;
     left: inherit;
@@ -7712,7 +7712,7 @@ Our home design Slider
 
 
 .why-live-here.hotspot-page .slider .carousel-inner
-{ overflow: inherit;  
+{ overflow: inherit;
 }
 
 
@@ -8086,7 +8086,7 @@ Author: Bharat Khairnar
 /*responsive */
 @media screen and (max-width: 812px){
   .box-video-sm a .box-video-img-sml
-  { height: auto;    
+  { height: auto;
   }
   .box-video-sm a .box-video-img-sml {
     position: relative;
@@ -11759,20 +11759,20 @@ Edit to fix event info padding
 
 
 .arrange-header .container h2
-{   max-width: 890px; margin: 0 auto;  
+{   max-width: 890px; margin: 0 auto;
 }
 .arrange-header .container h2 b
-{   color:#105DAC  
+{   color:#105DAC
 }
 
 .arrange-inspection-from .arrange-inner-main .git-form
-{   box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);  border-radius: 5px; max-width: 742px; margin:0 auto;     
+{   box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);  border-radius: 5px; max-width: 742px; margin:0 auto;
 }
 .arrange-inspection-from .arrange-inner-main .git-form .form-text
 {  text-align: center;
 }
 .arrange-inspection-from .arrange-inner-main .git-form .form-text h4
-{   color:#62717F; font-size: 14px; font-weight: bold; line-height: 17px; 
+{   color:#62717F; font-size: 14px; font-weight: bold; line-height: 17px;
 }
 .arrange-inspection-from .arrange-inner-main .git-form .form-text p
 {   line-height: 20px; font-weight: 300; font-size: 14px; color: #414952;
@@ -11785,29 +11785,34 @@ Edit to fix event info padding
 @media (max-width:1024px)
 {
     .arrange-header .container h2
-    {   font-size: 72px;     
+    {   font-size: 72px;
     }
 
 }
 @media (max-width:812px)
 {
   .arrange-header
-  {   padding-bottom: 0px !important;    
+  {   padding-bottom: 0px !important;
   }
 }
 @media (max-width:768px)
 {
   .arrange-header .container h2
-  {   font-size: 54px;    
+  {   font-size: 54px;
   }
 }
 @media (max-width:480px)
 {
     .arrange-inspection-from .arrange-inner-main .git-form .form-control
-    {   font-size: 14px;      
+    {   font-size: 14px;
     }
     .arrange-header .container h2
-    {   font-size: 36px;     
+    {   font-size: 36px;
     }
-
+}
+/* FK added responsive */
+@media screen and (max-width: 414px) {
+  .getintouch-form-warp .git-form .form-group{
+    margin-bottom: 30px;
+  }
 }
