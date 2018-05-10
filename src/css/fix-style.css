@@ -335,22 +335,22 @@ p {
 }
 
 :-ms-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 :-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-webkit-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
@@ -4798,6 +4798,8 @@ Listing page Hero & Heading
     overflow: hidden;
   }
 }
+
+
 
 /*
 Author: Bharat Khairnar
@@ -11807,6 +11809,7 @@ Edit to fix event info padding
 
 
 
+
 /* Menu V5 */
 
 
@@ -12273,3 +12276,66 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
     {   display: block;
     }
 }
+
+/*=== arrange inspections ===*/
+
+
+.arrange-header .container h2
+{   max-width: 890px; margin: 0 auto;
+}
+.arrange-header .container h2 b
+{   color:#105DAC
+}
+
+.arrange-inspection-from .arrange-inner-main .git-form
+{   box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);  border-radius: 5px; max-width: 742px; margin:0 auto;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text
+{  text-align: center;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text h4
+{   color:#62717F; font-size: 14px; font-weight: bold; line-height: 17px;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text p
+{   line-height: 20px; font-weight: 300; font-size: 14px; color: #414952;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .btn-blue
+{  width: 100%; margin-top: 23px;
+}
+
+
+@media (max-width:1024px)
+{
+    .arrange-header .container h2
+    {   font-size: 72px;
+    }
+
+}
+@media (max-width:812px)
+{
+  .arrange-header
+  {   padding-bottom: 0px !important;
+  }
+}
+@media (max-width:768px)
+{
+  .arrange-header .container h2
+  {   font-size: 54px;
+  }
+}
+@media (max-width:480px)
+{
+    .arrange-inspection-from .arrange-inner-main .git-form .form-control
+    {   font-size: 14px;
+    }
+    .arrange-header .container h2
+    {   font-size: 36px;
+    }
+}
+/* FK added responsive */
+@media screen and (max-width: 414px) {
+  .getintouch-form-warp .git-form .form-group{
+    margin-bottom: 30px;
+  }
+}
+
