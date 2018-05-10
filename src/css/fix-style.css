@@ -335,22 +335,22 @@ p {
 }
 
 :-ms-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 :-moz-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
 ::-webkit-input-placeholder {
-  color: #A3ACB5 !important;
+  color: #62717F !important;
   font-family: "Gotham", helvetica, "sans-serif";
 }
 
@@ -4798,6 +4798,8 @@ Listing page Hero & Heading
     overflow: hidden;
   }
 }
+
+
 
 /*
 Author: Bharat Khairnar
@@ -12179,7 +12181,9 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 
 
 .globalNav .linkGroup ul li a.buying-process
+
 {   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939302/buy-process-new_h6ooe5.png ) no-repeat 15px center / 34px auto;
+
 }
 .globalNav .linkGroup ul li a.buying-process:hover
 {   background: #105DAC url(../images/buy-process-hover.png) no-repeat 15px center / 34px auto;
@@ -12199,7 +12203,6 @@ header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown
 header.nav-v2 .navbar-collapse.collapse.mobile-menu ul li.dropdown.mega-dropdown ul li a.about-us
 {   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939357/about-new_sdympk.png) no-repeat 15px center / 20px auto;
 }
-
 
 .globalNav .linkGroup ul li a.our-team
 {   background: #fff url(http://res.cloudinary.com/gateway-lifestyle/image/upload/v1525939152/team-new_slxtjj.png) no-repeat 15px center / 34px auto;
@@ -12371,5 +12374,67 @@ section.four-cta-button ul li a.faqs:hover
 {
   section.four-cta-button ul li a
   {   font-size: 14px;
+  }
+}
+
+/*=== arrange inspections ===*/
+
+
+.arrange-header .container h2
+{   max-width: 890px; margin: 0 auto;
+}
+.arrange-header .container h2 b
+{   color:#105DAC
+}
+
+.arrange-inspection-from .arrange-inner-main .git-form
+{   box-shadow: 0 0 20px 0 rgba(222,222,222,0.5);  border-radius: 5px; max-width: 742px; margin:0 auto;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text
+{  text-align: center;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text h4
+{   color:#62717F; font-size: 14px; font-weight: bold; line-height: 17px;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .form-text p
+{   line-height: 20px; font-weight: 300; font-size: 14px; color: #414952;
+}
+.arrange-inspection-from .arrange-inner-main .git-form .btn-blue
+{  width: 100%; margin-top: 23px;
+}
+
+
+@media (max-width:1024px)
+{
+    .arrange-header .container h2
+    {   font-size: 72px;
+    }
+
+}
+@media (max-width:812px)
+{
+  .arrange-header
+  {   padding-bottom: 0px !important;
+  }
+}
+@media (max-width:768px)
+{
+  .arrange-header .container h2
+  {   font-size: 54px;
+  }
+}
+@media (max-width:480px)
+{
+    .arrange-inspection-from .arrange-inner-main .git-form .form-control
+    {   font-size: 14px;
+    }
+    .arrange-header .container h2
+    {   font-size: 36px;
+    }
+}
+/* FK added responsive */
+@media screen and (max-width: 414px) {
+  .getintouch-form-warp .git-form .form-group{
+    margin-bottom: 30px;
   }
 }

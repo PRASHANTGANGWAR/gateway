@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { HomeDesignsModule } from './home-designs/home-designs.module';
 import { enquiryModule } from './enquiry-form/enquiry.module';
+import { arrangeModule }  from './arrange-inspection/arrange.module';
 import { eventModule } from './event/event.module';
 import { howitworksModule } from './howitworks/howitworks.module';
 import { aboutusModule } from './aboutus/aboutus.module';
@@ -52,6 +53,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([]);
     TestimonialModule,
     BrowserModule,
     enquiryModule,
+    arrangeModule,
     eventModule,
     HomeModule,
     HomeDesignsModule,
