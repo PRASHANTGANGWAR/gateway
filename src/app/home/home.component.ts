@@ -376,6 +376,7 @@ export class HomeComponent implements OnInit {
 
   ngOnDestroy() { 
         $('body').removeClass(this.bodyClasses);
+        $.getScript("js/nav-bar.js");
         $(".nav-v2.innerpage-header").show();
         $(".nav-v2.home-header").hide();
         $(".nav-v2.innerpage-header").addClass('globalNav');
